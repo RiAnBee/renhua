@@ -258,6 +258,20 @@ Paper list and per-item sources: `skills/renhua/references/evidence.md`.
 
 ---
 
+## Contributing
+
+New evidence, counterexamples (real Chinese sentences that look triggered but shouldn't be edited), and
+failure reports are all welcome.
+
+**Counterexamples especially.** This project's number-one failure mode is not a missed edit — it is
+**breaking normal human writing**. Humans use metaphor 2.4× more than AI, questions 17× more, and
+intra-sentence parallelism 0.61×. A rule without counterexamples is a dangerous rule.
+
+New rules must satisfy three conditions at once: **pointable to a specific location**, **has a
+human-side baseline**, and **has ≥3 writeable counterexamples**. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
 ## License
 
 [MIT](LICENSE)
