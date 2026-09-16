@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "renhua",
+  "description": "中文去 AI 味。只做减法：删零信息句、说教式元评论与修辞超载，不新增事实、不改立场、不动结构。Remove the machine texture from Chinese text by deletion only.",
+  "author": {
+    "name": "Donglin",
+    "url": "https://github.com/RiAnBee"
+  },
+  "homepage": "https://github.com/RiAnBee/renhua",
+  "repository": "https://github.com/RiAnBee/renhua",
+  "license": "MIT",
+  "keywords": [
+    "chinese",
+    "写作",
+    "去ai味",
+    "ai-tone",
+    "style",
+    "editing",
+    "de-ai-flavor",
+    "skill"
+  ],
+  "skills": "./skills"
+}

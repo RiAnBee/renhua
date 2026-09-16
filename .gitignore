@@ -1,0 +1,28 @@
+# 论文原文（PDF + LaTeX 源码）不入库：体积大，且版权属原作者。
+papers/
+
+# 长程任务 harness / 中间产物：状态、决策、候选池、草稿。
+# 这些文件包含未完成的推理与筛查过程，不上传公网。
+.harness/
+*.local.md
+notes/
+drafts/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# 杂项
+*.log
+tmp/
+scratch/

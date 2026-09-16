@@ -1,0 +1,7 @@
+# 统一换行符，避免 WSL / Windows 之间来回提交产生噪声 diff
+* text=auto eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.png binary
+*.pdf binary
