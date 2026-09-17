@@ -110,6 +110,14 @@ git clone https://github.com/RiAnBee/renhua.git
 cp -r renhua/skills/renhua ~/.claude/skills/     # or your skills directory
 ```
 
+**If you intend to edit this skill, symlink instead of copying** — otherwise the installed copy
+**will not update** after a `git pull`, while you keep editing the repo version, and the two
+silently diverge:
+
+```bash
+ln -s "$PWD/renhua/skills/renhua" ~/.claude/skills/renhua
+```
+
 As a Claude Code plugin:
 
 ```bash

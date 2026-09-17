@@ -100,6 +100,13 @@ git clone https://github.com/RiAnBee/renhua.git
 cp -r renhua/skills/renhua ~/.claude/skills/     # 或你的 skills 目录
 ```
 
+**如果你会改这份 skill，建议用软链而不是拷贝** —— 否则 `git pull` 之后，装在 skills
+目录里的旧副本**不会更新**，而你改的是仓库那份，两边静默分叉：
+
+```bash
+ln -s "$PWD/renhua/skills/renhua" ~/.claude/skills/renhua
+```
+
 作为 Claude Code 插件：
 
 ```bash
