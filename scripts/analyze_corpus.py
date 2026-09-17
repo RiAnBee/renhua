@@ -83,11 +83,32 @@ FEATS = {
 CONCESSION_TURN = r"[。；\n]\s*不过[，,][^。]{0,30}?(?:仍|还|也|依然)[^。]{0,20}?(?:面临|存在|需要|有)"  # 让步转折公式
 
 
+def drop_label_lines(t):
+    """去掉标签行、表格行、标识符行。
+
+    这些行短、且不含任何句内标点，是代码块/表格/字段清单的残留。
+    不清理它们，句长统计会把「策略文件 / breakthrough_platform.py / 突破平台」
+    这类无标点的连续行粘成一个几百字的假"句子"——实测污染过 411 字。
+    """
+    out = []
+    for line in t.split("\n"):
+        s = line.strip()
+        if not s:
+            out.append(line)
+            continue
+        if len(s) < 40 and not re.search(r"[。，、；：！？\u201c\u201d]", s):
+            continue
+        out.append(line)
+    return "\n".join(out)
+
+
 def clean(t):
     """去掉代码块、行内代码、URL、列表项——它们不是散文，会污染句长与虚词统计。"""
     t = re.sub(r"```.*?```", " ", t, flags=re.S)
     t = re.sub(r"`[^`\n]+`", " ", t)
     t = re.sub(r"https?://\S+", " ", t)
+    t = re.sub(r"^\s*\|.*$", " ", t, flags=re.M)          # Markdown 表格行
+    t = drop_label_lines(t)                                  # 标签/标识符行
     t = re.sub(r"^\s*(?:[-*+>]|\d+[.)])\s+.*$", " ", t, flags=re.M)
     t = re.sub(r"^\s*(?:def |class |import |from |function |const |var |let |#include|\$ |> )\S.*$",
                " ", t, flags=re.M)
@@ -102,14 +123,15 @@ def feats(t):
         out[name] = per_k(t, len(re.findall(pat, t)))
     out["让步转折公式"] = per_k(t, len(re.findall(CONCESSION_TURN, t)))
     # 句长
-    ss = sentences(t)
+    ss = [s for s in sentences(t) if s.strip()[-1:] in "。！？"]
     if ss:
         L = [len(s) for s in ss]
         out["平均句长"] = st.mean(L)
         out["句长CV"] = st.pstdev(L) / max(st.mean(L), 1e-9)
     # 段末句长度 CV（节奏均匀度）
     ps = paragraphs(t)
-    lastlens = [len(sentences(p)[-1]) for p in ps if sentences(p)]
+    lastlens = [len(ss[-1]) for p in ps
+                if (ss := [s for s in sentences(p) if s.strip()[-1:] in "。！？"])]
     if len(lastlens) > 2:
         out["段末句长CV"] = st.pstdev(lastlens) / max(st.mean(lastlens), 1e-9)
     # 段首句是否为评论/元文本框架
@@ -121,7 +143,7 @@ def feats(t):
     # 信息推进：相邻句字符级 Jaccard（越低=跳步越大）
     jumps = []
     for p in ps:
-        ss2 = sentences(p)
+        ss2 = [s for s in sentences(p) if s.strip()[-1:] in "。！？"]
         for a, b in zip(ss2, ss2[1:]):
             A, B = set(a), set(b)
             if A and B:

@@ -76,16 +76,17 @@ def main():
 
     print(f"{'特征':22s} {'正式':>26s} {'口语':>26s}  判定")
     print("-" * 92)
-    robust, dep, null = [], [], []
+    robust, weak, dep, null = [], [], [], []
 
     for k in keys:
-        cells, dirs = [], []
+        cells, dirs, sigs = [], [], []
         for reg in ("正式", "口语"):
             h = hp[f"人类·{reg}"][0].get(k, [])
             a = hp[f"AI·{reg}"][0].get(k, [])
             if len(h) < 3 or len(a) < 3:
                 cells.append("        n/a        ")
                 dirs.append(0)
+                sigs.append(False)
                 continue
             _, z = mann_whitney(h, a)
             d = cliffs_delta(h, a)
@@ -93,10 +94,14 @@ def main():
                                                ("*" if abs(z) > 1.96 else " "))
             cells.append(f"Δ={d:+.2f} z={z:+5.1f}{sig:<3s}")
             dirs.append(1 if d > 0.15 else (-1 if d < -0.15 else 0))
+            sigs.append(abs(z) > 1.96)
 
-        if dirs[0] != 0 and dirs[0] == dirs[1]:
-            verdict = "稳健 ✅"
+        if dirs[0] != 0 and dirs[0] == dirs[1] and all(sigs):
+            verdict = "稳健 ✅"                      # 同向 + 两语域均显著
             robust.append(k)
+        elif dirs[0] != 0 and dirs[0] == dirs[1]:
+            verdict = "同向·弱"                      # 方向一致但至少一语域不显著
+            weak.append(k)
         elif dirs[0] != 0 and dirs[1] != 0 and dirs[0] != dirs[1]:
             verdict = "**语域依赖** ⚠️"
             dep.append(k)
@@ -107,11 +112,12 @@ def main():
             verdict = "仅单语域显著"
         print(f"{k:22s} {cells[0]} {cells[1]}  {verdict}")
 
-    print(f"\n稳健（两语域同向）：{len(robust)} 条 → {', '.join(robust)}")
+    print(f"\n稳健（两语域同向且均 p<0.05）：{len(robust)} 条 → {', '.join(robust)}")
+    print(f"同向但弱（至少一语域不显著）：{len(weak)} 条 → {', '.join(weak)}")
     print(f"语域依赖（方向相反）：{len(dep)} 条 → {', '.join(dep)}")
     print(f"无差异：{len(null)} 条 → {', '.join(null)}")
 
-    out = {"robust": robust, "register_dependent": dep, "null": null,
+    out = {"robust": robust, "weak": weak, "register_dependent": dep, "null": null,
            "n": {g: hp[g][1] for g in GROUPS}}
     (CORPUS.parent / ".harness" / "corpus-stats.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
