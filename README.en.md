@@ -32,24 +32,23 @@ The rewrite is the deliverable. The diagnosis is a side effect.
 
 This section matters more than the one above.
 
-### It will not shorten your sentences
+### Sentences don't get shorter
 
 **Chinese AI text has *shorter* sentences than human Chinese.** Native Chinese median is ~50 characters
 per sentence; machine-generated Chinese is under 40. Shortening sentences moves in the **wrong direction**.
 
-### It will not delete your metaphors, questions, or parallelism
+### Metaphor, questions, and parallelism stay
 
 Measured: **humans use metaphor 2.4× more than AI** (8× for standalone-paragraph metaphors),
 **humans use questions in body text 17× more**, and **intra-sentence parallelism is used no less by humans**
 (0.61×).
-
 Deleting these makes writing look *more* like AI, not less.
 
-### It will not add first person, slang, or break up long paragraphs
+### No added first person, slang, or paragraph breaks
 
 No evidence supports any of this. Density is the author's choice, not a rule's obligation.
 
-### It will not touch formally-regulated text
+### Formally-regulated text is off-limits
 
 Government notices, contracts, legal clauses, academic papers, technical docs, API references, SOPs —
 these genres *require* uniform formatting and consistent wording. "De-AI-flavoring" them means breaking
@@ -57,24 +56,24 @@ the genre.
 
 When such a register is detected, **the entire rule family is disabled**; only tool artifacts are cleaned.
 
-### It does not promise a lower AI-detection rate
+### No promise of a lower detection rate
 
 This is a mathematical constraint: `TPR ≤ FPR + TV`.
 "Spare human writing" and "fool detectors" are **two ends of the same dial** — you cannot max both.
 
 This skill serves **experienced human readers**, not detectors.
 
-### It cannot fix content
+### Content problems stay
 
 De-AI-flavoring changes *how* something is said. Opinions flattened by AI do not come back through
 rewriting. Measured: content is preserved after rewriting (87% of text pairs above 0.95 cosine), but in
-heavy-AI writing, **neutral-stance proportion is 66.7% vs 39.5% for humans**. Stance is the author's to recover.
+heavy-AI writing, **neutral-stance proportion is 66.7% vs 39.5% for humans** — a gap the author has to close.
 
 ---
 
 ## Why subtraction only
 
-Not caution — the evidence points here.
+The evidence points here.
 
 **Evidence 1**: The same AI-generated paragraphs were edited by 18 professional writers (MFA). Across
 8,035 edits: replacement 74%, deletion 18%, insertion 8%. Asked which version was best, **65% chose the
@@ -140,7 +139,7 @@ skills/renhua/
     └── evidence.md                 # Sources, figures, corpus setting, evidence grades
 ```
 
-`SKILL.md` is 316 lines. References load on demand and don't occupy context.
+`SKILL.md` is around 350 lines (budget cap). References load on demand and don't occupy context.
 
 ---
 
@@ -151,7 +150,7 @@ the narrative science field (arXiv:2604.03136, University of Maryland with Googl
 10,272 prompts × 6 generators = 61,608 texts), supported by a dozen directly relevant stylometry,
 computational linguistics, and editing-behavior studies.
 
-**But one thing has to be said plainly: clean Chinese-native human-vs-machine comparison evidence
+**Clean Chinese-native human-vs-machine comparison evidence
 barely exists.**
 
 - The only study with both a native Chinese human baseline (People's Daily, Xinhua) and machine-generated
@@ -196,8 +195,6 @@ the risk first and flags it in the ledger.
 You may have heard "different models have very different AI flavor." That claim is **directionally right
 but wrongly explained**.
 
-Measurements:
-
 - **Chinese-made and foreign-made models are indistinguishable**: 66.63% classification accuracy,
   F1 0.519 — near random
 - **Between models**, attributable variance is 68.4%; **between human and machine** it is 93.2%
@@ -237,8 +234,8 @@ text as *less* AI — detection rate is not monotonic with AI involvement.
 1. **It cannot reach the "humans do more of this" half.** Subplots, time jumps, allusive naming, moral
    ambiguity, direct address to the reader — humans clearly do more of these, but they all require
    **adding** content, which information conservation forbids. They go into the do-not-touch list only.
-2. **It expires.** AI flavor is a moving target. Multiple longitudinal studies agree the drift deepens over
-   time. Wordlist-based judgments go stale.
+2. **It expires.** AI flavor is a moving target; multiple longitudinal studies agree the drift deepens over
+   time, and wordlist-based judgments go stale.
 3. **Gate decisions are subjective.** The line between "business commentary" and "technical report" is not
    always clear. Current policy: **when unsure, prefer no change** — missing an edit costs far less than
    breaking something.

@@ -142,7 +142,7 @@ cd renhua
 
 ### 提交前
 
-- `SKILL.md` 保持 **≤350 行**（当前 316 行）
+- `SKILL.md` 保持 **≤350 行**（用 `wc -l` 自查）
 - 新增规则必须同时更新 `references/counterexamples.zh.md`
 - 新增证据必须同时更新 `references/evidence.md`，并标证据等级
 - 数字必须**可复算**：给出出处、表号或章节号、语料场景
