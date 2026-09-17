@@ -4,8 +4,7 @@
 
 **A Chinese-language "de-AI-flavor" skill that only subtracts.**
 
-It adds no facts, changes no positions, restructures nothing. It deletes the specific things that make
-Chinese text read like a machine wrote it.
+It deletes the specific things that make Chinese text read like a machine wrote it.
 
 ---
 
