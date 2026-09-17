@@ -13,11 +13,11 @@ It deletes the specific things that make Chinese text read like a machine wrote 
 Give it a passage of Chinese text. It applies six rules, each traceable to a specific location:
 
 1. **Deletes zero-information sentences** — the closing elevation, restatement, moral
-   (**formal register only**)
+   (**reporting register only: news, reports**)
 2. **Deletes preachy meta-commentary** — "this tells us a lesson" style stepping outside the content
 3. **Breaks up adjacent-sentence isomorphism** — when several sentences in a row share one skeleton,
    reorder; when several are short fragments in a row, merge them (not delete information)
-4. **Thins explicit cohesion** — over-dense adversatives (**formal register only**) and
+4. **Thins explicit cohesion** — over-dense adversatives (**reporting register only**) and
    sentence-initial "同时/此外/另外" sequencing (**both registers**)
 5. **Thins rhetorical density** — metaphor and parallelism spread across the piece, every section
    closing on a one-line aphorism
@@ -179,7 +179,7 @@ Chinese figure came from a Chinese-translated-from-English setting.
 
 **The split is deliberate; we don't pool.** Pooling lies — take adversative connectives:
 
-| Formal register | Informal register | Pooled (the wrong move) |
+| Reporting register | Author-present register | Pooled (the wrong move) |
 |---|---|---|
 | AI **6.43×** human | AI **0.08×** human (opposite direction) | **2.04×** |
 
@@ -194,7 +194,7 @@ defects — the AI·informal layer had mixed three models (on questions, the int
 *larger than the human-vs-machine gap*), and sentence-length stats were polluted by code blocks and
 tables (identifier lines glued into a fake 411-character "sentence"). After the fix, the robustness of
 `paragraph-final sentence-length CV` and `jump CV` **was an artifact of the confound** and has been
-downgraded to "formal register only."
+downgraded to "reporting register only."
 
 **Limits**: one model family on the AI side; no contamination scrubbing on the human side; the
 "informal" layer is really tech blogs; all features are regex-reproducible surface measures with no
