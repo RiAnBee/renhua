@@ -7,7 +7,7 @@ argument-hint: [文件路径或直接粘贴文本]
 
 **执行前必做**：
 
-1. 先读 `skills/renhua/SKILL.md`（三条硬边界 + 四道闸门 + 六条常开规则 + 输出契约）
+1. 先读 `skills/renhua/SKILL.md`（三条硬边界 + 四道闸门 + 六条规则 + 输出契约）
 2. 再读 `skills/renhua/references/counterexamples.zh.md`（反例门，改写前必读）
 3. 只有在不确定该不该改某处时，才读 `references/no-touch.zh.md`
 4. 只有在用户追问依据时，才读 `references/evidence.md`

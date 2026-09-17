@@ -13,6 +13,7 @@ It deletes the specific things that make Chinese text read like a machine wrote 
 Give it a passage of Chinese text. It applies six rules, each traceable to a specific location:
 
 1. **Deletes zero-information sentences** — the closing elevation, restatement, moral
+   (**formal register only**)
 2. **Deletes preachy meta-commentary** — "this tells us a lesson" style stepping outside the content
 3. **Breaks up adjacent-sentence isomorphism** — when several sentences in a row share one skeleton,
    reorder; when several are short fragments in a row, merge them (not delete information)
