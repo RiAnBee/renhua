@@ -11,14 +11,21 @@ Chinese text read like a machine wrote it.
 
 ## What it does
 
-Give it a passage of Chinese text. It does four things:
+Give it a passage of Chinese text. It applies six rules, each traceable to a specific location:
 
 1. **Deletes zero-information sentences** — the closing elevation, restatement, moral
 2. **Deletes preachy meta-commentary** — "this tells us a lesson" style stepping outside the content
 3. **Breaks up adjacent-sentence isomorphism** — when several sentences in a row share one skeleton,
-   reorder (not delete information)
-4. **Thins explicit cohesion and rhetorical density** — over-dense connectives, rhetoric spread across
-   the whole piece
+   reorder; when several are short fragments in a row, merge them (not delete information)
+4. **Thins explicit cohesion** — over-dense connectives (**formal register only**)
+5. **Thins rhetorical density** — metaphor and parallelism spread across the piece, every section
+   closing on a one-line aphorism
+6. **Deletes opening declarations** — openings that use "not X, not Y, only Z" instead of stating
+   plainly (**deleted only when** each negation is restated elsewhere in the piece; where the
+   negation is the *only* such promise, it stays)
+
+There are also 5 optional rules (zero-subject paragraph openers, empty colon lead-ins, pseudo-list
+structure, dangling framing, reversal tone), off by default.
 
 Then it hands you a **change ledger**: which rule each edit maps to, what the original was, what it
 became, and why. Plus a **do-not-touch list**: places that look AI-ish but were deliberately left alone,
@@ -34,8 +41,14 @@ This section matters more than the one above.
 
 ### Sentences don't get shorter
 
-**Chinese AI text has *shorter* sentences than human Chinese.** Native Chinese median is ~50 characters
-per sentence; machine-generated Chinese is under 40. Shortening sentences moves in the **wrong direction**.
+**Chinese AI text has *shorter* sentences than human Chinese, and they are more uniform in length.**
+Native Chinese median is ~50 characters per sentence; machine-generated Chinese is under 40. Our own
+corpus (Cliff's δ, **both registers p<0.05**): mean sentence length −0.46/−0.53, sentence-length CV
+−0.44/−0.38.
+
+So it only **merges** runs of short fragments; it never splits long sentences — splitting moves in the
+**wrong direction**. ("Sentence length should vary" is a popular recommendation that our measurements
+retired; see `no-touch.zh.md`.)
 
 ### Metaphor, questions, and parallelism stay
 
@@ -131,7 +144,7 @@ The skill infers register and length on its own. **You never declare a model or 
 
 ```
 skills/renhua/
-├── SKILL.md                        # 3 hard limits + 4 gates + 5 always-on rules + output contract
+├── SKILL.md                        # 3 hard limits + 4 gates + 6 always-on rules + output contract
 └── references/
     ├── rules.zh.md                 # 5 optional rules (zero-subject paragraph openers, empty lead-ins…)
     ├── counterexamples.zh.md       # Counterexample gate: Chinese sentences that look triggered but aren't
@@ -143,15 +156,52 @@ skills/renhua/
 
 ---
 
+## Our own Chinese corpus
+
+**This is the project's only evidence source with a native Chinese human baseline** — every earlier
+Chinese figure came from a Chinese-translated-from-English setting.
+
+| Layer | Source | Docs | Chinese chars |
+|---|---|---|---|
+| Human · formal | People's Daily | 100 | 174,040 |
+| Human · informal | cnblogs personal tech blogs | 82 | 179,425 |
+| AI · formal | same model × 40 news topics | 40 | 33,490 |
+| AI · informal | **same model** × 40 tech-blog topics | 40 | 74,270 |
+
+**The split is deliberate; we don't pool.** Pooling lies — take adversative connectives:
+
+| Formal register | Informal register | Pooled (the wrong move) |
+|---|---|---|
+| AI **6.43×** human | AI **0.08×** human (opposite direction) | **2.04×** |
+
+**2.04× holds in neither real register.** So calibration corpus layers must **mirror the skill's
+register gate**.
+
+**Only 2 features are robust in both registers at p<0.05** (Cliff's δ): mean sentence length −0.46/−0.53,
+sentence-length CV −0.44/−0.38. Two more share a direction but are weak (jump mean, questions).
+
+**We retracted conclusions.** The first pass reported 6 robust features; review found two methodological
+defects — the AI·informal layer had mixed three models (on questions, the inter-model gap was **105%**,
+*larger than the human-vs-machine gap*), and sentence-length stats were polluted by code blocks and
+tables (identifier lines glued into a fake 411-character "sentence"). After the fix, the robustness of
+`paragraph-final sentence-length CV` and `jump CV` **was an artifact of the confound** and has been
+downgraded to "formal register only."
+
+**Limits**: one model family on the AI side; no contamination scrubbing on the human side; the
+"informal" layer is really tech blogs; all features are regex-reproducible surface measures with no
+syntactic annotation.
+
+---
+
 ## On evidence: an honest note
 
 This skill rests on reading **77 papers**, centered on a large-scale human-vs-machine writing study from
 the narrative science field (arXiv:2604.03136, University of Maryland with Google DeepMind:
-10,272 prompts × 6 generators = 61,608 texts), supported by a dozen directly relevant stylometry,
-computational linguistics, and editing-behavior studies.
+10,272 prompts, each written by a human author and five LLMs = 61,608 stories, 24 missing because
+models refused), supported by a dozen directly relevant stylometry, computational linguistics, and
+editing-behavior studies, **plus this project's own Chinese comparison corpus** (previous section).
 
-**Clean Chinese-native human-vs-machine comparison evidence
-barely exists.**
+**Before that corpus, clean Chinese-native human-vs-machine comparison evidence barely existed:**
 
 - The only study with both a native Chinese human baseline (People's Daily, Xinhua) and machine-generated
   text is a **Chinese-translated-from-English setting**, and its authors acknowledge source-language interference.
@@ -165,13 +215,14 @@ So the rules are graded by **evidence strength**:
 
 | Grade | Meaning | Example |
 |---|---|---|
-| A | Measured on Chinese corpora with a native Chinese human baseline | Adversative connectives >2×, inter-sentence isomorphism 2.0×, empty colon lead-ins 9.4× |
+| A | Measured on Chinese corpora with a native Chinese human baseline | All our own corpus entries; adversative connectives 6.43× (formal); inter-sentence isomorphism 2.0× |
 | B | Cross-linguistic mechanism, independently replicated | Zero-information endings, preachy meta-commentary, alignment as the cause |
-| C | Single source / narrow corpus / conflicting evidence | Em-dashes (Chinese and English directions conflict; disabled by default) |
+| C | Single source / narrow corpus / conflicting evidence | Em-dashes (English side runs the other way) |
 | P | Practitioner methodology | Rhetorical budget, three-question ending test |
 
-**Chinese rules can only state direction, not claim a clean Chinese measurement ratio.** This is recorded
-in `references/evidence.md`.
+**Our own corpus has firm limits too**: one model family on the AI side, no contamination scrubbing on
+the human side, the "informal" layer is really tech blogs, all features are surface measures.
+**Cross-model claims still have to rest on the papers.**
 
 ---
 
@@ -217,12 +268,14 @@ different items on the same checklist and automatically get different treatment.
 
 ## Verification: a three-minute self-check
 
-1. **Run it on an old draft you wrote yourself.** Expect almost no changes. **Three or more edits means it
-   is misfiring on human text.**
+1. **Run it on an old draft you wrote yourself.** Expect almost no changes — **three or more edits means
+   it is misfiring on human text** (this applies only when *you* wrote the input; an AI-drafted piece
+   should legitimately get multiple edits).
 2. **Read only the deletion list, and ask "did I lose anything?"** Not "does it read like AI?"
 3. **Revert any edit you cannot map to a rule number.**
 
-Optional magnitude check: post-rewrite semantic similarity ≥0.85; word-level edit distance in 0.15–0.35.
+Optional magnitude check: post-rewrite semantic similarity ≥0.85; word-level edit distance **≤0.35**
+(there is no lower bound — few edits is not a failure).
 
 **Do not use AI-detector scores as acceptance criteria.** Six of twelve detectors score heavily-rewritten
 text as *less* AI — detection rate is not monotonic with AI involvement.
@@ -236,10 +289,13 @@ text as *less* AI — detection rate is not monotonic with AI involvement.
    **adding** content, which information conservation forbids. They go into the do-not-touch list only.
 2. **It expires.** AI flavor is a moving target; multiple longitudinal studies agree the drift deepens over
    time, and wordlist-based judgments go stale.
-3. **Gate decisions are subjective.** The line between "business commentary" and "technical report" is not
+3. **Gate decisions are subjective.** The line between "tech blog" and "product documentation" is not
    always clear. Current policy: **when unsure, prefer no change** — missing an edit costs far less than
    breaking something.
-4. **Coverage is incomplete.** The rule list is deliberately narrow, keeping only what can be pointed to and
+4. **Layout is out of scope.** Bold density, heading shape, and list nesting have no human-side baseline,
+   so the skill leaves them alone. If that is where your "AI flavor" impression comes from, it will say so
+   rather than manufacture edits.
+5. **Coverage is incomplete.** The rule list is deliberately narrow, keeping only what can be pointed to and
    what is safe to delete.
 
 ---
