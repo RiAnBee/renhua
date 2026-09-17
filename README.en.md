@@ -16,7 +16,8 @@ Give it a passage of Chinese text. It applies six rules, each traceable to a spe
 2. **Deletes preachy meta-commentary** — "this tells us a lesson" style stepping outside the content
 3. **Breaks up adjacent-sentence isomorphism** — when several sentences in a row share one skeleton,
    reorder; when several are short fragments in a row, merge them (not delete information)
-4. **Thins explicit cohesion** — over-dense connectives (**formal register only**)
+4. **Thins explicit cohesion** — over-dense adversatives (**formal register only**) and
+   sentence-initial "同时/此外/另外" sequencing (**both registers**)
 5. **Thins rhetorical density** — metaphor and parallelism spread across the piece, every section
    closing on a one-line aphorism
 6. **Deletes opening declarations** — openings that use "not X, not Y, only Z" instead of stating
