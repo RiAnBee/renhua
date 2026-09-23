@@ -1,92 +1,51 @@
-# scripts
+# 研究脚本
+
+这些是维护者的论文与语料研究工具，**不是新版skill的运行依赖，也不是自动改稿或效果验收器**。脚本中的A1/A3等旧编号、触发阈值与“稳健／无差异”标签对应当时的探索协议，不恢复旧的编辑规则。
+
+当前编辑合同见 [SKILL.md](../skills/renhua/SKILL.md)，当前评测见 [evals/README.md](../evals/README.md)，历史数据解释见 [研究存档](../docs/research/evidence-history.md)。
 
 ## 论文检索与下载
 
-本仓库的**规则证据来源**是公开论文。论文原文（PDF + LaTeX 源码）**不入库**，按许可与体积考虑只保存在本地
-`papers/`（见 `.gitignore`）。本脚本把它们重新取回来。
-
-## 用法
-
 ```bash
-# 1. arXiv 批量扫库：产出候选池 .harness/candidates.json
 python3 scripts/fetch_papers.py sweep
-
-# 2. 按候选池里 screen=keep 的条目下载 PDF + TeX 源码并解压到 papers/<id>/
 python3 scripts/fetch_papers.py download
-
-# 3. 单个补下
 python3 scripts/fetch_papers.py download --id 2604.03136
 ```
 
-依赖：`curl`、`tar`、`python3`（标准库）。arXiv 限速 3 秒/请求，脚本已内置退避。
+下载依据候选池中的筛选状态；先确认记录再下载。`sweep`、筛选与合并工具在 `.harness/` 写候选与筛查记录。PDF与可用的TeX源码保存在 `papers/<id>/`，不入库；无源码的论文不能伪造源码。
 
-## TeX 源码的处理
+论文检索脚本使用Python标准库及`curl`等外部命令；具体参数见脚本帮助。论文的数量不等于当前编辑方案的效果证据。
 
-arXiv 的 e-print 通常是 `.tar.gz`，也可能是单个 `.gz` 的 `.tex`。脚本统一解压到
-`papers/<id>/source/`，并把 PDF 放在 `papers/<id>/<id>.pdf`，同时写一份 `meta.json`
-（标题、作者、日期、arXiv 分类、一句话价值）。
-
-## 备注
-
-- `sweep` 只写候选池，不做质量判断；质量筛查由 sub agent 复审后写回 `screen` 字段。
-- 部分论文（非 arXiv 或作者未上传源码）没有 TeX；脚本会记录 `source: null` 并继续。
-
----
-
-## 中文语料采集与分析
-
-规则 A3/A4/A6 的中文侧证据来自**本项目自建的分层语料**（见 `references/evidence.md` §0）。
-原文抓取自人民网、博客园等站点，**版权属原作者，不入库**（`corpus/` 在 `.gitignore` 内），
-只保留脚本与结论。
+## 旧语料的采集与特征探索
 
 ```bash
-# 0. 连通性自检（默认动作）
 python3 scripts/collect_corpus.py probe
-
-# 1. 采集：按站点抓取，产出 corpus/{formal,informal}/meta.jsonl
 python3 scripts/collect_corpus.py crawl <入口URL> <目标篇数>
-python3 scripts/collect_corpus.py stats          # 查看已采篇数与本量
-
-# 2. 逐篇提特征 + 用当前模型生成同话题 AI 对照语料，并算分层倍率
+python3 scripts/collect_corpus.py stats
 python3 scripts/analyze_corpus.py
-
-# 3. 显著性：Mann-Whitney U（含并列修正）+ Cliff's delta
 python3 scripts/stats_corpus.py
-
-# 4. 根因实验：姿态框定 / 文体框定（否证「助手人格」假说）
-python3 scripts/persona_experiment.py
 ```
 
-中间产物写到 `.harness/`（不入库）：`corpus-analysis.json`、`CORPUS-RESULTS.md` 等。
+`analyze_corpus.py`读取已有语料并计算特征，**不会自动生成AI对照稿**。它和统计脚本会覆盖相应 `.harness/` 结果文件；需要保留历史时先另存输入与结果快照。
 
-### 分层，不混池
+`corpus/formal`与`corpus/informal`是历史目录名，实际来源为新闻与技术博客，不等于所有正式／口语中文。抓取全文版权归原作者，`corpus/`不入库。
 
-四层：人类·正式（人民网）、人类·口语（博客园）、AI·正式、AI·口语。
-**混池会得出错误结论** —— 转折连词在正式语域 AI 是人类 6.43×，口语语域 0.08×（方向相反），
-混池算出 2.04×，两个真实语域都不成立。所以统计脚本对**每一层单独**跑，
-再单独跑一次混池**仅用于展示差异**。
+其他脚本：
 
-### 语言学侧交叉检验（可选）
+| 文件 | 历史用途 |
+|---|---|
+| `false_positive.py` | 旧规则的机械形态触发代理；触发率不等于编辑损害率 |
+| `ling_features.py` | 词汇与欧化表达候选特征探索 |
+| `coord_phrases.py`、`syntax_features.py` | 并列、依存句法及句长分层比较 |
+| `zh_pos_features.py`、`prosody_features.py` | 词性与韵律代理特征探索，部分需要本地jieba/spaCy资源 |
+| `persona_experiment.py` | 历史姿态／文体实验的材料与结果处理 |
 
-`ling_features.py` 把**汉语欧化语法**那份操作性清单（王力 1943 → 贺阳 2008 → 余光中 1987 →
-闫易乾 2019 六类）放到同一套语料上测，看它在「AI 中文」上是否成立：
+这些脚本不随skill安装，也没有因本轮重构新增依赖。需运行时先读相应入口与依赖；不要为了普通改稿安装NLP模型。
 
-```bash
-python3 scripts/ling_features.py
-```
+## 怎样解释输出
 
-**结论：多数不成立。** 十一项里只有「显式连词」支持欧化假设（Δ=+0.62/+0.68，两语域 p<0.001）；
-「长定语比例」与「的」**方向相反**（AI 更少）；代词、「们」、虚化动词、性化后缀均不显著。
-
-→ **AI 中文不是欧化中文**：欧化是「长句 + 长定语 + 连词多」，本语料的 AI 是
-「短句 + 长定语少 + 连词多」。
-
-把连词再拆子类后另有一条可用结论：**「并列补充」（同时/此外/另外/以及）两语域稳健**
-（5.79×/2.89×），而「转折」语域依赖（6.03×/0.38×）。
-
-分析记录见 `.harness/LING-RESEARCH.md`。
-
-### 为什么用 Cliff's delta 而非均值比较
-
-逐篇算特征值再比较分布，不用「语料级归一化均值」——后者会被长文主导。
-报告 p 值与效应量，两者都看。
+- 区分汉字数、Unicode字符数与分词后词数。现有部分指标使用`len()`，不能一概叫汉字。
+- 对语体、来源、长度与测量算子做检查；完整文档编辑不使用硬截断窗口。
+- 单项显著性、频率差异和语料分类能力不是改稿收益；多重比较、同文相关性和探索性筛选均影响解释。
+- 未复现不等于证明不存在；自己的窄语料也不能否决其他任务的研究。
+- 检测器命中、编辑动作、保真损害、读者偏好分别测量。需要评价新版时按完整文档协议运行，不把旧脚本改个名字当新评测。

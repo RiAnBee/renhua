@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "renhua",
-  "description": "中文去 AI 味。只做减法：删零信息句、说教式元评论与修辞超载，不新增事实、不改立场、不动结构。Remove the machine texture from Chinese text by deletion only.",
+  "description": "中文表达编辑：把空泛、僵硬和重复的措辞改自然，保留事实、判断、语气与作者声音。Faithful Chinese prose editing without imposing a single voice.",
   "author": {
     "name": "Donglin",
     "url": "https://github.com/RiAnBee"
