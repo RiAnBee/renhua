@@ -91,6 +91,7 @@ skills/renhua/
   SKILL.md                  # 编辑流程与权限，只读这一份也能用
   references/
     examples.zh.md          # 边界不清、要动结构时看
+    ai-flavor-cases.md      # 觉得怪但说不出哪里怪时查
     situating.md            # 判断骨架、体裁、材料剂量时看
     evidence.md             # 有人问依据时看
 ```

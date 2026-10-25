@@ -91,6 +91,7 @@ skills/renhua/
   SKILL.md                  # Editing contract; usable on its own
   references/
     examples.zh.md          # Difficult boundaries, structural work
+    ai-flavor-cases.md      # Something reads wrong but you cannot name it
     situating.md            # Judging situation, genre, material dose
     evidence.md             # When someone asks for the evidence
 ```
