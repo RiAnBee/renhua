@@ -96,8 +96,6 @@ skills/renhua/
     evidence.md             # When someone asks for the evidence
 ```
 
-The reasoning ships as the [evidence summary](skills/renhua/references/evidence.md) inside the skill directory. The research library, evaluation material and analysis scripts stay local and are not part of the repository.
-
 ## What the previous version withdrew
 
 The old contract turned "invent no facts" into "replace nothing", and governed edits with sentence length, human/AI frequency gaps, and rule hits. Those prescriptions were withdrawn in 2026-09: **telling sources apart does not make the text better once those features are gone.**
@@ -112,7 +110,7 @@ Read an edit in this order: did meaning, tone, or commitment change; then, does 
 
 Development material is 36 synthetic drafts, with 120 differently themed synthetic drafts sealed separately. They exercise engineering boundaries. **They are not a human-writing baseline and they prove nothing about real-world safety or quality.** Direct-prompt runs, real skill loading, model-assisted review, and human blind review are counted separately in the implementation record.
 
-Five pre-registered experiments (one model, 30 items, 5 genres x 6 topics) support the three layers: situation context cuts evaluative filler from 7.7 to 5.2 per 1,000 characters, while added material only reaches 5.9; material count lifts referential density 4 -> 20 -> 28 -> 40 with coverage at 1.00; genre labels drive form convergence (eta-squared 0.456 -> 0.342), material barely moves it. **No reader blind review was run this round**, so the release claims fewer predictable failures (dumping every supplied fact, inventing around a missing situation) and makes no claim that output reads more human. Protocols and raw reports stay local and are not published with the repository.
+Five pre-registered experiments (one model, 30 items, 5 genres x 6 topics) support the three layers: situation context cuts evaluative filler from 7.7 to 5.2 per 1,000 characters, while added material only reaches 5.9; material count lifts referential density 4 -> 20 -> 28 -> 40 with coverage at 1.00; genre labels drive form convergence (eta-squared 0.456 -> 0.342), material barely moves it. **No reader blind review was run this round**, so the release claims fewer predictable failures (dumping every supplied fact, inventing around a missing situation) and makes no claim that output reads more human.
 
 Editing still rests on the model's judgment; information preservation has no formal guarantee. Distinctive voices, legal text, and technical material should be reviewed by the author or a domain user. Missing material can only be flagged, never recovered. Answering whether this beats a good one-line prompt needs complete-document comparisons and Chinese reader evaluation; neither has been run.
 
