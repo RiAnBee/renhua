@@ -1,0 +1,95 @@
+{
+  "cells": {
+    "A": {
+      "n": 30,
+      "reference_median": 28.0,
+      "coverage_mean": 0.72,
+      "eval_rate": 6.4,
+      "sent_len": 39.3,
+      "sent_cv": 0.493,
+      "disyllabic": 0.662,
+      "phrase_2_5": 0.214,
+      "marker_rate": 0.23,
+      "title_rate": 0.17,
+      "eta2": 0.456,
+      "silhouette": 0.099,
+      "kmeans_ari": 0.566,
+      "style_purity": 0.547
+    },
+    "B": {
+      "n": 30,
+      "reference_median": 4.0,
+      "coverage_mean": 0.01,
+      "eval_rate": 7.5,
+      "sent_len": 45.3,
+      "sent_cv": 0.449,
+      "disyllabic": 0.659,
+      "phrase_2_5": 0.222,
+      "marker_rate": 0.2,
+      "title_rate": 0.03,
+      "eta2": 0.411,
+      "silhouette": 0.096,
+      "kmeans_ari": 0.566,
+      "style_purity": 0.447
+    },
+    "C": {
+      "n": 30,
+      "reference_median": 28.0,
+      "coverage_mean": 0.69,
+      "eval_rate": 5.7,
+      "sent_len": 41.2,
+      "sent_cv": 0.452,
+      "disyllabic": 0.665,
+      "phrase_2_5": 0.208,
+      "marker_rate": 0,
+      "title_rate": 0,
+      "eta2": 0.342,
+      "silhouette": 0.062,
+      "kmeans_ari": 0.338,
+      "style_purity": 0.393
+    },
+    "D": {
+      "n": 30,
+      "reference_median": 4.0,
+      "coverage_mean": 0.01,
+      "eval_rate": 6.1,
+      "sent_len": 37.9,
+      "sent_cv": 0.425,
+      "disyllabic": 0.661,
+      "phrase_2_5": 0.235,
+      "marker_rate": 0,
+      "title_rate": 0,
+      "eta2": 0.27,
+      "silhouette": -0.022,
+      "kmeans_ari": 0.162,
+      "style_purity": 0.293
+    }
+  },
+  "rejected": {
+    "A": [],
+    "B": [],
+    "C": [],
+    "D": []
+  },
+  "verdict": {
+    "H-F1_prompt_driven": true,
+    "H-F2_prior_driven": false,
+    "H-M_materials": true,
+    "eta2_A_vs_C": [
+      0.456,
+      0.342
+    ],
+    "ari_A_vs_C": [
+      0.566,
+      0.338
+    ],
+    "style_A_vs_C": [
+      0.547,
+      0.393
+    ],
+    "marker_C_vs_A": [
+      0,
+      0.23
+    ]
+  }
+}

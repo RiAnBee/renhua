@@ -1,0 +1,105 @@
+{
+  "cells": {
+    "d0": {
+      "n": 30,
+      "reference_median": 4.0,
+      "reference_mean": 5.9,
+      "reference_iqr": [
+        4.0,
+        8.0
+      ],
+      "eval_rate": 5.2,
+      "novel_num_per_1k": 0.0,
+      "coverage": 0.01,
+      "sent_len": 46.0,
+      "sent_cv": 0.464,
+      "disyllabic": 0.673,
+      "phrase_2_5": 0.206
+    },
+    "d2": {
+      "n": 30,
+      "reference_median": 20.0,
+      "reference_mean": 22.8,
+      "reference_iqr": [
+        16.0,
+        31.0
+      ],
+      "eval_rate": 6.4,
+      "novel_num_per_1k": 0.1,
+      "coverage": 0.67,
+      "sent_len": 41.8,
+      "sent_cv": 0.448,
+      "disyllabic": 0.667,
+      "phrase_2_5": 0.198
+    },
+    "d5": {
+      "n": 30,
+      "reference_median": 28.0,
+      "reference_mean": 32.1,
+      "reference_iqr": [
+        20.0,
+        51.0
+      ],
+      "eval_rate": 5.9,
+      "novel_num_per_1k": 0.1,
+      "coverage": 0.99,
+      "sent_len": 38.7,
+      "sent_cv": 0.482,
+      "disyllabic": 0.654,
+      "phrase_2_5": 0.216
+    },
+    "d10": {
+      "n": 30,
+      "reference_median": 40.0,
+      "reference_mean": 42.8,
+      "reference_iqr": [
+        24.0,
+        52.0
+      ],
+      "eval_rate": 7.1,
+      "novel_num_per_1k": 0.1,
+      "coverage": 1.0,
+      "sent_len": 39.4,
+      "sent_cv": 0.471,
+      "disyllabic": 0.654,
+      "phrase_2_5": 0.205
+    }
+  },
+  "rejected": {
+    "d0": [],
+    "d2": [],
+    "d5": [],
+    "d10": []
+  },
+  "verdict": {
+    "ok_n": true,
+    "ref_curve": {
+      "0": 4.0,
+      "2": 20.0,
+      "5": 28.0,
+      "10": 40.0
+    },
+    "gains": [
+      16.0,
+      8.0,
+      12.0
+    ],
+    "fit": {
+      "a": 3.67,
+      "b": 14.62,
+      "r2": 0.992,
+      "slope_per_ln": 14.62,
+      "marginal": [
+        16.0,
+        8.0,
+        12.0
+      ]
+    },
+    "H-D_rising": true,
+    "H-S_saturated_at_5": false,
+    "H-S_open_at_10": true,
+    "H-E_substitution": false,
+    "H-F_form_stable": true,
+    "H-N_materials_suppress_invention": false
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "reviewed_at": "2026-10-20",
+  "reviewer": "international_linguistics agent; independent from root integration author",
+  "scope": "Root integration, inventory, acquisition, reading-cognition and final supplements; GitHub final aggregation excluded; no repeated PDF hash computation",
+  "snapshot": {
+    "README.md": {
+      "sha256": "dff6465f59902ea1229d01f7069dd6eb695f005a733ac10015f71601a3fb8ff5",
+      "bytes": 4567,
+      "mtime": "2026-10-20T19:47:50"
+    },
+    "总报告.md": {
+      "sha256": "f4ee6fd04352b4321f19b6dcb5989de81677ad7ad1a78bdb6dddb81b239082b3",
+      "bytes": 13450,
+      "mtime": "2026-10-20T19:46:29"
+    },
+    "scope-and-coverage.md": {
+      "sha256": "927686e78ea8771dae857394d8d6f9a407868baab2311a5676e636d51481a74a",
+      "bytes": 3275,
+      "mtime": "2026-10-20T18:20:57"
+    },
+    "inventory/README.md": {
+      "sha256": "a94921b1f8fe3a6e7091595231d40a34612b0d4bdcec0ac89424ce846ad42f72",
+      "bytes": 1644,
+      "mtime": "2026-10-20T18:20:57"
+    },
+    "inventory/summary.json": {
+      "sha256": "287379e50fb9918c183ca6aef70e23303ac4314bc250c8c7e46e4a7b820ae0f3",
+      "bytes": 260,
+      "mtime": "2026-10-20T18:19:27"
+    },
+    "catalog-summary.json": {
+      "sha256": "ffd88f64aa5b9048ec08fbb43e8154ebe20e7926af05c25a562a9620e7c7902e",
+      "bytes": 2712,
+      "mtime": "2026-10-20T19:47:50"
+    },
+    "acquisition/pdf-summary.json": {
+      "sha256": "37559395091f395ea6c30d09f7ec7b94498996388e9ae2a9b852b5488a639abf",
+      "bytes": 1332,
+      "mtime": "2026-10-20T19:45:25"
+    },
+    "acquisition/book-access.jsonl": {
+      "sha256": "387d8aa3d32f6766a3c0953c2dd8d5091fb83ffddf7ab7ebc2ee2e9ec7dd340e",
+      "bytes": 1642,
+      "mtime": "2026-10-20T18:42:03"
+    },
+    "acquisition/cnki-receipts.jsonl": {
+      "sha256": "1c3a1e857b994e19077c81a2de25f6ef6261c99849b96dde885e5cb84781fa77",
+      "bytes": 8428,
+      "mtime": "2026-10-20T19:03:05"
+    },
+    "acquisition/pending-access.jsonl": {
+      "sha256": "60848ef90062ae4c6645f31ed14416905aea8b1f5c80f7677fc36c4afed192c3",
+      "bytes": 58763,
+      "mtime": "2026-10-20T19:26:55"
+    },
+    "reading-cognition/报告.md": {
+      "sha256": "a0906a6453143a9904899cb10cf93f091b3f9d437761c264f7cf9c16b894e53c",
+      "bytes": 10666,
+      "mtime": "2026-10-20T18:56:01"
+    },
+    "reading-cognition/sources.jsonl": {
+      "sha256": "2a15a195fdd664283e00ce7e6177995e96e118df0ce0bfaac9f3cb0152e9d350",
+      "bytes": 13371,
+      "mtime": "2026-10-20T19:16:31"
+    },
+    "evidence-map.md": {
+      "sha256": "bc96901109762f63a9cc0305b23ed45d979c62b8a05222ee0d47e528b4185bdb",
+      "bytes": 5859,
+      "mtime": "2026-10-20T19:46:29"
+    },
+    "acquisition/README.md": {
+      "sha256": "3206e13db47428a32ff77e7c6252805c76a789331bb43fbe39af42b9afde27d1",
+      "bytes": 4027,
+      "mtime": "2026-10-20T19:46:29"
+    },
+    "HANDOFF.md": {
+      "sha256": "a0e6276c543da16236d543728c6a4eb267b14bb4927ae58d2cfa882eda47540e",
+      "bytes": 5203,
+      "mtime": "2026-10-20T19:46:29"
+    },
+    "supplements/报告.md": {
+      "sha256": "aa3a0dc1a4c3baf645e717310f6f7f1d7cc7a6c87db08f38e60b216e1707a3a9",
+      "bytes": 3983,
+      "mtime": "2026-10-20T19:45:09"
+    },
+    "catalog.jsonl": {
+      "sha256": "942aa84e448b628ca35a1f7c9b02b225e25bca710df2d2071505038f19a6314f",
+      "bytes": 138247,
+      "mtime": "2026-10-20T19:47:50"
+    },
+    "supplements/sources.jsonl": {
+      "sha256": "62b2302b42274774fda136f532a049084f4d527620090fd9448190047cd3820e",
+      "bytes": 13988,
+      "mtime": "2026-10-20T19:46:29"
+    }
+  },
+  "checks": {
+    "local_markdown_links_checked": 70,
+    "missing_local_markdown_links": [],
+    "missing_explicit_source_files": [],
+    "source_rows": 175,
+    "branch_rows": {
+      "linguistics-zh": 67,
+      "linguistics-intl": 59,
+      "reading-cognition": 8,
+      "practice-guides": 24,
+      "open-books": 8,
+      "citation-audits": 1,
+      "supplements": 8
+    },
+    "actual_pdf_files": 64,
+    "pdf_manifest_rows": 64,
+    "pdf_summary": {
+      "date": "2026-10-20",
+      "pdf_files": 64,
+      "unique_file_hashes": 64,
+      "bytes": 168630492,
+      "pages": 4328,
+      "by_collection": {
+        "cnki": 10,
+        "linguistics-intl": 21,
+        "linguistics-zh": 11,
+        "open-books": 7,
+        "practice-guides": 5,
+        "reading-cognition": 3,
+        "supplements": 7
+      },
+      "duplicate_hash_groups": [],
+      "unlinked_files": [],
+      "files_with_parser_warnings": [
+        "papers/human-expression/cnki/feng-2010-register-mechanism/paper.pdf",
+        "papers/human-expression/cnki/jiang-2025-chinese-readability-review/paper.pdf",
+        "papers/human-expression/cnki/shen-2012-minor-running-sentence/paper.pdf",
+        "papers/human-expression/cnki/tang-ji-2023-appositive-connectives/paper.pdf",
+        "papers/human-expression/cnki/wang-2026-register-grammar-history/paper.pdf",
+        "papers/human-expression/cnki/yang-ping-2024-metadiscourse/paper.pdf",
+        "papers/human-expression/linguistics-intl/INTL-GOPEN-SWAN-1990/source.pdf",
+        "papers/human-expression/linguistics-intl/INTL-SOMMERS-1980/source.pdf",
+        "papers/human-expression/linguistics-zh/ZH031-qu2017-zhe/source.pdf",
+        "papers/human-expression/practice-guides/PRAC-PKU-STYLE/source.pdf"
+      ],
+      "errors": [],
+      "counting_note": "Includes articles, complete books, samples, handouts and frontmatter. Not full-reading or independent-study counts."
+    },
+    "cnki_receipt_rows": 10,
+    "cnki_unique_ids": 10,
+    "legacy_source_rows": 90,
+    "legacy_local_file_rows": 1663,
+    "whole_books_obtained": 7,
+    "whole_book_read_status": "All seven books remain partial; not whole-book full-reading claims",
+    "reading_status": {
+      "partial": 66,
+      "abstract": 18,
+      "metadata": 65,
+      "full": 26
+    },
+    "whole_book_pages": 3319,
+    "supplement_records": 8,
+    "supplement_pdf_files": 7,
+    "supplement_pdf_pages": 53,
+    "supplement_read_status": {
+      "partial": 7,
+      "abstract": 1
+    },
+    "final_errors": [],
+    "final_warnings": []
+  },
+  "findings": [
+    {
+      "id": "INTREV-01",
+      "priority": "P2",
+      "status": "resolved_verified_after_root_update_2026-10-20",
+      "file": "总报告.md",
+      "locator": "§1 paragraph ending 参见中文报告ZH001/ZH003及国际卡片D01",
+      "issue": "The sentence asserting within-Chinese-academic disciplinary variation points to ZH001 (cross-genre) and ZH003 (spoken theme structure), which do not directly support this subclaim. The collection does contain suitable evidence.",
+      "recommendation": "Cite ZH044 (970 papers, six disciplines, partial) or ZH023 (cross-culture and cross-discipline stance) for this subclaim; keep D01 for English complexity.",
+      "evidence_sources": [
+        "linguistics-zh/sources.jsonl:ZH001-tairao2021",
+        "linguistics-zh/sources.jsonl:ZH003-zhangfang1994-theme",
+        "linguistics-zh/sources.jsonl:ZH044-yuan2022-academic-register",
+        "linguistics-zh/sources.jsonl:ZH023-deng2023-stance"
+      ]
+    },
+    {
+      "id": "INTREV-02",
+      "priority": "P2",
+      "status": "resolved_verified_after_root_update_2026-10-20",
+      "file": "acquisition/pending-access.jsonl",
+      "locator": "ZH004-feng2005-written and PRAC-MOE-TW-PUNCTUATION",
+      "issue": "Full available documents are labelled complete_book_not_obtained. ZH004 is a book_chapter with a 33-page cloud PDF; the Taiwan handbook is a complete 21-page downloaded file with partial reading. Substring book classification can conflate chapters and handbooks with missing complete monographs.",
+      "recommendation": "Distinguish complete-file availability from reading scope; put these in a close-reading queue rather than full-book acquisition. Do not call ZH004 a full book.",
+      "evidence_sources": [
+        "linguistics-zh/sources.jsonl:ZH004-feng2005-written",
+        "practice-guides/sources.jsonl:PRAC-MOE-TW-PUNCTUATION"
+      ]
+    },
+    {
+      "id": "INTREV-03",
+      "priority": "P3",
+      "status": "resolved_verified_after_root_update_2026-10-20",
+      "file": "acquisition/pending-access.jsonl",
+      "locator": "practice-guides:PRAC-POLYU-ACADEMIC",
+      "issue": "A verified university teaching-site collection entry is assigned a generic fulltext-not-obtained/database-access next action; there is no single research full text associated with this landing page.",
+      "recommendation": "Treat as a discovery/teaching-resource entry; next action is to choose particular guides if needed, not to obtain a database article or crawl the entire collection."
+    },
+    {
+      "id": "INTREV-04",
+      "priority": "P3",
+      "status": "resolved_root_linked_abstract_snapshot_2026-10-20",
+      "file": "reading-cognition/sources.jsonl",
+      "locator": "RC006 evidence_locator",
+      "issue": "Initial reviewer followed evidence_locator to Crossref metadata, which has no abstract, and missed the separate existing abstract_snapshot_locator. Publisher abstract independently rechecked; root cross-linked the already available abstract snapshot into evidence_locator.",
+      "recommendation": "Keep both abstract locator fields traceable and retain abstract reading status. This was partly a reviewer evidence-navigation oversight, not proof that no abstract had been saved.",
+      "new_evidence": ".harness/research-20261020/review-integration/raw/RC006-RC007-publisher-search.json",
+      "resolution": "Root confirms abstract_snapshot_locator existed, now also evidence_locator names snapshot and implications distinguish reference redundancy from zero new semantic information"
+    },
+    {
+      "id": "INTREV-05",
+      "priority": "P3",
+      "status": "nonblocking_method_boundary",
+      "file": "reading-cognition/sources.jsonl",
+      "locator": "RC002; original §3.2, printed541–542",
+      "issue": "The score uses BERT masked probabilities conditioned on the complete sentence, including following context. This is not identical to left-to-right incremental surprisal available to a reader at that moment. Existing report remains cautious and does not claim identity.",
+      "recommendation": "Preserve this distinction if later converting processing research into edit thresholds or information-order rules; no current total-report factual correction required."
+    },
+    {
+      "id": "INTREV-06",
+      "priority": "P3",
+      "status": "verified_source_boundary_no_new_root_change_required",
+      "source_id": "SUP003",
+      "locator": "print285 §2.1 and §3",
+      "evidence": ".harness/research-20261020/supplements/SUP003-page2.png",
+      "confirmed": "24 recruited,6 excluded,18 analysed;18 in6groups3each. Context and target sentence position vary together. No unqualified rhythm-causal editing conclusion."
+    },
+    {
+      "id": "INTREV-07",
+      "priority": "P3",
+      "status": "verified_source_boundary_no_new_root_change_required",
+      "source_id": "SUP005",
+      "locator": "physicalp6 Table3 and §3.3, officialHTML §2.5",
+      "evidence": ".harness/research-20261020/supplements/SUP005-page6.png",
+      "confirmed": "Disyllabic SP11.3%/12.2% vs no disyllabic targets were skipped;Trials643+662+616+468=2389 vs officialHTML2340 observations. Keep unresolved, no raw-data adjudication."
+    },
+    {
+      "id": "INTREV-08",
+      "priority": "P3",
+      "status": "verified_source_boundary_no_new_root_change_required",
+      "source_id": "SUP007",
+      "locator": "print78 header and officialHTML citation/DC metadata",
+      "evidence": ".harness/research-20261020/supplements/SUP007-page1.png",
+      "confirmed": "PDF November2023/Vol46No6 vs webpage citation/DC2023-01-20;source read_statuspartial and image_only retained. Not full-paper reading or same-unit corpus-size claim."
+    }
+  ],
+  "resolved_or_in_progress_notes": [
+    {
+      "topic": "Root navigation and stale counters",
+      "status": "root_refreshed_final_supplements_verified",
+      "details": "Final70checked local links exist;175source/64PDF/10uniqueCNKI/4328pages. Earlier167/57/4275 is prior review snapshot, not final count."
+    },
+    {
+      "topic": "Kirkpatrick/Xu2012",
+      "status": "corrected_in_own_open_books_branch",
+      "details": "Earlier collaboration message said acquired, but root final file audit found ZH055 metadata/403 and no local PDF. All-library obtained whole-book count remains seven. Own open-books narrative/exclusion/coverage corrected; no eighth book counted."
+    },
+    {
+      "topic": "Exact identifier groups",
+      "status": "work_linkages_file_present",
+      "details": "Zero DOI/ISBN/URL overlaps does not prove independent works. Root identified Zhao1968 and LiThompson1981 cross-branch work overlaps; work-linkages.jsonl will preserve editions and shared work relationships."
+    },
+    {
+      "topic": "Reviewer count correction",
+      "status": "corrected",
+      "details": "Reviewer initially said eleven CNKI receipts in a message by mental counting; parser confirms ten unique IDs. Report uses parser-derived ten."
+    }
+  ],
+  "positive_checks": [
+    "No missing checked local Markdown links in reviewed root/reading/inventory documents at snapshot.",
+    "No missing explicit files found in six non-GitHub source manifests at snapshot.",
+    "Root summary correctly distinguishes records from independent studies and PDF files from full reading.",
+    "Book access receipt correctly calls Zhu2017 chapter-one trial preview, not full-book access.",
+    "CNKI retrieval receipts remain access events and do not overwrite source-card current reading status.",
+    "RC001 original Participants/Materials/Results support current recruited/excluded counts and weak-to-moderate Bayesian-evidence formulation.",
+    "RC006 and RC007 publisher abstracts support only the narrow conditional claims presently used; neither was upgraded to full reading.",
+    "RC005 source/report retain internal direction and power conflicts and withhold directional editing advice.",
+    "Inventory states stat/path checks separately from cloud-content verification and does not silently recycle retracted historical conclusions.",
+    "Final seven-branch sources175 exactly match catalog identities/titles/read statuses:full26/partial66/abstract18/metadata65.",
+    "Final64physical PDF names/byte sizes match manifest;manifest sum4328pages/168630492bytes/64hashes agrees summary without rehashing each PDF.",
+    "All70checked current local Markdown links exist, and all explicit source files/visual pages exist.",
+    "Supplements8records=7partial+1abstract;7PDF/53pages;SUP003/SUP005/SUP007 requested facts independently checked against original page images and saved officialHTML.",
+    "Main report, evidence map, acquisitionREADME and HANDOFF preserve current non-GitHub counters and unresolved source conflicts."
+  ],
+  "prior_review_checks": {
+    "local_markdown_links_checked": 70,
+    "missing_local_markdown_links": [],
+    "missing_explicit_source_files": [],
+    "source_rows": 175,
+    "branch_rows": {
+      "linguistics-zh": 67,
+      "linguistics-intl": 59,
+      "reading-cognition": 8,
+      "practice-guides": 24,
+      "open-books": 8,
+      "citation-audits": 1,
+      "supplements": 8
+    },
+    "actual_pdf_files": 64,
+    "pdf_manifest_rows": 64,
+    "pdf_summary": {
+      "date": "2026-10-20",
+      "pdf_files": 64,
+      "unique_file_hashes": 64,
+      "bytes": 168630492,
+      "pages": 4328,
+      "by_collection": {
+        "cnki": 10,
+        "linguistics-intl": 21,
+        "linguistics-zh": 11,
+        "open-books": 7,
+        "practice-guides": 5,
+        "reading-cognition": 3,
+        "supplements": 7
+      },
+      "duplicate_hash_groups": [],
+      "unlinked_files": [],
+      "files_with_parser_warnings": [
+        "papers/human-expression/cnki/feng-2010-register-mechanism/paper.pdf",
+        "papers/human-expression/cnki/jiang-2025-chinese-readability-review/paper.pdf",
+        "papers/human-expression/cnki/shen-2012-minor-running-sentence/paper.pdf",
+        "papers/human-expression/cnki/tang-ji-2023-appositive-connectives/paper.pdf",
+        "papers/human-expression/cnki/wang-2026-register-grammar-history/paper.pdf",
+        "papers/human-expression/cnki/yang-ping-2024-metadiscourse/paper.pdf",
+        "papers/human-expression/linguistics-intl/INTL-GOPEN-SWAN-1990/source.pdf",
+        "papers/human-expression/linguistics-intl/INTL-SOMMERS-1980/source.pdf",
+        "papers/human-expression/linguistics-zh/ZH031-qu2017-zhe/source.pdf",
+        "papers/human-expression/practice-guides/PRAC-PKU-STYLE/source.pdf"
+      ],
+      "errors": [],
+      "counting_note": "Includes articles, complete books, samples, handouts and frontmatter. Not full-reading or independent-study counts."
+    },
+    "cnki_receipt_rows": 10,
+    "cnki_unique_ids": 10,
+    "legacy_source_rows": 90,
+    "legacy_local_file_rows": 1663,
+    "whole_books_obtained": 7,
+    "whole_book_read_status": "All seven books remain partial; not whole-book full-reading claims",
+    "reading_status": {
+      "partial": 66,
+      "abstract": 18,
+      "metadata": 65,
+      "full": 26
+    },
+    "whole_book_pages": 3319,
+    "supplement_records": 8,
+    "supplement_pdf_files": 7,
+    "supplement_pdf_pages": 53,
+    "supplement_read_status": {
+      "partial": 7,
+      "abstract": 1
+    },
+    "final_errors": [],
+    "final_warnings": []
+  },
+  "final_supplement_review_locator": ".harness/research-20261020/review-integration/supplement-review.json"
+}

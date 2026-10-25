@@ -1,0 +1,149 @@
+{
+  "updated_at_utc": "2026-10-20T13:38:17.194422+00:00",
+  "phase": "round3_1810_candidates_and_fulltext_gaps",
+  "validation_passed": true,
+  "source_records": 177,
+  "pdf_files": 82,
+  "pdf_pages": 4916,
+  "complete_local_books": 8,
+  "old_fulltext_gaps_closed": 20,
+  "fulltext_gap_records_remaining": 65,
+  "github_indexed": 2438,
+  "github_source_read": 223,
+  "github_frozen_queue_reviewed": 1810,
+  "github_extra_scope_reviewed": 12,
+  "skill_changed": false,
+  "committed_or_pushed": false,
+  "files": [
+    {
+      "path": "docs/research/2026-10-20-human-expression/README.md",
+      "bytes": 6089,
+      "sha256": "f3fd3746485273480f5dccafb241f955870a09ad960b7a48ae4ea2a83b5437bc"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/总报告.md",
+      "bytes": 20049,
+      "sha256": "5782f918b2d9e2ee84aeb19dfd52b57613d37895f1142d193599ed951677b5ea"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/HANDOFF.md",
+      "bytes": 9317,
+      "sha256": "0735dde6e92e556754cc187bdb70cc1e3707a41045b679c35b2f6c3d327ce99f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/scope-and-coverage.md",
+      "bytes": 4471,
+      "sha256": "fac6a406debdb9c53b9a6d6f896f61a611c6f41bb7dc01e1144b2dcdc4597386"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/evidence-map.md",
+      "bytes": 6299,
+      "sha256": "d4e60fddaf90b0193cf5a0092b90ea2317b5ff30b3d0b3691b10f44ce5632ef2"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/catalog.jsonl",
+      "bytes": 140244,
+      "sha256": "7716f22ef032eea92eb1ac96a36fad574653a670a00088153e0032dffa8d1426"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/catalog-summary.json",
+      "bytes": 2561,
+      "sha256": "1351dae27f0586923a0b4ac433c9ea84b67583e62f582d7f3cea4a85aac32510"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/validation.json",
+      "bytes": 2185,
+      "sha256": "40e660c21a91cc17c3947f417c5ac40f729e67ab1fe7c8c17b4246f3a532055b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-final-round3.md",
+      "bytes": 5830,
+      "sha256": "d5182e1b967eb86423ec8661d30779bac9276c0bd8c81eee43c3341990b228e6"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-final-round3.json",
+      "bytes": 13340,
+      "sha256": "68e114ed60e83f6f2887692d3bc723daddda71e89f4544dbd54d364e260d512f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/README.md",
+      "bytes": 5010,
+      "sha256": "aa6075d3e37d077c8e9163b8e101f9cba5948e0a5b3bf2726251931580828141"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/pdf-files.jsonl",
+      "bytes": 35971,
+      "sha256": "03565b074d59c3bf7206a3aa047a1603bb56c79780a1cbe353d0f7487aa1d524"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-fulltext-summary.json",
+      "bytes": 6149,
+      "sha256": "dd0a2d1172b6b8b7b80c295ac111e6a25e3e3e336e2e9dea2b823b469fe17607"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-nonpdf-files.jsonl",
+      "bytes": 3269,
+      "sha256": "cf7a2a2b826dd8fd86788cc75c1be240bdad4ecffc6f751c53372a14ea9ea62b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-zh/报告.md",
+      "bytes": 19394,
+      "sha256": "692f91f229e78479e071e4c253220add3fd035398e41277dc2948c1e394d322d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-international/报告.md",
+      "bytes": 6449,
+      "sha256": "1e0b5b754ad0acadadf5438535b99a0de7f0171920765ce3befca5b5d311b085"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/README.md",
+      "bytes": 14900,
+      "sha256": "70614acfea62135cb78f3a726c658527cb40254e01aafe7d0b7a53533aa579e0"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3-report.md",
+      "bytes": 11102,
+      "sha256": "fdcf1124d2982ffb23afb4d381bce7dbc3b36866480732d85d2f270c0bf9660e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/final-receipt.json",
+      "bytes": 2534,
+      "sha256": "542caaaf1cf018b7cc3ede5d895ebb3ae45fe0f5aa777d2e62b11339b051fc72"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/citation-audits/sources.jsonl",
+      "bytes": 1622,
+      "sha256": "1a0afeae6bff94f1248f7435471428bc481fba1559e72a8228338b8807ea6751"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-intl/sources.jsonl",
+      "bytes": 103708,
+      "sha256": "c3b326da27218f584c26dea24479565381658b92905564e8482d0ff23081c76e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/sources.jsonl",
+      "bytes": 110954,
+      "sha256": "cc53e62aa415958a1c9990ec65ca998d52b2821f1896e3a2c78badbf45593a25"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/open-books/sources.jsonl",
+      "bytes": 21124,
+      "sha256": "07ffc01a1a620f2a96fb5792c08d4a581f09d1213098740768981035ee7a56a7"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/practice-guides/sources.jsonl",
+      "bytes": 51120,
+      "sha256": "247edd515fe0b26dd465bff8fdab5d70a357c42fbb2008c717a4b422dd5a93e5"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/reading-cognition/sources.jsonl",
+      "bytes": 16443,
+      "sha256": "7e8fef02150a243b8e52b30bd8c855d6b578728c2efbcdcffeb53ee535b838ac"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/supplements/sources.jsonl",
+      "bytes": 13988,
+      "sha256": "62b2302b42274774fda136f532a049084f4d527620090fd9448190047cd3820e"
+    }
+  ]
+}

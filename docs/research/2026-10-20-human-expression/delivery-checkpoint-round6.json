@@ -1,0 +1,1418 @@
+{
+  "created_at_utc": "2026-10-20T19:38:18.400943+00:00",
+  "phase": "round6_integrated_checkpoint_not_final_delivery",
+  "is_final": false,
+  "final_acceptance_passed": false,
+  "goal_status": "active",
+  "files_count": 279,
+  "bytes": 21600767,
+  "self_excluded": true,
+  "third_party_originals_included": false,
+  "closed_baseline_records": 3,
+  "current_pending_records": 59,
+  "analysis_cards": 75,
+  "changed_source_records": 16,
+  "independent_checkpoint_review": "docs/research/2026-10-20-human-expression/review-checkpoint-round6.json",
+  "pending_human_verification": [
+    "reading-cognition:RC006",
+    "reading-cognition:RC007"
+  ],
+  "note": "Public research-file hash snapshot only. Ignored papers/.harness originals remain separate, not automatically synced or published. Historical round4/5 artifacts keep original contents; this checkpoint does not supersede their historical denominators or emit final acceptance.",
+  "files": [
+    {
+      "path": "docs/research/2026-10-20-human-expression/HANDOFF.md",
+      "bytes": 12709,
+      "sha256": "485a16a3ee5395727942bfc69e7d9aaafead0b4d1db9167392ce60e6d4d5fe1f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/README.md",
+      "bytes": 8362,
+      "sha256": "4b6fb9bc722f65f8f514434b67ea8bffffb4d2fdd732527a1c89055d5ab628c9"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/README.md",
+      "bytes": 4756,
+      "sha256": "5c71f6c3eeab40aaf6a091734bf6da9e86cccdae3706afb32b024c384a3e7189"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/book-access.jsonl",
+      "bytes": 1642,
+      "sha256": "387d8aa3d32f6766a3c0953c2dd8d5091fb83ffddf7ab7ebc2ee2e9ec7dd340e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/cnki-receipts.jsonl",
+      "bytes": 17975,
+      "sha256": "b1e065df8bf6d0b12477bc72c061096e5585c0c9f9080cb2f7525ad2ae11418b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/pdf-files.jsonl",
+      "bytes": 46729,
+      "sha256": "d6bdc2725d813372961c1e6178c39920dd68084003f0774e4e63fde216caa3e5"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/pdf-summary.json",
+      "bytes": 1889,
+      "sha256": "f7ac74d8b740abaa67a847cfcd4bdde7b8c4873e3f801e12ff910333e88b7b20"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/pending-access.jsonl",
+      "bytes": 42893,
+      "sha256": "940bd781879d38a1da449f8eec29feeb35ef48550ff95194b94b87b02ff23e67"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/queue-summary.json",
+      "bytes": 463,
+      "sha256": "5e88d065d82a98e6a67153619bcd4d5f1da12e2df7a4eff3f8b4636ec149383e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/reading-queue.jsonl",
+      "bytes": 67561,
+      "sha256": "2231fdddff86bdb95a2b71f3c2e7b5a0248cb9dc51cefad33ce70806304c7f28"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-browser-attempts.jsonl",
+      "bytes": 8783,
+      "sha256": "0b3214ff91e2f4b2ad642379a545fe351696c1ea8a783e0b700f06c81d8027fd"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-browser-supplement.jsonl",
+      "bytes": 529,
+      "sha256": "61a386271ace573ba49dd4a969afbf8de8ec9c11d9f5a68b2b7467ef684e8934"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-fulltext-summary.json",
+      "bytes": 6149,
+      "sha256": "dd0a2d1172b6b8b7b80c295ac111e6a25e3e3e336e2e9dea2b823b469fe17607"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-nonpdf-files.jsonl",
+      "bytes": 3269,
+      "sha256": "cf7a2a2b826dd8fd86788cc75c1be240bdad4ecffc6f751c53372a14ea9ea62b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-zh-receipts.jsonl",
+      "bytes": 4012,
+      "sha256": "3d13e858fcaa6dbc2095468aa2bcfdd8ce43018cc31d9b0fc7195079fd5a655e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/zh-four-en-round3-attempts.jsonl",
+      "bytes": 5069,
+      "sha256": "d30142082ad62a43aed11516fbaff87238611d745b453ddcefdb6c458c9e7d13"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/zh-round3-attempts.jsonl",
+      "bytes": 4635,
+      "sha256": "a62cba9158cae64e100e3f253712a0c12a2730f4e844d31942995f39302c9fe7"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/zh-school-priority-round3.jsonl",
+      "bytes": 57129,
+      "sha256": "b00212507c93d4743fbd73739b47a24b40902c892c66d312446868a982696327"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/中文学校获取优先表-round3.md",
+      "bytes": 7748,
+      "sha256": "94adc4e779d1d8606f3756338b2404ab4db0e35eadf56cbc93b99044dbd3b3c4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/catalog-summary.json",
+      "bytes": 2992,
+      "sha256": "7320c0932b965feb7c147b024a847601e87a62f4fd49658ad219fdb1a9f23cbf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/catalog.jsonl",
+      "bytes": 147991,
+      "sha256": "f4e4cbbf5e3f2d6bcd48f044502dd72cb40379296b80723a0d0110b8ef48c447"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/citation-audits/reference-checks.jsonl",
+      "bytes": 1308,
+      "sha256": "8dfdcce5c81b24cdd9383e667ffe0f545a19cf7af7f6b997fe4365671c7ff6cf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/citation-audits/sources.jsonl",
+      "bytes": 1665,
+      "sha256": "194c34501a9305dc18b7abc6bbe4f02e5d369d61dcb7ad21e2450596f1452116"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/citation-audits/报告.md",
+      "bytes": 3181,
+      "sha256": "ab471d65233ded4d517bf265aff2cec22083108c43f9e25aec98a5d0ffb354cf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/README.md",
+      "bytes": 5000,
+      "sha256": "bf7dbb1e669f3d1f3bfaf87da28e8eff93680d3600dc1365212d3275d3268ccc"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH008-xu-cards.jsonl",
+      "bytes": 19379,
+      "sha256": "12dcf08b1c73e0fab0007ce447f04daec983cfc7380133e5936bdc7a231b23de"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH008-xu-reading.md",
+      "bytes": 8687,
+      "sha256": "e6838eac5adc5ced35e01908f2dbda30103acdc8ea1c11bd0f679c6c81c50469"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH008-xu-source-update.json",
+      "bytes": 1914,
+      "sha256": "edf23e2b4c72c8332a74105954a2a265ec73ff3f04b8ce4d5e49cf521bc37660"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH010-chenwangdao-cards.jsonl",
+      "bytes": 22804,
+      "sha256": "6eda5e186053d1e0cca43c135053d7ffabd0b56961ddd1d4dd51482663abc483"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH010-chenwangdao-reading.md",
+      "bytes": 7538,
+      "sha256": "0629835f8bcb15f39fb5b49feab4e841e539d4586248fecc69e243e12ee01b86"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH072-ni-cards.jsonl",
+      "bytes": 59920,
+      "sha256": "5e1ee1d2605c87426bb99c404981a7faa9dda573ecdb11114bf6641e7cfc61af"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH072-ni-reading.md",
+      "bytes": 7498,
+      "sha256": "8c425211c6194d3c5e35f9e04848ca8c169421aeb5bb96d7d48bc6082d241336"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH072-ni-source-update.json",
+      "bytes": 3405,
+      "sha256": "74b3e9805c6abd7640294344197a63e226d6a12cd337cf6fd3a509d86adc8a11"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH079-zhangfang1996-cards.jsonl",
+      "bytes": 5299,
+      "sha256": "fb0d29d5d0004678db64e065c60c889cd5684c19d5d3732ad3c8aca48f3caa5d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH079-zhangfang1996-reading.md",
+      "bytes": 4255,
+      "sha256": "37345e09e81df2a7a252b91e20c4dddbe6553b8b06931f255d829ac2e32d563f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/classics-round4/ZH079-zhangfang1996-source-proposal.json",
+      "bytes": 2018,
+      "sha256": "8b083590d83eff8eeb09a02bee5e2ec211afd0fc08cc4122313f8e60666ee7a2"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/delivery-round3.json",
+      "bytes": 5756,
+      "sha256": "974e2f3ee204576c2fca4949c1894b4df640ee51f9e41176f524ad425724523f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/delivery-round4.json",
+      "bytes": 44763,
+      "sha256": "92a8104c0d3a1a37a434e4a8a1c4d45ba7c6d7553b1ba5f0ce4fd41ecfc801a6"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/delivery-round5.json",
+      "bytes": 50813,
+      "sha256": "3d3aa0e6946961eaa5b9df2f1a28c3450317aae679c07fd0f9e9a2e40687afe3"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/evidence-map.md",
+      "bytes": 10539,
+      "sha256": "edd3c27c2cdac684c34dcf639cd2458b8b75976b048d395709c3c8d84b6375c4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-international/http-attempts.jsonl",
+      "bytes": 88910,
+      "sha256": "29dd5c6d2bccad34bdbbfe80b63f209608f5ef7275c161771f80721d7cfe2c17"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-international/reading-cards.jsonl",
+      "bytes": 9014,
+      "sha256": "45acc143848bdf697221117e740b57f95034ff58b3e898d8a82aad1498c48dfe"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-international/source-attempt-status.jsonl",
+      "bytes": 140544,
+      "sha256": "a4e8d1e5a2c332de85402eee1774f5b8b777d4c49058e2e97c94abd2f6a5d7bb"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-international/summary.json",
+      "bytes": 512,
+      "sha256": "515ac43181ac5705aaba375422f012f65dacdaa628b960a0f91958c137e8d327"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-international/validation.json",
+      "bytes": 184,
+      "sha256": "970b55732777f7b3b19178fb7c661754c6327f5ea160918c7e43bd02dc419e44"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-international/报告.md",
+      "bytes": 6449,
+      "sha256": "1e0b5b754ad0acadadf5438535b99a0de7f0171920765ce3befca5b5d311b085"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-zh/source-attempt-status.jsonl",
+      "bytes": 157637,
+      "sha256": "8c1dfe94478e61acbadec06e777992630eba9731f3f3b097c26116b35b314e85"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-zh/summary.json",
+      "bytes": 13165,
+      "sha256": "62cba2f3ba245970972a295f3614e3b051079ee212c5d1b1a3707294c5d04d36"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-zh/报告.md",
+      "bytes": 19394,
+      "sha256": "692f91f229e78479e071e4c253220add3fd035398e41277dc2948c1e394d322d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/README.md",
+      "bytes": 7121,
+      "sha256": "ba9bd816515006d283dc639c4a1160326f417936071dc365eed8ac078c06bc53"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-collected-receipts.jsonl",
+      "bytes": 4976,
+      "sha256": "7ae8210a56c7cebbadf44b77309c7572bfb14f263243bc2d2bfe27ea10e18402"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-collected-source-proposal.json",
+      "bytes": 3268,
+      "sha256": "6e31772537cdb4eb9972991f195c86197a9a0e3730dcd2702e0ba33fff3effe1"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-originals-receipts.jsonl",
+      "bytes": 3640,
+      "sha256": "1be8d3c502f418583fc370324a2e898c13a3f7e2c57389591e9c7af22991f6cf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-originals-source-proposals.jsonl",
+      "bytes": 4191,
+      "sha256": "4f94b6e38ebef86c21b6d66ff2e862825e0a49540a67b39da412d322897eb238"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-receipts.jsonl",
+      "bytes": 34885,
+      "sha256": "f58415294460ccab8819104c3ebc1845d8e8c33c372b1992f9e4bf05e23194bf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-report.md",
+      "bytes": 11388,
+      "sha256": "0d72fca5b2de0a76dd9fcf3db69a6bc48f0731ca3efb1639520b908950b55cdc"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-source-updates.jsonl",
+      "bytes": 8601,
+      "sha256": "5412c753aec8861a911eaec1deef95164cd9a6e1e92d7d386aad65e0faa26321"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-status.jsonl",
+      "bytes": 64485,
+      "sha256": "0db07cfbdbdbcb6c7be7feec4d7c543fcc24b92f73ba6e007367c56201a4cd41"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-supplement-cards.jsonl",
+      "bytes": 12644,
+      "sha256": "b1204962e9a9cef6b51b766950cdbced9ef847fa72c0d3355129bafa4fd7533a"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-supplement-receipts.jsonl",
+      "bytes": 2089,
+      "sha256": "371aeed20bedffbd9c49b8d86dd212cc25d6c6b1e039a302e7f786b188a3f6ea"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-supplement-report.md",
+      "bytes": 8151,
+      "sha256": "57602c9935a77c0126c7d9f2372672eabc1320f4211af78a14135360cf46617f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-supplement-source-proposal.json",
+      "bytes": 2963,
+      "sha256": "da14297ceff99a40e21eaeb820e7555aa16d7a166f258cd6a4c5169722ab3be9"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-supplement-validation.json",
+      "bytes": 693,
+      "sha256": "a8bdd5a5bc1f4b049950808452e2ed94e8d0785c55e378dcf634ba9eaeff4459"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/chinese-validation.json",
+      "bytes": 853,
+      "sha256": "60927eb17ffe7649ccb06723fcb69ee6f1d4f875c282a024e74c3d71c4b39b19"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/international-html-receipts.jsonl",
+      "bytes": 47347,
+      "sha256": "c1bd6c103f8d0228b8d88eafb558fc4c8df70a09434d58b5ceba6a9463fa3996"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/international-reading-cards.jsonl",
+      "bytes": 24719,
+      "sha256": "c444a03051647401e47f1208f38381e3affd58224a7a634ee69d7e1ee2693f0f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/international-receipts.jsonl",
+      "bytes": 20038,
+      "sha256": "dd5809accb97c0d52f01a209934bc652d412baeb07537ddb978d815017fa64fa"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/international-report.md",
+      "bytes": 31795,
+      "sha256": "f8e8ce40016010e3f7161326ae1686408601c7ff548869799a7f1057b96ad0ba"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/international-source-updates.jsonl",
+      "bytes": 68429,
+      "sha256": "41c206c96e0cdb823a171abf5c602187e60a7e59bacec29392d0ff1e582f075e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/international-status.jsonl",
+      "bytes": 191168,
+      "sha256": "36d9b6de7af9e631a066fec2ec48171d6d4f87cd52ba52c079f9df1f5631ca05"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/international-summary.json",
+      "bytes": 906,
+      "sha256": "578b02db2daa3b8d1ea50d2c6e1e995336c4da31fbec312abb4be765b2a58b65"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/international-validation.json",
+      "bytes": 750,
+      "sha256": "bfa4413bdc2c0cae44fe867184dd1a1345b7403141b07b9fe16d8fcbb34fd72d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/source-merge-log.jsonl",
+      "bytes": 15775,
+      "sha256": "2dbb10b9bfca34ea49a07b980af71bbb8b9494b25fab6192e8f821fc8181e982"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round4/summary.json",
+      "bytes": 4424,
+      "sha256": "ef069fb9b0d2f87f98630350b3baa159390fed7ef700a027802a31c73f20abf0"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/README.md",
+      "bytes": 5193,
+      "sha256": "829c91c524ddb5f7f325fd1b66f9aad22605397d213abb40544a58df7b4506fb"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/chinese-reading-cards.jsonl",
+      "bytes": 55455,
+      "sha256": "219ccef35e926f21b9fc229525eaa749af32e4162c8634f428f7a596ae72fb7d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/chinese-receipts.jsonl",
+      "bytes": 80119,
+      "sha256": "18b17de7a293189e435963cd62a289f7779be9700ce545838a71eff74737bcd4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/chinese-report.md",
+      "bytes": 23757,
+      "sha256": "68645a8f8a5ceebb23167e86375235dc09a8c50fc4d706d1883f533f8a689883"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/chinese-source-updates.jsonl",
+      "bytes": 24401,
+      "sha256": "d55df22d3118e2594cb921a7ef23ed23f59f15df65bd6da24f230432c28dcf85"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/chinese-status.jsonl",
+      "bytes": 58074,
+      "sha256": "4a98a0c439380ad1b4467452f340579c295b4c317b18b6de2e1f04a6e5663d20"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/chinese-validation.json",
+      "bytes": 34627,
+      "sha256": "0a54042214aedd532d778de18830ba0fd78a0c6977a2aee9dca7723c0a4fe433"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/comparison-cards.jsonl",
+      "bytes": 28400,
+      "sha256": "e221b85ffc49a42b64cc551bbe2cec58f12195f1fc7486e6562f607109d1237c"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/comparison-receipts.jsonl",
+      "bytes": 3459,
+      "sha256": "50d4272a0eaa0eebd4a5e12d24c0003dcb3ecd1ee072cee7f0c3cb1dd4b88306"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/comparison-report.md",
+      "bytes": 10719,
+      "sha256": "a307df2949a62e2117d994aa451a86807eab834641d42e4ddb71e1d3757daecb"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/comparison-source-updates.jsonl",
+      "bytes": 13062,
+      "sha256": "e1b53485a02eda0263bbfb706a9746af05806d6dc01e4ac8f9b6ec2622f679d6"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/disagreements-and-boundaries.md",
+      "bytes": 14203,
+      "sha256": "d169b4fae808ad0cab77e69134d8d0177ed82d2aff9214dc0efe3c23e7bbdf73"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/international-reading-cards.jsonl",
+      "bytes": 22681,
+      "sha256": "c5bd6d56f3aa3473378bcc4f04692819a6a09d7f8dadacd01fb9fafa6087425e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/international-receipts.jsonl",
+      "bytes": 10241,
+      "sha256": "71b70b72cb98fcc4144f4a2dc7fd42d195a1d6c397c689b14f0d1622ba405e77"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/international-report.md",
+      "bytes": 19491,
+      "sha256": "ddd118a76068e335fe6b9e2dc26294d4a7f9f7b2ad07b3b5ed3d0d44f1813e18"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/international-source-updates.jsonl",
+      "bytes": 45164,
+      "sha256": "bfc123b3727d9d68af5182318aae2bab199e0bdf20fc9f4a8c00353f667e2c71"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/international-status.jsonl",
+      "bytes": 108548,
+      "sha256": "32f972d86c3d7d91367e9109a747ab2d6c0ca2cd99a3b2a7a02ad9e04eb1c200"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/international-validation.json",
+      "bytes": 1770,
+      "sha256": "954760a7de374efb1e02a9d9c3a4efd50522fba529e0c12440d78ba4ed8f5806"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/root-reading-cards.jsonl",
+      "bytes": 7199,
+      "sha256": "6ace7226a5efb9ea354f7b3e54d7bd7867067d14d38335009652b0980b3ac527"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/root-reading-notes.md",
+      "bytes": 10946,
+      "sha256": "f3b04f82995fee1de09db227eef3b45fd3d14b64701fcd096c9afcded16f1c8e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/root-receipts.jsonl",
+      "bytes": 4017,
+      "sha256": "e6c2ceb14b22767153a8147999d4d87f1fcd80edb4045b4426af5cbe1969ef98"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/root-source-updates.jsonl",
+      "bytes": 3625,
+      "sha256": "33fd86331872928bd3e0744264e7f241603c5626f151f846a5e5effe877ef30d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/source-merge-log.jsonl",
+      "bytes": 10767,
+      "sha256": "9be8a1866f3e3da6b9d5532d02077cdf9d49d749d37b5fff75f13a790bc9a3dd"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round5/summary.json",
+      "bytes": 6571,
+      "sha256": "8c70f9316cfde7096afb8a9cab551401afda50f65025494f6a04ee840ced54fb"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/README.md",
+      "bytes": 6987,
+      "sha256": "6c3ff2640e0a312016ee3598bd0e545396e6f65b34ab884bc8628f86cd88c852"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-sequencing-discourse-cards.jsonl",
+      "bytes": 14412,
+      "sha256": "32075a4c08ddd8c2bceb1235b0ca9508a80af7dc549755db8bfab029a0ad5024"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-sequencing-discourse-notes.md",
+      "bytes": 4928,
+      "sha256": "9dc63e6c09377853af3de63b61165837bc7b92d57359087797ff76d17ecebee6"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-sequencing-discourse-receipts.jsonl",
+      "bytes": 4614,
+      "sha256": "8ad5635c77c61b7c6b02f04fb29fafb613260bb71638122fd4b6dfc1f94acf20"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-sequencing-sentence-cards.jsonl",
+      "bytes": 21840,
+      "sha256": "c9eefaa7effb977c7453a5f287e4f991fef819e9254b357767c760b84d2b2652"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-sequencing-sentence-notes.md",
+      "bytes": 5119,
+      "sha256": "cf9fddf4d7a973cfab19cb03e1c90f7b711cdcda615306f9428d2e9a8818d231"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-sequencing-sentence-receipts.jsonl",
+      "bytes": 7568,
+      "sha256": "bc14568127bb7e9df07f3076839b6d65eb765ced841d9a467e843cc29ff1f632"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-textbooks-cards.jsonl",
+      "bytes": 13398,
+      "sha256": "7e49e1e446cb33a4f5cea0a0f552d57beaab343a65855b8032d505921be34bcf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-textbooks-notes.md",
+      "bytes": 3234,
+      "sha256": "e1c67353390b08a4e5f40cc52bdae9f4d84e34625ba0094b75dbbf30d31fe534"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/addendum-textbooks-receipts.jsonl",
+      "bytes": 3558,
+      "sha256": "1cec507829581c01cf39dead652ea8358bb389e38ec4446bb1790e0f2200fafd"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/checkpoint-source-merge-log.jsonl",
+      "bytes": 8672,
+      "sha256": "86ec34435ade2187070bb994c92e08138cf4298d0a4d9e338970079823388dcf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/checkpoint-summary.json",
+      "bytes": 3487,
+      "sha256": "dcd168bad32809fd9354d3ca28661f393b904e047768b0a3effee030de30e457"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/chinese-reading-cards.jsonl",
+      "bytes": 36222,
+      "sha256": "95a306e0c223041dd81daca4a39b3d716013b0473be8006dc2e9ac380ff8d3df"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/chinese-receipts.jsonl",
+      "bytes": 53828,
+      "sha256": "ed11baeda33844aea9b9e77aeaabc6cc033f568fde20af613d11f9b4619b4656"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/chinese-report.md",
+      "bytes": 15005,
+      "sha256": "f766be7d5d7f813f5578a280923b38405fa81367c2a581bef455eda719f8d03d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/chinese-source-updates.jsonl",
+      "bytes": 20970,
+      "sha256": "ec53fd2430a27338f24efb71c81775239e6bfdbb2365125e1cccd450663349a7"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/chinese-status.jsonl",
+      "bytes": 38396,
+      "sha256": "6a05246f3bae19f289909a49002af4c4f8a41423b6fe07e3ab213398735c97c8"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/chinese-validation.json",
+      "bytes": 3035,
+      "sha256": "4de6e38ff6e6747f4e4e47408485a823c9a3ebfc5fe03320749d410f33bfee0b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/comparison-cards.jsonl",
+      "bytes": 34780,
+      "sha256": "54cffbd0ef38904114e8e832986d4c52d88241d8d2f8f917ace028a8267c4e0e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/comparison-receipts.jsonl",
+      "bytes": 8880,
+      "sha256": "619d4051c4a2df43d72c65e7e1d9ce2af415ae622ecb5f5d517dd962c0137c5d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/comparison-report.md",
+      "bytes": 10082,
+      "sha256": "d74bb1975d3686977e301423e8a7eb2824eaf638f2d1dda60cc9c7a7edb5a075"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/comparison-source-updates.jsonl",
+      "bytes": 16591,
+      "sha256": "db07732948c12d01d46b3827cc815bf67bf106a59af8381c932e2b71f3b1f6b4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/comparison-validation.json",
+      "bytes": 443,
+      "sha256": "199255de43bc476cff73c27ebbf1cd1361decfc15afa2566c4050715fa79538e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/culture-reading-cards.jsonl",
+      "bytes": 15478,
+      "sha256": "570c05e9446a98f26ae82e3b8de03e033b94d9a24f0ff571a78392733f626543"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/culture-reading-notes.md",
+      "bytes": 5068,
+      "sha256": "d844aac19431a67b0ec2928fe7d8dfdd46ce1fd969eaace74037a75e0fe10f66"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/culture-reading-receipts.jsonl",
+      "bytes": 2711,
+      "sha256": "f9c2a4562bcda0d8e2b4147cf5f351dd7cc7907fdf67fa014650e9e683875627"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/disagreements-and-boundaries.md",
+      "bytes": 23964,
+      "sha256": "9fddc7b2a7286a23bb6810bf35f6669612ae45dc04770473e940f7ed80419663"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/international-reading-cards.jsonl",
+      "bytes": 18831,
+      "sha256": "f195070f3a52ec03b22f0386dc6956684cf7339df2b65e691f4966e7c025485f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/international-receipts.jsonl",
+      "bytes": 10293,
+      "sha256": "35036a2390168b723a84d2c735bd1476f43ae306251ace990acca9e831a585bd"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/international-report.md",
+      "bytes": 20331,
+      "sha256": "dcdb6b67612868ed83bd1924816aeea2406e6ef8943dceb6343a20862ba9a3ef"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/international-source-updates.jsonl",
+      "bytes": 63475,
+      "sha256": "7605d2ae80808231122068061c103760370c2dea6593a736b40786df7582434a"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/international-status.jsonl",
+      "bytes": 216198,
+      "sha256": "606566f42a2357b6e6b63e1349ad2bf1bbffefb100d5ef6bd6092ac397db6f59"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/international-validation.json",
+      "bytes": 1941,
+      "sha256": "65684502a96d9bdf4ede598602ff726ad293c6561a7c2c43e878afcdd9ba64c2"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/root-reading-cards.jsonl",
+      "bytes": 16615,
+      "sha256": "0d139f74e56f678d43bc05a59d590491a8d3aa542b1dd47e2b9ea820bd21ee5a"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/root-reading-notes.md",
+      "bytes": 15484,
+      "sha256": "e892013283245c46705926181d3dfecf271c554a6cb8f812cfbe329851153496"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/root-receipts.jsonl",
+      "bytes": 5553,
+      "sha256": "d996ad74653f8979493a22a4d96f8a98dd7164ba2241c29911f19eaf79bee133"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/root-route-notes.jsonl",
+      "bytes": 6601,
+      "sha256": "736df829546024c5f0184e2d6ea8b66dc235532020e1b76fe076b2f9771c5d9d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round6/root-source-updates.jsonl",
+      "bytes": 14139,
+      "sha256": "0a00cc5e82589dadeab693d0ffd6ffdbb9b8cea670bc74ac54060565ea47582d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/README.md",
+      "bytes": 14900,
+      "sha256": "70614acfea62135cb78f3a726c658527cb40254e01aafe7d0b7a53533aa579e0"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/candidates-disposition.jsonl",
+      "bytes": 1791068,
+      "sha256": "fb9d5e62eb3fda103aefc8b79d4ffbfe8ae695ccccc5957b50958953aeec276e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/catalogue.md",
+      "bytes": 1180599,
+      "sha256": "0197e4928797aa9ebde518bc1584a4469f521b480799c3fd2a342d4b8dc9239d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/category-mapping.json",
+      "bytes": 11170,
+      "sha256": "e4b28981635bf00885ec2bf17cfa73d5097bb657f93d27a6a5722ccbc2635b93"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/content-dispositions.jsonl",
+      "bytes": 92225,
+      "sha256": "fd7cd72f5806f0670dd45ab28a0a5692082b0b53bf396fef1dc8eea7bc105d58"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/coverage.md",
+      "bytes": 7272,
+      "sha256": "c4f4fa7310bbd6c1b905bc04ab65c4db624032918987204b8cfbe75f98a16116"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/document-link-validation.json",
+      "bytes": 208,
+      "sha256": "fedad48e0c4812ab5b059ddae6367fb5b39b8651c9a1614460eb8f5042ea8811"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/duplicate-groups.jsonl",
+      "bytes": 15254,
+      "sha256": "b940d9a371c505c3fb0764d7c7aebcfe93690ed5e8f5eed253e91475bc63f5ba"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/legacy-access-reviews.jsonl",
+      "bytes": 48769,
+      "sha256": "c36993d55bf736f28c04c565aac2ab905adb0cea6d9bc0c0cd779d160d376668"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/lineage.jsonl",
+      "bytes": 172262,
+      "sha256": "f61035f44d8daab48dbd55db096652d733374f02a9fcd2262711ed8fb374f595"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/literature-bridges.jsonl",
+      "bytes": 835,
+      "sha256": "7d46ae93fe4980360e3481499cab9602d903b31da21ef55a7596ffcdc2ac18c5"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/manual-notes.jsonl",
+      "bytes": 380534,
+      "sha256": "6dc42c07bcc32a572eedb58809b1e88372c44719114cabd9f4ce66063d72bdc3"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/metadata-reviewed-dispositions.jsonl",
+      "bytes": 8916,
+      "sha256": "e107225dcfa999e009f8997d802fdcc1e682f7df86123bd2df76c1442b832ce8"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/next-round-queue.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/priority-reading.md",
+      "bytes": 19983,
+      "sha256": "59de849a87667d7fe5f14c20865eb3e817b87ac7a3298f9a5e312bec5ea1b284"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/queries.jsonl",
+      "bytes": 220377,
+      "sha256": "915621924002f7c223e3d1f5a60dc30df385ca268b2870228b7e1f6b7a49fa53"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/repos.jsonl",
+      "bytes": 6848408,
+      "sha256": "f7e9e26dd96025d3d58e5402586428d16bfa8812374c74a6185855a5d3151769"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-additional-high-relevance-queue.jsonl",
+      "bytes": 516412,
+      "sha256": "cda0d7519bac5e5740933ef7bc1e8833d46581be90ccd5f7968b8c212fa12c65"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-additional-international-reviews.jsonl",
+      "bytes": 328509,
+      "sha256": "795f63ac28623a5a9fa6902bbfa4e2c10dfcd31b899794fa9769153594e68e8f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-additional-international-tail-reviews.jsonl",
+      "bytes": 92789,
+      "sha256": "6403d8b7d8b15a827c5940ab5f8bb8437e7f0e3628dfbd1bc65c5bf7edc92a93"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-additional-international-tail-validation.json",
+      "bytes": 396,
+      "sha256": "b1efc5f8807a5477dd8d68bde05f839e86dc76dd950a302213da75d28684db1c"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-additional-international-validation.json",
+      "bytes": 488,
+      "sha256": "44fd6152f36390e23c8a67544edbc9a974cbf4f949d4cd448edd7f42ebfe6ae8"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-additional-root-reviews.jsonl",
+      "bytes": 223051,
+      "sha256": "bf33f4f0112d5f1dd2147bafdfc9e46d4efc261eceed2fbe1338f71ce1c1f74d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-additional-zh-reviews.jsonl",
+      "bytes": 253880,
+      "sha256": "6feda25ba249ee481c02b9ff8a0ee2acaf042b7f96461fa72edb9c4f24b82970"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-additional-zh-validation.json",
+      "bytes": 745,
+      "sha256": "b8e5b353ebc2257e34e8aa475a813229dd843bd08c01136c644a27f166f8d9e7"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-international-findings.md",
+      "bytes": 8316,
+      "sha256": "95ba0514ba6841cf3165b72c0928914fbcc10864935623408dfac433b89557cf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-content-review-queue.jsonl",
+      "bytes": 235174,
+      "sha256": "9c28582a1678fd68e8ac61c1b1e0460c00d28209c14b8f477cb92ed7daa65186"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-international-findings.md",
+      "bytes": 6459,
+      "sha256": "4e14938add43350238e6ed03b25413af9e8350021c726386b7dfefdf4eefdec3"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-international-reviews.jsonl",
+      "bytes": 137129,
+      "sha256": "11c736cf16b1bcbd7ce8e8e0d8767c0b6b10d49e4e8b5b33277c0780039c8abf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-international-validation.json",
+      "bytes": 897,
+      "sha256": "55e8e3d731879b2aea9e61cd24bb1b81fa68fdfa147268b20e03ce2c4a12557c"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-language-leads.jsonl",
+      "bytes": 60704,
+      "sha256": "7032606af1d5a4818af5324fefb9847d66d89fefaf04b85f28ce140bcf95eb88"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-metadata-report.md",
+      "bytes": 2776,
+      "sha256": "ba38f596c7394f7eaaf5d24ad48e6c58395c82004e0e391972351fae53351b80"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-metadata-summary.json",
+      "bytes": 1148,
+      "sha256": "023e90ff66aff633274a990ab16ef908d05f18163f71c04c2813137dbeb6efb7"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-metadata-tail-validation.json",
+      "bytes": 261,
+      "sha256": "4650a2bdd7920220e99f4d346779840861e62ecd44938b5a8b45e628c4efe02d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-metadata-tail.jsonl",
+      "bytes": 91218,
+      "sha256": "d91df43f137e75893c6d3770c3cf7d5b96a097b07af43513b412cfed97028f01"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-metadata.jsonl",
+      "bytes": 276019,
+      "sha256": "139ed4584654119184dd092b8fa3bce5d8793a5b2cf177f72d2818e3ceb08191"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-root-reviews.jsonl",
+      "bytes": 125165,
+      "sha256": "e75226b02401ef834dba5b12350a51caea11911ca9027776f71209968c83f318"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-zh-reviews.jsonl",
+      "bytes": 164935,
+      "sha256": "8546810ec58cc6659d40a9465cf8c1c8c9cf856428d461fe17612ee069d9ec63"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-other20-zh-validation.json",
+      "bytes": 674,
+      "sha256": "0ddb142fc190d36bcfa7e11868b09f2c4f7cc5971af8ed5ed3d26b7ba5e2b7df"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-priority-reading.md",
+      "bytes": 19385,
+      "sha256": "bce3cc1a25b907af4dbbf229f77c50a188d9dcefbba445549da7e58794de6fdc"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-progress.json",
+      "bytes": 2286,
+      "sha256": "5567de55fdc14db32cf0d2665cdf0ff9428dd13814683ac10e9254d670f9c1f1"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-remaining-writing-leads.jsonl",
+      "bytes": 140962,
+      "sha256": "e881fa7d64140f32d1b7e31e5625525b99c0993d9c7718545c6aaa196973dbed"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-report.md",
+      "bytes": 13552,
+      "sha256": "5afe28c532f5ec1e83af5f9fc8c001cc912285a13a4314dc133d6bd0db1a0640"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-root-findings.md",
+      "bytes": 11923,
+      "sha256": "ffae0a3c6c4ac666d6e18333716a280d75a78accd76562382fc67682daba5d35"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-root-reviews.jsonl",
+      "bytes": 131108,
+      "sha256": "f6120e70252035b6ddc3ac58292b5af7febbb0d4a4f19a495bf971df5d56522e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-writing-root-reviews.jsonl",
+      "bytes": 92691,
+      "sha256": "7256e6350ae228c1945631d89352348f43fa3a5f870cd2a041caa4ef33beda8b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-writing-zh-reviews.jsonl",
+      "bytes": 82073,
+      "sha256": "bb089f36b43135fd204fc1caacf7a662b7a1c3bcdec83cca7f9b71c9ded3ea58"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-writing-zh-validation.json",
+      "bytes": 808,
+      "sha256": "83776fc5c0cec12fca0db1516927c77ffe53ae23b93c5e7836c52dc7eea95de3"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-zh-findings.md",
+      "bytes": 22205,
+      "sha256": "5a91ab058c69bde3902ed1bb359b08c3b01bf00500eb515180c533cf496549e7"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-zh-reviews.jsonl",
+      "bytes": 203541,
+      "sha256": "cdd73807e993f53dfd0a12f1c7f7f60b013cfd25a83ec47f7dfd5a724152be24"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round2-zh-validation.json",
+      "bytes": 382,
+      "sha256": "d8c22496d05475703d11682592a53a8c227d572e30bdc6795d56d1b5ddd4ccc9"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/README.md",
+      "bytes": 2332,
+      "sha256": "e84cfb7617a048ca4a0179dde273a87f942729f721d1a0f3e0aa3f1c7b3eb0ce"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/c-rans-manual-audit.md",
+      "bytes": 4786,
+      "sha256": "e8f1a9f86c2e704aa868ed31f7ff9652ce269c202b36a3b8dd222cc9b9da4a8e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/final-receipt.json",
+      "bytes": 2534,
+      "sha256": "542caaaf1cf018b7cc3ede5d895ebb3ae45fe0f5aa777d2e62b11339b051fc72"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/intl-method-audits.jsonl",
+      "bytes": 35716,
+      "sha256": "65c5935a17ccd84cd2d602ecb1a42734cb86ff971a492f4d900eb013ec73e09d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/intl-method-audits.md",
+      "bytes": 7077,
+      "sha256": "106f31e76ab4691242e6df579ec4194e288e4453ad483b75a22c2b0607942cee"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/intl-method-audits.validation.json",
+      "bytes": 252,
+      "sha256": "cef74e5bbd557b1243807e755649aab1f780a6ee33ed7068912b732375f65a21"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/our-method-audits.jsonl",
+      "bytes": 12635,
+      "sha256": "8cccaff60e87886cc1bc67b9d0664442e54cb32b5c9db6cfaf0ad3f84990c5a4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/progress.json",
+      "bytes": 2769,
+      "sha256": "8eed2fd1e7c8aaaf04410d6e8c087314c2370b5ce4845837235be363565c38f4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/root-bridge-findings.md",
+      "bytes": 5650,
+      "sha256": "cbd4242c0aaa9b93c2149a248adfd34475ce636485a5274d1c146c0392386197"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/round3-github-reviews.jsonl",
+      "bytes": 1010580,
+      "sha256": "303a1461c18852bde3ecff6d69ec1654add4c707b0de64aee926aa9b14cc6c14"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/round3-intl-findings.md",
+      "bytes": 4989,
+      "sha256": "a2ec58adcfec8569210668dd82a826cc8032b58b37bf158862989033bae6012c"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/round3-intl-reviews.jsonl",
+      "bytes": 130111,
+      "sha256": "e18d22bc97c30300609bb9dad9818bcd719e5ff5ca74b0dff94e86342c45f54f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/round3-intl-validation.json",
+      "bytes": 733,
+      "sha256": "e86b5c6684ca98a189e85b9c250c09c0b3da682061cd8c5a68202edd06e19c5e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/round3-root-reviews.jsonl",
+      "bytes": 659264,
+      "sha256": "f49d24f32ae3138855b16881188c882c11284fa3b8efbe9912627ca06f68b8e3"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/round3-zh-findings.md",
+      "bytes": 13043,
+      "sha256": "fdc10030afe582bf746f1947cf7bd3133e2946a5fcea93e861039b1531ba189d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/round3-zh-reviews.jsonl",
+      "bytes": 806456,
+      "sha256": "51ea965cbc6369fa1a958c60dd25410bc51ac5aa208e4569c54993e10c184275"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/round3-zh-validation.json",
+      "bytes": 380,
+      "sha256": "f769d3b268a5d037e80ba8f4b359287399df27c3a65a6f22186c1a88c92a4bbe"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/zh-method-audits.jsonl",
+      "bytes": 17413,
+      "sha256": "bf4da6ea169773b820c7fe5c6a32bf9e87460fb71268140959617c173fae6892"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3-report.md",
+      "bytes": 11102,
+      "sha256": "fdcf1124d2982ffb23afb4d381bce7dbc3b36866480732d85d2f270c0bf9660e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/status.json",
+      "bytes": 3810,
+      "sha256": "b482a04c47d8149193f3d1bdbcffebc252f1bdff4606d7b32bcfb5559848dcbe"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/validation.json",
+      "bytes": 931,
+      "sha256": "9b827b948474845a52904207abfc45926685bff7924218d3f8df1cd5a66aa9e8"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/inventory/README.md",
+      "bytes": 1644,
+      "sha256": "a94921b1f8fe3a6e7091595231d40a34612b0d4bdcec0ac89424ce846ad42f72"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/inventory/legacy-local-files.jsonl",
+      "bytes": 305772,
+      "sha256": "247795353bf7620980ce0dffe40cb0256ea67368e7a343e0b505ecb3fecace1f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/inventory/legacy-sources.jsonl",
+      "bytes": 65094,
+      "sha256": "12be7c3ddae4e4275dfb205dd528c11c7b8dc65e3b7a0e8328b6d0c16d0f140f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/inventory/summary.json",
+      "bytes": 260,
+      "sha256": "287379e50fb9918c183ca6aef70e23303ac4314bc250c8c7e46e4a7b820ae0f3"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-intl/coverage.json",
+      "bytes": 295,
+      "sha256": "3574926bd455b206eb8b9cea4a118201a4eac8dc7e495e0d1c96fadf2aba343f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-intl/deep-reading-cards.jsonl",
+      "bytes": 16983,
+      "sha256": "292041199fe184fd88b4ac7c8e73583d42303bf3be4babed2b6765b194440f21"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-intl/queries.jsonl",
+      "bytes": 17272,
+      "sha256": "18714791fc4c2d1cb8472d351357a27239d1ed20ae00eb3c0eb9465f88bb5f35"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-intl/sources.jsonl",
+      "bytes": 179730,
+      "sha256": "427b042ec4f084b61b3e66d7ec510b7cf112addf8fff1f7a28f7d2805a77266a"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-intl/报告.md",
+      "bytes": 12256,
+      "sha256": "ffa3953f7fdaa26e58ddc35527ea892101fe8bfa297437c3e9af989025741788"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-intl/深读卡片.md",
+      "bytes": 17608,
+      "sha256": "e552327da784fefe0ea41fa99c82a3dfcba388fd2233e3eee7226565706bdd5d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/collect_selected_sources.py",
+      "bytes": 2768,
+      "sha256": "7c35edbd7016a047759869ece61b6d3ed0db03b62b790d78b57b142668f2170e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/decode_tex_font_text.py",
+      "bytes": 1791,
+      "sha256": "3d0abe52ebcc9f464191ca31d3db97a5c737d37ef8def182671101d9d118963e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/extra-retrieval-targets.json",
+      "bytes": 2183,
+      "sha256": "c600553eb11bd352cd148e8cace0b158078ea2f737d8eff688867f1b1c24438f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/queries.jsonl",
+      "bytes": 29518,
+      "sha256": "21b75b9f58b2eb73f0c884fba6cd7d9947af944fa7d4866c84a39006552137e0"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/retrieval-targets.json",
+      "bytes": 3822,
+      "sha256": "88b0002a6089215bd557657586d869e265ecd95e84cb36ad3ba0b1e4e7a3394f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/sources.jsonl",
+      "bytes": 176269,
+      "sha256": "b3927c407df3c057bf892806c4e532aecf1cb09e09b42eee6b0e047d3a02569b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/validation.json",
+      "bytes": 5301,
+      "sha256": "f97a3495388fe38b00a90a7fe5431dd3a4cc363253bb84277a5b98eee00f0b8b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/报告.md",
+      "bytes": 32284,
+      "sha256": "2724195e31847aa3c8d197129fdc127337bc20fa38e6536ef54c6cf5e3cda12f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/linguistics-zh/精读札记.md",
+      "bytes": 17718,
+      "sha256": "bf8e141243057ec5e5ac77580e00d6e9e41f8468565922ccd4b01601bca63541"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/open-books/coverage.json",
+      "bytes": 1291,
+      "sha256": "df5e0d937f6f63202b833e74f621b57f2b8426ed6d8b13fc19b3ad7581fb5072"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/open-books/discovery-exclusions.jsonl",
+      "bytes": 1400,
+      "sha256": "48f2b73d3c7dd47e1b3f4942cb83eb269ddcb62f043fc7a96ed76a197753b73a"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/open-books/queries.jsonl",
+      "bytes": 6896,
+      "sha256": "2309629d945a616b53e1e5737c9ce8ae905d23ff480ea2f8f0965b14d5b5650e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/open-books/reading-cards.jsonl",
+      "bytes": 15196,
+      "sha256": "c639b607c02d844e7ba881b3a70a97323a6455392dedc34c614b9f561de08cc4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/open-books/sources.jsonl",
+      "bytes": 71499,
+      "sha256": "5b47fe610ca3aea84f950abb3a5e55bc6dafa207acdb8b05abc75f23db3d57f6"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/open-books/报告.md",
+      "bytes": 12448,
+      "sha256": "4f5361488cb3070051edd5653d06df05e4a12d121745b4213a220ed4ed83edbe"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/open-books/章节阅读卡.md",
+      "bytes": 13994,
+      "sha256": "8e9a44f01feb2424efe6ee72cb830a52223749dd2ff7fa383adea2bc824813f7"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/overlap-groups.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/practice-guides/coverage.json",
+      "bytes": 575,
+      "sha256": "7e87fe78c2543168aca3e307c5dfe36ba9a167d72f938e7320a47478cf66aa3a"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/practice-guides/queries.jsonl",
+      "bytes": 4295,
+      "sha256": "94ce912d174117da342ad2baf7b9a397e3a908e17afc4764e8744955b4c14a24"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/practice-guides/sources.jsonl",
+      "bytes": 51120,
+      "sha256": "247edd515fe0b26dd465bff8fdab5d70a357c42fbb2008c717a4b422dd5a93e5"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/practice-guides/报告.md",
+      "bytes": 12497,
+      "sha256": "306c75c28965d8f17625618764c9fce4b06cf8793adc1575f6af877ea5e666e5"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/reading-cognition/queries.jsonl",
+      "bytes": 3692,
+      "sha256": "78e7889b76d69403a060efa0b5b5420a2b5b15f89e69d5155a70d892c9c1fabf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/reading-cognition/sources.jsonl",
+      "bytes": 25149,
+      "sha256": "f2fead1da2a98dd4c52d250b1c96d640d019caa84f681091d34103b5415c0a62"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/reading-cognition/报告.md",
+      "bytes": 11826,
+      "sha256": "0218c359d988a875c09246c799b4091113ab9efcc272458aa25ede74d20505e0"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-checkpoint-round6.json",
+      "bytes": 87256,
+      "sha256": "be03904212a546a29db9f047600ac599e2573fd42ce0d8e0ef9a183b41a9b453"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-checkpoint-round6.md",
+      "bytes": 3510,
+      "sha256": "7f6c31ea7b1c66a887961528fbf29c190224a1588c5fe39f775f1f7926e7dda3"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-final-round3.json",
+      "bytes": 13340,
+      "sha256": "68e114ed60e83f6f2887692d3bc723daddda71e89f4544dbd54d364e260d512f"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-final-round3.md",
+      "bytes": 5830,
+      "sha256": "d5182e1b967eb86423ec8661d30779bac9276c0bd8c81eee43c3341990b228e6"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-final-round4.json",
+      "bytes": 18018,
+      "sha256": "7635cdfac21b0d46198604a6d5116e28961b85daae8850e1383038976548f1af"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-final-round4.md",
+      "bytes": 6875,
+      "sha256": "0dbd88fd8888126f5c54cfbd3dfaff32d984ef8a7bdd9ee24da40a8544af87e3"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-final-round5.json",
+      "bytes": 46688,
+      "sha256": "b22d126d2c79c2d7ee20c457a76bfda08d3d47639781a7094ee02540d07ef14e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-final-round5.md",
+      "bytes": 9086,
+      "sha256": "059c195f0c9f8db43aeed92efe300e54b62fb6896b7ae0d16aaa51004a1a98d4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-integration-round3.json",
+      "bytes": 4448,
+      "sha256": "3c62907de1a4f84fc4a7b5f0041f4270d5b355a2c5a01ba12a83e563348a9555"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-integration-round3.md",
+      "bytes": 2876,
+      "sha256": "ca6290c074efc2eca311642fc00f85b5c03ab1fa7aac248202e4a5f7108a914b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-integration.json",
+      "bytes": 17517,
+      "sha256": "cb6b86fc7394ee2986c344e24a79309ecc472092a04d5da8bad8a1000058dc59"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-integration.md",
+      "bytes": 8613,
+      "sha256": "1633361f2d13d35c148cf327f54523ba570df450d7e881936c50869a9557e18e"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-resolution.md",
+      "bytes": 4040,
+      "sha256": "68282ac80fb989d5ebf4e213bcc34766281468bf54e37c971945bf955cb7b037"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-zh-root-validation.json",
+      "bytes": 3252,
+      "sha256": "4af25b60dee15a601ad5d0db8877c30d2e28366d8222485c75c0dbd2928db342"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/review-zh-root.md",
+      "bytes": 4526,
+      "sha256": "81e2d4aba1f55c93dbf0baeea3e218fbadbd47a4bb9b37a796f7dc8365d01399"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/scope-and-coverage.md",
+      "bytes": 4968,
+      "sha256": "a8aacfa9c9fe7f742e8590def5805791f265d01ea126b27102afef8e4ac67e1d"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/supplements/queries.jsonl",
+      "bytes": 738,
+      "sha256": "a10e3c6fdb4c36ad79f4a932ae78b0d8346e816d144858dc64fdc3a11ebb4c47"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/supplements/sources.jsonl",
+      "bytes": 20213,
+      "sha256": "91b9a3d91db042de4729e1f0ffb5e9f51de1bffc67acd16495b3d13f31fd08e0"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/supplements/报告.md",
+      "bytes": 4985,
+      "sha256": "640543243cca2619059f4a1c3cbc3833e83b4ad0bc2ef0939e9ee418d90f1c1b"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/audit_acquisition.py",
+      "bytes": 4521,
+      "sha256": "0a2cb8f99414cba36240a4ba84b0862a23a6bd98c8ebaf641795162e68518ebe"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/build_acquisition_queues.py",
+      "bytes": 6193,
+      "sha256": "d12f007e017298cc2810380f25915ec449275dff188fcf50bca3b601fc33e6e9"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/build_catalog.py",
+      "bytes": 5249,
+      "sha256": "22370afcad30af8b4700dc691a7e2debcffe8dda404176239912b7aa40decec1"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/build_round4_summary.py",
+      "bytes": 3904,
+      "sha256": "5ab11d8f032ddc6f097b9b62ba9dd4259d2a7ca07d03c763b31fcbf80ebb6ddf"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/build_round5_summary.py",
+      "bytes": 8333,
+      "sha256": "f73394bf6342407f2ca115c8825a0d72d5ffd707f986203a20e60fa12f3635a4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/build_round6_checkpoint.py",
+      "bytes": 6494,
+      "sha256": "0e887881d2717328538416ae9ec5621afbe450daa06e6bfb42e55aa56d7295f4"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/build_round6_summary.py",
+      "bytes": 9132,
+      "sha256": "116aef2ebc663f6b50c2901bb5a2d3be9b02c8d1e001150e7f632b95254b56b8"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/merge_round6_proposals.py",
+      "bytes": 5993,
+      "sha256": "0e61154267ec88c9c9967fc109e2facdb06ef59bfaa2c5857c8eaec18784c6f5"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/register_pdf.py",
+      "bytes": 3681,
+      "sha256": "5dadf7d03935c76cde8f4497eccc84932a023e267c451e8da189f06c5e3d2c90"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/validate_delivery.py",
+      "bytes": 11209,
+      "sha256": "e26af9fd12bed0a836c6db2dbaa6314b984b926e9db9e831e0fd2d212476eb10"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/validate_round4.py",
+      "bytes": 54629,
+      "sha256": "30f266e5205f36110e78645d917184792cb052257db00bdf3b63462c61125bbb"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/validate_round5.py",
+      "bytes": 44151,
+      "sha256": "343339812d722cf6db4802e1d9f3056604f58e2fd7a40e0fba27ee640b9d2f41"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/validate_round6.py",
+      "bytes": 63943,
+      "sha256": "373bbb48ea18bb51190c6890d950fc07174ac1b563c8d715807fe7d702d3cf04"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/tools/validate_round6_checkpoint.py",
+      "bytes": 16460,
+      "sha256": "f7473458797db04e558a6d4a6f354b767dbc7114c988c280fda3f4ae84461815"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/validation.json",
+      "bytes": 2885,
+      "sha256": "a4fe5f5047d035622305fc2df73187bf2e2fd3f99961cdcfbb8df38475f8f7c2"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/work-linkages.jsonl",
+      "bytes": 3442,
+      "sha256": "bd3450d97a87432fd0404603e1f012a2107e6d36b9f6c5070dca88fb012156b5"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/总报告.md",
+      "bytes": 34073,
+      "sha256": "2271bc9d8d338fa07739066726b395767063093754893e0b88f9059993cc9f42"
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/研究进行记录.md",
+      "bytes": 30488,
+      "sha256": "238d4e313baba1cbb30abc0fa825e157ad880c423ac8569e3a0392be5e06533b"
+    }
+  ]
+}

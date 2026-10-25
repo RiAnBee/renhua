@@ -30,3 +30,19 @@ Thumbs.db
 *.log
 tmp/
 scratch/
+
+# 2026-10 中文表达调研：只发布协议、结论与自产数据。
+# 第三方抓取快照、论文全文、人类语料与派生的阅读卡留在本地。
+docs/research/2026-10-20-human-expression/github/
+docs/research/2026-10-20-human-expression/acquisition/
+docs/research/2026-10-20-human-expression/mechanism/data-prep/
+docs/research/2026-10-20-human-expression/mechanism/lit/
+docs/research/2026-10-20-human-expression/fulltext-*/
+docs/research/2026-10-20-human-expression/linguistics-*/
+docs/research/2026-10-20-human-expression/practice-guides/
+docs/research/2026-10-20-human-expression/supplements/
+docs/research/2026-10-20-human-expression/reading-cognition/
+docs/research/2026-10-20-human-expression/classics-round4/
+docs/research/2026-10-20-human-expression/open-books/
+docs/research/2026-10-20-human-expression/inventory/
+docs/research/2026-10-20-human-expression/experiments/reader-blind/packet/

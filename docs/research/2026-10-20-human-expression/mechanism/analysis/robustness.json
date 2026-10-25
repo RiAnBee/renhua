@@ -1,0 +1,231 @@
+{
+  "chars": {
+    "human": {
+      "mean": 784.1,
+      "sd": 91.0
+    },
+    "v1": {
+      "mean": 644.7,
+      "sd": 66.7
+    },
+    "v2": {
+      "mean": 256.1,
+      "sd": 26.4
+    },
+    "v3": {
+      "mean": 679.8,
+      "sd": 70.6
+    },
+    "v4": {
+      "mean": 645.5,
+      "sd": 42.9
+    }
+  },
+  "spread": {
+    "v1": {
+      "ratio": 0.65,
+      "ci95": [
+        0.63,
+        0.68
+      ]
+    },
+    "v2": {
+      "ratio": 0.76,
+      "ci95": [
+        0.73,
+        0.77
+      ]
+    },
+    "v3": {
+      "ratio": 0.18,
+      "ci95": [
+        0.13,
+        0.2
+      ]
+    }
+  },
+  "jaccard": {
+    "human": {
+      "within": 0.007,
+      "across": 0.0,
+      "ratio": 163.82
+    },
+    "v1": {
+      "within": 0.003,
+      "across": 0.0,
+      "ratio": 295.43
+    },
+    "v2": {
+      "within": 0.0035,
+      "across": 0.0,
+      "ratio": 182.84
+    },
+    "v3": {
+      "within": 0.7495,
+      "across": 0.0002,
+      "ratio": 3080.66
+    },
+    "v4": {
+      "within": 0.0032,
+      "across": null,
+      "ratio": null
+    }
+  },
+  "reference_profile": {
+    "human": {
+      "S1": 27.3,
+      "S2": 30.4,
+      "S3": 39.4,
+      "S4": 19.6,
+      "S5": 12.2
+    },
+    "v1": {
+      "S1": 2.1,
+      "S2": 4.4,
+      "S3": 6.7,
+      "S4": 3.1,
+      "S5": 0.5
+    },
+    "v2": {
+      "S1": 4.2,
+      "S2": 11.0,
+      "S3": 5.9,
+      "S4": 2.1,
+      "S5": 1.0
+    },
+    "v3": {
+      "S1": 5.5,
+      "S2": 3.6,
+      "S3": 3.7,
+      "S4": 0.2,
+      "S5": 3.0
+    }
+  },
+  "reference_rank_corr": {
+    "v1": 0.9,
+    "v2": 0.9,
+    "v3": 0.6
+  },
+  "reference_level_ratio": {
+    "v1": 0.13,
+    "v2": 0.19,
+    "v3": 0.12
+  },
+  "genre_contrast": {
+    "human": {
+      "sent_len": 0.64,
+      "sent_cv": 0.322,
+      "para_cv": 0.44,
+      "connective": 0.608,
+      "sent_initial_conn": 0.42,
+      "formula": 0.802,
+      "eval": 0.41,
+      "digit": 0.331,
+      "year": 0.292,
+      "time": 0.476,
+      "quote": 0.259,
+      "inst": 0.681,
+      "condition": 0.548,
+      "negation": 0.509,
+      "particle": 0.477,
+      "pron1": 0.592,
+      "pron2": 0.541,
+      "de": 0.562,
+      "nominal": 0.0,
+      "ttr": 0.373,
+      "entropy": 0.79
+    },
+    "v1": {
+      "sent_len": 0.87,
+      "sent_cv": 0.83,
+      "para_cv": 0.97,
+      "connective": 0.766,
+      "sent_initial_conn": 0.336,
+      "formula": 0.94,
+      "eval": 0.507,
+      "digit": 0.0,
+      "year": 0.0,
+      "time": 0.0,
+      "quote": 0.659,
+      "inst": 0.694,
+      "condition": 0.74,
+      "negation": 0.787,
+      "particle": 0.0,
+      "pron1": 0.968,
+      "pron2": 0.327,
+      "de": 0.863,
+      "nominal": 0.0,
+      "ttr": 0.796,
+      "entropy": 0.962
+    },
+    "v2": {
+      "sent_len": 0.867,
+      "sent_cv": 0.698,
+      "para_cv": 0.936,
+      "connective": 0.453,
+      "sent_initial_conn": 0.572,
+      "formula": 0.888,
+      "eval": 0.643,
+      "digit": 0.0,
+      "year": 0.0,
+      "time": 0.0,
+      "quote": 0.149,
+      "inst": 0.664,
+      "condition": 0.519,
+      "negation": 0.795,
+      "particle": 0.0,
+      "pron1": 0.845,
+      "pron2": 0.423,
+      "de": 0.806,
+      "nominal": 0.0,
+      "ttr": 0.616,
+      "entropy": 0.851
+    },
+    "v3": {
+      "sent_len": 0.999,
+      "sent_cv": 0.998,
+      "para_cv": 1.0,
+      "connective": 0.989,
+      "sent_initial_conn": 0.996,
+      "formula": 0.998,
+      "eval": 0.942,
+      "digit": 0.0,
+      "year": 0.0,
+      "time": 0.0,
+      "quote": 0.0,
+      "inst": 0.955,
+      "condition": 1.0,
+      "negation": 0.993,
+      "particle": 0.0,
+      "pron1": 0.997,
+      "pron2": 0.26,
+      "de": 0.995,
+      "nominal": 0.0,
+      "ttr": 0.991,
+      "entropy": 0.993
+    }
+  },
+  "caricature": {
+    "sent_len": 1.35,
+    "sent_cv": 2.17,
+    "para_cv": 2.13,
+    "connective": 0.75,
+    "sent_initial_conn": 1.36,
+    "formula": 1.11,
+    "eval": 1.57,
+    "digit": 0.0,
+    "year": 0.0,
+    "time": 0.0,
+    "quote": 0.58,
+    "inst": 0.98,
+    "condition": 0.95,
+    "negation": 1.56,
+    "particle": 0.0,
+    "pron1": 1.43,
+    "pron2": 0.78,
+    "de": 1.43,
+    "nominal": 0.0,
+    "ttr": 1.65,
+    "entropy": 1.08
+  }
+}

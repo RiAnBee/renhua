@@ -1,0 +1,985 @@
+{
+  "checked_at_utc": "2026-10-20T17:01:05.976828+00:00",
+  "phase": "final_after_integration",
+  "passed": true,
+  "checks": {
+    "baseline": {
+      "frozen_manifest_sha256": "dd65e22770de6c70e728660ce5f6cc8b588b971a40bc4385a81c3d60484afce5",
+      "files_hash_checked": 17,
+      "pending_sha256": "a4c20aae3a3c88db67330ddec7ba2f30d8115a63bfa005792ad8a608cfe1486d",
+      "pending_identities": 61,
+      "existing_registered_pdf_paths": 95,
+      "new_file_selection": "Current path+SHA256 registry minus this frozen registry; never inferred from round directory names",
+      "historic_round4_artifacts_hash_checked": 41,
+      "prior_source_file_hash_declarations_checked": 99
+    },
+    "frozen_scope": {
+      "expected": 61,
+      "chinese_expected": 26,
+      "international_and_other_expected": 35,
+      "status_identities": 61,
+      "terminal_investigations": 61,
+      "identities_match": true,
+      "all_terminal": true,
+      "status_counts": {
+        "official_29page_preview_acquired_complete_book_pending": 1,
+        "official_six_page_frontmatter_pdf_acquired_no_book_body": 1,
+        "no_new_legal_route_found": 7,
+        "new_library_catalog_metadata_only": 1,
+        "new_googlebooks_metadata_no_preview": 1,
+        "new_university_ebook_lead_catalog_unavailable": 1,
+        "complete_journal_pdf_acquired_and_body_visually_read": 1,
+        "new_oa_index_closed_no_repository_match": 1,
+        "translation_new_library_lead_english_original_restricted": 1,
+        "new_accurate_ia_edition_access_restricted": 1,
+        "new_library_metadata_no_fullbook": 1,
+        "new_official_chapter_abstract_access_gated": 1,
+        "no_new_legal_wholebook_route_found": 1,
+        "new_author_institution_bibliography_only": 1,
+        "new_accurate_ia_book_access_restricted": 1,
+        "no_new_legal_exact_edition_route_found": 1,
+        "no_new_legal_route_found_existing_online_retained": 1,
+        "no_new_legal_file_route_existing_online_retained": 1,
+        "original_journal_new_search_no_match_reprint_linked": 1,
+        "no_new_legal_file_route_new_selected_online_reading": 1,
+        "completed_new_route_review": 31,
+        "partial_material_obtained_fulltext_pending": 4
+      }
+    },
+    "acquisition": {
+      "receipt_files": 4,
+      "receipt_records_with_unique_file_anchors_or_attempts": 52,
+      "access_receipt_records": 0,
+      "existing_source_reading_receipts": 39,
+      "frozen_existing_pdf_paths": 95,
+      "new_registered_pdfs": 7,
+      "new_pdf_count_scope": "New registered physical paths; not necessarily new content, full works or independent sources",
+      "new_pdf_unique_hashes_not_in_baseline": 7,
+      "new_pdf_paths_reusing_baseline_hash": [],
+      "new_pdf_pages": 168,
+      "new_pdf_bytes": 11115590,
+      "html_book_bundles": 0,
+      "complete_book_body_records": [],
+      "newly_marked_complete_book_records": [],
+      "complete_article_records": [
+        "linguistics-zh:ZH013-yu1979-westernization"
+      ],
+      "frozen_ids_cleared_from_file_queue": [
+        "linguistics-zh:ZH013-yu1979-westernization"
+      ],
+      "frozen_ids_remaining_in_file_queue": [
+        "linguistics-intl:INTL-ASHER-LASCARIDES-2003",
+        "linguistics-intl:INTL-BAWARSHI-REIFF-2010",
+        "linguistics-intl:INTL-BAZERMAN-WAC-2005",
+        "linguistics-intl:INTL-BEREITER-SCARDAMALIA-1987",
+        "linguistics-intl:INTL-BIBER-1988",
+        "linguistics-intl:INTL-BIBER-CONRAD-2009",
+        "linguistics-intl:INTL-BIBER-GRAY-2016",
+        "linguistics-intl:INTL-BIBER-REPPEN-2015",
+        "linguistics-intl:INTL-BROWN-LEVINSON-1987",
+        "linguistics-intl:INTL-CHAFE-1976",
+        "linguistics-intl:INTL-CHAO-1968",
+        "linguistics-intl:INTL-DUBOIS-2007",
+        "linguistics-intl:INTL-GIVON-1983",
+        "linguistics-intl:INTL-GOFFMAN-1981",
+        "linguistics-intl:INTL-GUNDEL-1993",
+        "linguistics-intl:INTL-HALLIDAY-HASAN-1976",
+        "linguistics-intl:INTL-HALLIDAY-MATTHIESSEN-2014",
+        "linguistics-intl:INTL-HAYES-1996",
+        "linguistics-intl:INTL-HYLAND-HEDGING-1998",
+        "linguistics-intl:INTL-HYLAND-METADISCOURSE-2005",
+        "linguistics-intl:INTL-LAMBRECHT-1994",
+        "linguistics-intl:INTL-LI-THOMPSON-1976",
+        "linguistics-intl:INTL-LI-THOMPSON-1981",
+        "linguistics-intl:INTL-LU-2011",
+        "linguistics-intl:INTL-MARTIN-WHITE-2005",
+        "linguistics-intl:INTL-MATSUDA-1997",
+        "linguistics-intl:INTL-PRINCE-1981",
+        "linguistics-intl:INTL-REITER-DALE-2000",
+        "linguistics-intl:INTL-REPPEN-FITZMAURICE-BIBER-2002",
+        "linguistics-intl:INTL-SHEN-1989",
+        "linguistics-intl:INTL-SPERBER-WILSON-1996",
+        "linguistics-intl:INTL-SWALES-1990",
+        "linguistics-intl:INTL-TAO-1996",
+        "linguistics-zh:ZH005-feng2018-registergrammar",
+        "linguistics-zh:ZH006-fengshi2018-register",
+        "linguistics-zh:ZH007-zhangfang-functional",
+        "linguistics-zh:ZH008-xu2010-discourse",
+        "linguistics-zh:ZH009-fang2019-discourse",
+        "linguistics-zh:ZH010-chenwangdao-rhetoric",
+        "linguistics-zh:ZH011-lvzhu-grammar-rhetoric",
+        "linguistics-zh:ZH012-he2008-europeanized",
+        "linguistics-zh:ZH022-chen2023-selfreference",
+        "linguistics-zh:ZH034-chao1968-grammar",
+        "linguistics-zh:ZH035-lithompson1981",
+        "linguistics-zh:ZH042-zhang2023-stance",
+        "linguistics-zh:ZH043-interactional-stance",
+        "linguistics-zh:ZH049-chen2023-politeness",
+        "linguistics-zh:ZH050-pankadar2011-preview",
+        "linguistics-zh:ZH054-zhang2017-writtenvariation",
+        "linguistics-zh:ZH056-chen2004-rhetoric",
+        "linguistics-zh:ZH057-chen2018-pragmaticidentity",
+        "linguistics-zh:ZH070-wang2024-rhetoric",
+        "linguistics-zh:ZH072-nibaoyuan1992-revisions",
+        "linguistics-zh:ZH073-hu2018-cohesion",
+        "linguistics-zh:ZH074-zhu2017-registergrammar",
+        "linguistics-zh:ZH079-zhangfang1996-functional",
+        "linguistics-zh:ZH081-liao1987-scope",
+        "linguistics-zh:ZH083-liao1992-collected",
+        "reading-cognition:RC006",
+        "reading-cognition:RC007"
+      ],
+      "new_pending_identities_outside_frozen_scope": [
+        "linguistics-zh:ZH084-tsai2010-academic-discourse",
+        "open-books:OA-CENTRALITY-STYLE"
+      ],
+      "current_pending_total": 62,
+      "note": "Route investigation, full-body acquisition, native format and reading extent remain separate. Existing-source rereading is not a new acquisition."
+    },
+    "reading": {
+      "card_records": 55,
+      "by_file": {
+        "chinese-reading-cards.jsonl": 28,
+        "comparison-cards.jsonl": 14,
+        "international-reading-cards.jsonl": 7,
+        "root-reading-cards.jsonl": 6
+      },
+      "source_records": [
+        "linguistics-intl:INTL-BIBER-REPPEN-2015",
+        "linguistics-intl:INTL-DUBOIS-2007",
+        "linguistics-intl:INTL-GIVON-1983",
+        "linguistics-intl:INTL-REPPEN-FITZMAURICE-BIBER-2002",
+        "linguistics-zh:ZH005-feng2018-registergrammar",
+        "linguistics-zh:ZH013-yu1979-westernization",
+        "linguistics-zh:ZH075-liao1991-discourse",
+        "linguistics-zh:ZH082-xu2005-bridging",
+        "linguistics-zh:ZH083-liao1992-collected",
+        "linguistics-zh:ZH084-tsai2010-academic-discourse",
+        "open-books:OA-CENTRALITY-STYLE",
+        "open-books:OA-YUS-CYBERPRAGMATICS",
+        "reading-cognition:RC001",
+        "reading-cognition:RC004",
+        "reading-cognition:RC005",
+        "supplements:SUP004"
+      ],
+      "manifests_with_hash_records": 24,
+      "evidence_files_hash_checked": 301,
+      "limits": "Named pages, local locators and evidence hashes are checked. Actual interpretation and complete-section claims require the separate manual readback."
+    },
+    "proposals": {
+      "proposal_files": 4,
+      "proposals_checked": 19,
+      "fields_checked_by_record": {
+        "linguistics-zh:ZH082-xu2005-bridging": [
+          "cannot_infer",
+          "evidence_locator",
+          "findings",
+          "limitations",
+          "local_pdf",
+          "read_status",
+          "renhua_implications",
+          "round5_analysis_cards",
+          "round5_reading_report"
+        ],
+        "linguistics-zh:ZH075-liao1991-discourse": [
+          "download_url",
+          "evidence_locator",
+          "findings",
+          "limitations",
+          "local_file",
+          "page_count",
+          "read_status",
+          "receipt",
+          "round5_analysis_cards",
+          "round5_reading_report",
+          "sha256"
+        ],
+        "linguistics-zh:ZH005-feng2018-registergrammar": [
+          "access_status",
+          "byte_count",
+          "cannot_infer",
+          "edition_note",
+          "evidence_locator",
+          "findings",
+          "full_book_obtained",
+          "fulltext_available",
+          "limitations",
+          "local_file",
+          "official_preview_available",
+          "official_preview_page_count",
+          "read_status",
+          "reading_scope",
+          "renhua_implications",
+          "retrieval_receipt",
+          "round5_analysis_cards",
+          "round5_preview_files",
+          "round5_preview_manifest",
+          "round5_reading_report",
+          "school_access_round3",
+          "sha256"
+        ],
+        "linguistics-zh:ZH006-fengshi2018-register": [
+          "access_status",
+          "byte_count",
+          "edition_note",
+          "evidence_locator",
+          "findings",
+          "frontmatter_pdf",
+          "frontmatter_pdf_bytes",
+          "frontmatter_pdf_pages",
+          "frontmatter_pdf_sha256",
+          "full_book_obtained",
+          "fulltext_available",
+          "limitations",
+          "local_file",
+          "read_status",
+          "reading_scope",
+          "retrieval_receipt",
+          "round5_reading_report",
+          "school_access_round3",
+          "sha256"
+        ],
+        "linguistics-zh:ZH013-yu1979-westernization": [
+          "access_status",
+          "byte_count",
+          "cannot_infer",
+          "complete_article",
+          "document_extent",
+          "doi",
+          "doi_verification",
+          "download_url",
+          "evidence_locator",
+          "findings",
+          "fulltext_available",
+          "fulltext_file_gap_closed",
+          "fulltext_pdf_files",
+          "licensed_platform_url",
+          "limitations",
+          "local_file",
+          "local_file_missing",
+          "local_pdf",
+          "local_pdf_bytes",
+          "local_pdf_pages",
+          "local_pdf_sha256",
+          "printed_pages",
+          "read_status",
+          "reading_scope",
+          "renhua_implications",
+          "retrieval_receipt",
+          "round5_analysis_cards",
+          "round5_reading_report",
+          "sha256"
+        ],
+        "linguistics-zh:ZH084-tsai2010-academic-discourse": [
+          "access_status",
+          "authors",
+          "cannot_infer",
+          "canonical_url",
+          "doi",
+          "doi_verification",
+          "edition_note",
+          "evidence_locator",
+          "findings",
+          "full_book_obtained",
+          "fulltext_available",
+          "fulltext_file_gap_closed",
+          "id",
+          "isbn",
+          "language",
+          "library_pagination_note",
+          "licensed_platform_url",
+          "limitations",
+          "lineage_note",
+          "local_file_missing",
+          "official_companion_url",
+          "online_full_book_available",
+          "online_selected_sections_available",
+          "priority",
+          "publisher",
+          "publisher_page_count",
+          "read_status",
+          "reading_scope",
+          "related_records",
+          "renhua_implications",
+          "round5_analysis_cards",
+          "round5_pending_note",
+          "round5_reading_report",
+          "selected_images_manifest",
+          "series",
+          "title",
+          "topics",
+          "type",
+          "verified_at",
+          "year"
+        ],
+        "reading-cognition:RC001": [
+          "access_status",
+          "actual_pdf_format",
+          "actual_pdf_path",
+          "download_url",
+          "files",
+          "fulltext_file",
+          "limitations",
+          "local_pdf",
+          "pdf_acquisition_receipt",
+          "pdf_bytes",
+          "pdf_pages",
+          "pdf_sha256",
+          "reading_round5",
+          "round5_osf_static_readback",
+          "source_conflicts",
+          "version_notes"
+        ],
+        "reading-cognition:RC004": [
+          "limitations",
+          "reading_round5"
+        ],
+        "reading-cognition:RC005": [
+          "access_status",
+          "actual_pdf_format",
+          "actual_pdf_path",
+          "download_url",
+          "files",
+          "fulltext_file",
+          "limitations",
+          "local_pdf",
+          "pdf_acquisition_receipt",
+          "pdf_bytes",
+          "pdf_pages",
+          "pdf_sha256",
+          "reading_round5",
+          "round5_osf_static_readback",
+          "source_conflicts",
+          "version_notes"
+        ],
+        "supplements:SUP004": [
+          "evidence_locator",
+          "limitations",
+          "reading_round5"
+        ],
+        "open-books:OA-YUS-CYBERPRAGMATICS": [
+          "evidence_locator",
+          "findings",
+          "implications_and_limits",
+          "read_sections",
+          "read_status",
+          "reading_round5"
+        ],
+        "linguistics-zh:ZH015-gu1990-politeness": [
+          "evidence_locator",
+          "findings",
+          "read_status",
+          "reading_round5",
+          "renhua_implications"
+        ],
+        "linguistics-zh:ZH051-zhouzhang2018-politeness": [
+          "evidence_locator",
+          "findings",
+          "read_status",
+          "reading_round5",
+          "renhua_implications"
+        ],
+        "linguistics-intl:INTL-GIVON-1983": [
+          "access_status",
+          "evidence_locator",
+          "files",
+          "findings",
+          "full_book_obtained",
+          "fulltext_obtained",
+          "implications_and_limits",
+          "read_status",
+          "reading_round5"
+        ],
+        "linguistics-intl:INTL-REPPEN-FITZMAURICE-BIBER-2002": [
+          "access_status",
+          "evidence_locator",
+          "files",
+          "findings",
+          "full_book_obtained",
+          "fulltext_obtained",
+          "implications_and_limits",
+          "read_status",
+          "reading_round5"
+        ],
+        "linguistics-intl:INTL-BIBER-REPPEN-2015": [
+          "access_status",
+          "evidence_locator",
+          "files",
+          "findings",
+          "full_book_obtained",
+          "fulltext_obtained",
+          "implications_and_limits",
+          "read_status",
+          "reading_round5"
+        ],
+        "linguistics-intl:INTL-DUBOIS-2007": [
+          "access_status",
+          "evidence_locator",
+          "files",
+          "findings",
+          "fulltext_available",
+          "fulltext_obtained",
+          "implications_and_limits",
+          "read_status",
+          "reading_round5"
+        ],
+        "open-books:OA-CENTRALITY-STYLE": [
+          "access_history_round5",
+          "access_status",
+          "authors",
+          "canonical_url",
+          "doi",
+          "download_url",
+          "editors",
+          "evidence_locator",
+          "files",
+          "findings",
+          "full_book_obtained",
+          "fulltext_obtained",
+          "id",
+          "implications_and_limits",
+          "interpretation_type",
+          "isbn",
+          "language",
+          "license",
+          "license_evidence",
+          "next_action",
+          "other_isbns",
+          "publisher",
+          "read_sections",
+          "read_status",
+          "reading_round5",
+          "title",
+          "topics",
+          "type",
+          "verified_at",
+          "version_notes",
+          "year"
+        ],
+        "linguistics-zh:ZH083-liao1992-collected": [
+          "evidence_locator",
+          "findings",
+          "limitations",
+          "reading_round5",
+          "reading_scope",
+          "verified_at"
+        ]
+      },
+      "matching_is_static_not_semantic_proof": true
+    },
+    "global_delivery": {
+      "passed_flag": true,
+      "source_records": 184,
+      "pdf_files": 102,
+      "physical_pdf_pages": 5791,
+      "bytes": 235211897,
+      "reading_status": {
+        "partial": 116,
+        "metadata": 37,
+        "full": 29,
+        "abstract": 2
+      },
+      "scope": "Counts independently recomputed here; global validator owns link/catalog completeness"
+    },
+    "round5_summary": {
+      "fields_checked": [
+        "analysis_cards",
+        "analysis_cards_by_file",
+        "baseline_pdf_files",
+        "closed_baseline_ids",
+        "closed_baseline_records",
+        "current_pending_records",
+        "current_read_status",
+        "current_source_records",
+        "frozen_baseline",
+        "frozen_chinese",
+        "frozen_international_and_other",
+        "new_pdf_bytes",
+        "new_pdf_files",
+        "new_pdf_pages",
+        "new_pdf_unique_hashes_not_in_baseline",
+        "new_pending_ids",
+        "new_source_records",
+        "retained_baseline_ids",
+        "retained_baseline_records"
+      ],
+      "changed_source_records": 19,
+      "merge_log_records": 19
+    },
+    "runtime": {
+      "protected_paths": [
+        "skills",
+        "commands",
+        ".claude-plugin",
+        "scripts",
+        "evals"
+      ],
+      "changed_tracked": [],
+      "untracked": [],
+      "no_diff_against_HEAD": true
+    },
+    "manual_readback": {
+      "method": "独立查看已存原页图像，再与另一分支阅读卡逐项对照；不以卡的自述代替原页。仅样本抽审，未将本人撰写的comparison卡当作独立验证。终稿文件变动后须重核目标散列。",
+      "findings": [
+        {
+          "id": "R5-MANUAL-ZH082-LAYERS",
+          "domains": [
+            "chinese"
+          ],
+          "status": "supported_with_conditions",
+          "issue": "C03是否把“可省中间层”和外文烛台反例误当中文加工实验或统一删补规则。",
+          "resolution": "原图201上部墨水—墨盒/芯—主机的例示、中下部Miéville1999村落—教堂/祭坛烛台转述支持卡中区分；卡明确未在本文招募中文读者，未推出按跨度固定删补。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/chinese/zh082-reading/pdfpage-07.png",
+              "bytes": 236364,
+              "sha256": "64bd6238379885c51e09fc24c572f39e28dd8289640b38e3d6603d0076589c2c",
+              "locator": "印刷201，原图全文独立视觉核"
+            }
+          ],
+          "sample_scope": "单页201；不据此独立认证全文11页均已读"
+        },
+        {
+          "id": "R5-MANUAL-ZH082-NETWORK",
+          "domains": [
+            "chinese"
+          ],
+          "status": "supported_with_conditions",
+          "issue": "C04/C05是否有依据区分交叉推进与非语言知识，是否把潜在网络项当已陈述事实。",
+          "resolution": "原图203例17与图5明确把客车的部件关系和乘客关联套在一起；结语引语言/非语言信息及复杂判断推理，支持卡的知识边界。204注②明确本文联想回指词不只是词，也可含修饰词和中心词。卡没有把这套分析当全国读者实验。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/chinese/zh082-reading/pdfpage-09.png",
+              "bytes": 215043,
+              "sha256": "20c219aeeb1bc1dfefc50ff6bc6ab6c068c2e9e35534674e5e07546df0839c9c",
+              "locator": "印刷203，原图全文独立视觉核"
+            },
+            {
+              "file": ".harness/research-20261020/round5/chinese/zh082-reading/pdfpage-10.png",
+              "bytes": 179989,
+              "sha256": "e432b3e9895af8e5077854bbdcb69e82429375bae7fb019ce7a1c4a8e7e51d86",
+              "locator": "印刷204，注②及书目原图独立视觉核"
+            }
+          ],
+          "sample_scope": "203/204；未独立复核C05所引外部实验原研究"
+        },
+        {
+          "id": "R5-MANUAL-YUS-CONTEXT",
+          "domains": [
+            "international"
+          ],
+          "status": "supported_with_conditions",
+          "issue": "Yus新卡是否把传统“间接更礼貌”综述归成作者无条件规则，或把两邀请策略说成一种唯一正确礼貌形式。",
+          "resolution": "原图261在传统观点后明确要求情境并否认句子的固有礼貌值；273同一邀请两例分别解释为亲近团结与自主/拒绝空间，卡准确保留并存策略，且注明不是新的中文实验。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/international/readback/yus-physical-276.png",
+              "bytes": 216391,
+              "sha256": "fbc68424f3c8cbba2f1d314603fcaa1907f732939cce6798f95cc48d6ba22484",
+              "locator": "印刷261全文独立视觉核"
+            },
+            {
+              "file": ".harness/research-20261020/round5/international/readback/yus-physical-288.png",
+              "bytes": 213751,
+              "sha256": "5733b33f50e92ae238a6a6cc04c6b0f419dd80e49d2fdc442069a1dec85a76a5",
+              "locator": "印刷273全文独立视觉核"
+            }
+          ],
+          "sample_scope": "261/273；未独立通读本章全部255–285"
+        },
+        {
+          "id": "R5-MANUAL-YUS-HISTORICAL-LIMIT",
+          "domains": [
+            "international"
+          ],
+          "status": "supported_with_conditions",
+          "issue": "书末跨文化及收信人推断的概括是否被误当当代中文规范。",
+          "resolution": "原图285首段确述判断可超出发信者意图；后段称网络默认礼貌为西方、尤其hyper-polite Anglo-Saxon观念。卡把它明确标作2011作者历史概括并保留迁移限制，没有将其认可为全部中文读者规范。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/international/readback/yus-physical-300.png",
+              "bytes": 119153,
+              "sha256": "206a60f46fc7807d910be2afd64994775d15a2d06b9a5bf93df1f9a6b7ff6ef7",
+              "locator": "印刷285全文独立视觉核"
+            }
+          ],
+          "sample_scope": "285；不为其历史文化概括提供独立实证背书"
+        },
+        {
+          "id": "R5-MANUAL-GIVON-CODING",
+          "domains": [
+            "international"
+          ],
+          "status": "confirmed_source_internal_inconsistency_pending_other_edition",
+          "issue": "本轮样章§6.2关于潜在干扰的两句是否真同印value1，与注16的1/2定义不合，或只是文本提取错误。",
+          "resolution": "独立原图看印14§6.2，no potentially interfering referent与one or more referents两句确同印value1；印37注16却明列1.00为无干扰、2.00为存在一个或多个。当前样章版有内部不一致，不能仅归OCR，也不能自动替作者改值。没有据此否定全部话题连续性研究。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/international/readback/givon-physical-20.png",
+              "bytes": 214517,
+              "sha256": "882bf22e47b0b97501144fd6385d4ceb825fac7ce49335df718d8d14901d8fdc",
+              "locator": "印14§6.2全文独立视觉核"
+            },
+            {
+              "file": ".harness/research-20261020/round5/international/readback/givon-physical-43.png",
+              "bytes": 252045,
+              "sha256": "64b5b6e5e0b382efd5aef8cd96f42f7db0d5c44ea033f53e174f50c558ca90fe",
+              "locator": "印37注16及页内文字独立视觉核"
+            }
+          ],
+          "sample_scope": "仅独立原图核14/37两页，不认证其余样章已读或整本书已取得；未核其他版次/作者勘误"
+        },
+        {
+          "id": "R5-MANUAL-ZH051-PROOF-PAGE",
+          "domains": [
+            "international"
+          ],
+          "status": "corrected_after_independent_readback",
+          "issue": "国际比较卡把两轮搭车例记为作者proof校样10，且说比较只用完整8–10；原存转录该例位于页脚10之后、页脚11之前。",
+          "resolution": "国际分支核原工具连续输出后确认是校样11，已改称呼例9–10/搭车例11，并将实际完整读到11的范围纳入8–11比较；未将proof页冒充出版页，未用未完整读的12。",
+          "requires_correction": true,
+          "correction_resolved": true,
+          "evidence": [
+            {
+              "file": "papers/human-expression/zh-access-round3/ZH051-zhouzhang2018-politeness/author-proof-transcript.txt",
+              "bytes": 82096,
+              "sha256": "72402d720977f93e423b5efa01f5479f68051056b4bcc3400e7db022f50910a8",
+              "locator": "独立读校样8–11相关段及页脚，约转录660–945行；搭车例在10与11页脚间"
+            }
+          ],
+          "sample_scope": "原存作者proof转录版本；未取得出版PDF，未复核其所有外部引用"
+        },
+        {
+          "id": "R5-MANUAL-LIAO-OMISSION",
+          "domains": [
+            "chinese"
+          ],
+          "status": "supported_with_conditions",
+          "issue": "root主体省略卡是否有依据说同一省略形式既可结束、亦可延续被报告范围。",
+          "resolution": "独立原图107分别规定承前管领动词主语的省略成为边界，与承已确定管界中某句主语的省略常仍在范围内；例25及例2对照支持卡。它不是按省略数量判断流畅，也不允许把任何人物提及自动当同一归属。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/root/liao1992-pages/p107.png",
+              "bytes": 79068,
+              "sha256": "6a9bb98dc7cc3c455a2e61897b8b5326af68f44eb431db2670dd4a72f6f7f7dc",
+              "locator": "印107全文独立视觉核"
+            }
+          ],
+          "sample_scope": "1992文集重印页107；不冒充1987原刊，不认证整书"
+        },
+        {
+          "id": "R5-MANUAL-LIAO-SMALL-SURVEY",
+          "domains": [
+            "chinese"
+          ],
+          "status": "corrected_after_independent_readback",
+          "issue": "root卡对不明边界不妨碍理解的转述略去原页114“似乎”，以及小调查样本是否被泛化。",
+          "resolution": "已核root卡与札记均改保“许多情况下…似乎…没有实质影响”。原图115注7/8为邀11回8，2神经语言学者+6语言学者、17报刊例/18管领词语，允许多解且细节从略，卡已保留这些限制。",
+          "requires_correction": true,
+          "correction_resolved": true,
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/root/liao1992-pages/p114.png",
+              "bytes": 70078,
+              "sha256": "5b373c8405c65963c14ea4420f6188adfae61d72dbe044e9fbc94e3812a60502",
+              "locator": "印114全文独立视觉核"
+            },
+            {
+              "file": ".harness/research-20261020/round4/chinese/ZH083-evidence/p115.png",
+              "bytes": 56603,
+              "sha256": "eef97744bd1770d0256b4a20d987f705f0f1a3a1a54bbe389f01825e69bb86e8",
+              "locator": "印115注⑦–⑨及前部注释独立视觉核"
+            }
+          ],
+          "sample_scope": "只核114–115，不重做原调查、不推普通读者一致率或编辑效果"
+        },
+        {
+          "id": "R5-MANUAL-ZH005-PREVIEW",
+          "domains": [
+            "chinese"
+          ],
+          "status": "supported_exact_edition_partial_material_only",
+          "issue": "准确版本官方试读是否被当224页整书，§1.3.2是否真只按欧化作唯一解释。",
+          "resolution": "独立原图preview2题名/作者、3版权为2018.12首版首印ISBN9787561951606；preview28仅到正文12、29明确预览结束，支持完整书仍缺。原图正文5/8分别见§1.2/§1.3标题边界；正文9§1.3.2给语体机制解释“对/关于…进行”等，并明确反对单纯欧化归因。卡将其标作者理论与例示，未推出所有进行都应保留/删除，符合所见。",
+          "evidence": [
+            {
+              "file": "papers/human-expression/round5/ZH005-feng2018-registergrammar/preview-images/3.png",
+              "bytes": 51783,
+              "sha256": "28210363027898462f9f9af86aa4e96f77537ce09030a86c2998711fed331587",
+              "locator": "版权原图独立视觉核"
+            },
+            {
+              "file": "papers/human-expression/round5/ZH005-feng2018-registergrammar/preview-images/21.png",
+              "bytes": 120996,
+              "sha256": "a0493a6ba1d09472f2aa04f701011fc6af0214f5637337b63b510f2550983ba5",
+              "locator": "印5全文独立视觉核"
+            },
+            {
+              "file": "papers/human-expression/round5/ZH005-feng2018-registergrammar/preview-images/24.png",
+              "bytes": 111713,
+              "sha256": "2e20ddd8459e3fc213e68c2077e01b6afaef1968a97d5a7de82ba39c9df6c9a9",
+              "locator": "印8全文独立视觉核"
+            },
+            {
+              "file": "papers/human-expression/round5/ZH005-feng2018-registergrammar/preview-images/25.png",
+              "bytes": 127550,
+              "sha256": "4a6641dd06845f401da23ee9aa6a5a2c320441d159ad7fbd3e48c1977d922bc3",
+              "locator": "印9全文独立视觉核"
+            },
+            {
+              "file": "papers/human-expression/round5/ZH005-feng2018-registergrammar/preview-images/28.png",
+              "bytes": 106638,
+              "sha256": "16eebdda29f221b85bc9f90518d1934437e1b287cb2294135c9a7fec3f691283",
+              "locator": "印12及未结束的正文原图独立视觉核"
+            },
+            {
+              "file": "papers/human-expression/round5/ZH005-feng2018-registergrammar/preview-images/29.png",
+              "bytes": 77444,
+              "sha256": "4957235466382ec24dd3bdfc01c21c2aa15c3d730171f5f073575e14e7e2333e",
+              "locator": "预览结束原图独立视觉核"
+            }
+          ],
+          "sample_scope": "仅以上页及题名页2独立抽读；未独立通读29张，未将页29计作正文29页或全章。出版社224页为页面书目，不是我见到末页224。"
+        },
+        {
+          "id": "R5-MANUAL-ZH013-FIDELITY",
+          "domains": [
+            "chinese"
+          ],
+          "status": "supported_with_historical_and_task_limits",
+          "issue": "新全篇卡是否将余光中1979意见变成统一反西式规则，或把原文不顺与译文不顺的两条件混成一条删改命令。",
+          "resolution": "独立原图66承认外来交流/借词差别；73明确区分原文不顺与原文畅顺两情形，支持卡C02条件。74区分全称否定与非全称含义，79以具体晦涩/混杂意象批评而非实验；C03/C05保留否定范围与不把长限定直接压成I think的忠实性界线，未将其当当代普遍读者实证。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/chinese/zh013-reading/page-02.png",
+              "bytes": 1116304,
+              "sha256": "d99817618d565db625f4cd6b63ca148a57ddf06db23c0bc5b3fe9e9d8c8efe53",
+              "locator": "印66全文独立视觉读"
+            },
+            {
+              "file": ".harness/research-20261020/round5/chinese/zh013-reading/page-09.png",
+              "bytes": 1423776,
+              "sha256": "7542da1a5f415b4a7a5264764562550715b1367c3e3f8a24a0c7e44340e1e676",
+              "locator": "印73全文独立视觉读"
+            },
+            {
+              "file": ".harness/research-20261020/round5/chinese/zh013-reading/page-10.png",
+              "bytes": 1293312,
+              "sha256": "f9d4b9886695f28a75fe714372663aad29808ede5e7ddf8247674007ca7d13fe",
+              "locator": "印74全文独立视觉读"
+            },
+            {
+              "file": ".harness/research-20261020/round5/chinese/zh013-reading/page-15.png",
+              "bytes": 1298936,
+              "sha256": "acef0638448840df8aa67448c443016321fe2d95451a128cd11303905be814ac",
+              "locator": "印79全文独立视觉读"
+            }
+          ],
+          "sample_scope": "仅独立精读66/73/74/79；其余页仅正文非空和页码结构核验，不用接触表当全篇语义通读。"
+        },
+        {
+          "id": "R5-MANUAL-COMPARISON-PEER",
+          "domains": [
+            "comparison_peer_review"
+          ],
+          "status": "corroborated_by_independent_peer",
+          "reviewer": "root",
+          "issue": "本审查agent也撰写比较卡，不能把自己的报告反用作独立原文证明。",
+          "resolution": "root独立视觉核RC001正式PDF16/24和RC005正式PDF7/8/10，并另存有hash的读回记录，支持两文出版表文不一致、非仅PMC转换的核心窄结论；不等于14卡、OSF脚本、全部方法或整篇效果都已由另一人复核。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/root/root-independent-readback.json",
+              "bytes": 2054,
+              "sha256": "3e1c2f872ce16c58b00f723050331e4b25753fd6b730df5f060a2fd529f5c4f8",
+              "locator": "root独立原图读回及结论；非本agent自己的原页复述"
+            }
+          ],
+          "sample_scope": "独立同伴只核所列五张PDF原页；公共OSF脚本段落本分支静态读，不声称独立复现。"
+        },
+        {
+          "id": "R5-MANUAL-CENTRALITY-CHAPTER",
+          "domains": [
+            "international",
+            "new_source_scope"
+          ],
+          "status": "supported_selected_paragraphs_not_whole_book",
+          "issue": "新增编著的Lancaster章是否将两个A等学生段落当学科普遍规则，或把章HTML当完整编著。",
+          "resolution": "独立读所存章文本的Cohen/Rogers原写与改写解释及两个学生段落的比较/限制（阅读转录113–130、151–158，截断的129不据以扩张），并回原HTML核这些段落实际存在。作者明确两例无从泛化，且提及法律经济学教师训练、政治理论教师哲学训练及另一种段落收束读法；卡保持这些条件。完整章HTML不计整书，新增pending独立于旧61。",
+          "evidence": [
+            {
+              "file": "papers/human-expression/round5/OA-CENTRALITY-STYLE/lancaster-chapter.html",
+              "bytes": 207643,
+              "sha256": "b80048a6cfbd3f745fd0c134f76985f06bcb62dc3d2897deb7183763c0848100",
+              "locator": "章节语域例析与学生比较/限制；实际body文本包含所核段落"
+            }
+          ],
+          "sample_scope": "仅独立核选定论证段及存档HTML中的实际文字；未重新通读全章、核原PDF排版/表1视觉、完整编著或全部参考文献。"
+        },
+        {
+          "id": "R5-MANUAL-TSAI-CHAPTER-AND-EDITION",
+          "domains": [
+            "chinese",
+            "new_source_scope"
+          ],
+          "status": "supported_selected_pages_and_final_card_crosscheck",
+          "issue": "新增2010年写作教材的版本、比较写法适用条件及所存末页图是否足以支持整书取得。",
+          "resolution": "独立视觉读印64–66、70、82、版权页；另看83与84章界及187控件的左右图。64–66要求共同比较范畴和有意义基准，三种组织法视写作目的且允许不拘三式；70关于比较有助理解用“或许”，82列若干句式并提醒不能全用于同一段，不支持统一模板禁用或强制条款。版权亲见2010年11月初版一刷、ISBN9789860253665、DOI10.6327/NTUPRS-9789860253665，CIP页数栏留白。83仍第三章练习，84开始第四章；187-L为封底，187-R实际印85且与85-R同SHA，不能冒充书末正文。最终C01/C03/C04/C07及新来源提案已对照所核段落，保留这些条件；在线选读及私有指定页不计本地整书。",
+          "evidence": [
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader65-L1_0_0.jpg",
+              "bytes": 173835,
+              "sha256": "caf86e599c20efa511660618573862dd7cb2ff4e4abe1bb89dc269a81c73ac97",
+              "locator": "印64：第三章及3.1开头；比较用途与目的/基准条件"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader65-R1_0_0.jpg",
+              "bytes": 139952,
+              "sha256": "7b9a405f712529473c17a750b8f205b10fd1bf32b6da0e474c704645878363e8",
+              "locator": "印65：电话/汽车两例、共同范畴及三种结构图"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader67-L1_0_0.jpg",
+              "bytes": 92668,
+              "sha256": "9f8e375460743b5354535b582ca775c163032037d8b64f0a0c299b448ddd6d06",
+              "locator": "印66：三法解释，视目的且可不拘结构"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader71-L1_0_0.jpg",
+              "bytes": 161818,
+              "sha256": "bf05db23ce5c5f8d9270d30ab2a81649f48584d6a2645650e2570dce7074335e",
+              "locator": "印70：或许帮助不了解者；练习追问基准/意旨"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader83-L1_0_0.jpg",
+              "bytes": 125447,
+              "sha256": "7d8ad01d6323e78729ae1ac84f12df0d6e54ec151e051879c1c0ef30095e6703",
+              "locator": "印82：若干比较句式、段落不能一并全用的提示"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader83-R1_0_0.jpg",
+              "bytes": 64783,
+              "sha256": "f08204407574d820377629f694ab85d1665a00d6a9ae60ece45b16d2cdeba43d",
+              "locator": "印83：第三章末练习，非全书末"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader85-L1_0_0.jpg",
+              "bytes": 158536,
+              "sha256": "11a9f99206287bcf90f1f2f44fbc216634776d688a66e44ad5aab8d78433ff89",
+              "locator": "印84：第四章定义开头，仅用于第三章边界核验"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader185-L1_0_0.jpg",
+              "bytes": 144256,
+              "sha256": "2a80e5414ac199ea6a07081e4d895dfdb04697a5b227a4c4cd0cef6a60d9f475",
+              "locator": "版权与CIP：2010.11初版一刷、ISBN、DOI；页数字段空白"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader187-L1_0_0.jpg",
+              "bytes": 208769,
+              "sha256": "2e45de89bb5abd327eeffa8b104e0b6070b11145b39f4a791bc9718c1be968eb",
+              "locator": "封底，不是全书正文连续取得的证据"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/reader187-R1_0_0.jpg",
+              "bytes": 194726,
+              "sha256": "e3682854413c2f2e1abb8d9bc75867c45d2b1e405de62d448cae112fb4be8f43",
+              "locator": "实际印85旧图；与reader85-R同SHA，manifest已排除"
+            },
+            {
+              "file": ".harness/research-20261020/round5/root/tsai2010-pages/manifest.json",
+              "bytes": 19713,
+              "sha256": "184a6509b21686811b22c81527655739a3153703e3c236e9688b4a1ddd1a89b7",
+              "locator": "固定40JPEG清单；39非stale，非全书归档/阅读证明"
+            }
+          ],
+          "sample_scope": "本人独立完整读64–66、70、82五张正文及版权；83/84/封底/旧85用于边界和身份，不声称通读64–83或全书。中文分支的完整20页阅读须另据其实际卡核验。"
+        },
+        {
+          "id": "R5-MANUAL-DUBOIS-PARTIAL-TRANSCRIPT-GUARD",
+          "domains": [
+            "international",
+            "fulltext_scope"
+          ],
+          "status": "partial_artifact_boundary_and_integrated_queue_verified",
+          "issue": "metadata提升partial及新MD文件，是否被误当完整原章而清除旧61中的全文缺口。",
+          "resolution": "独立看存档转录开头、首个diagraph解释/例48及末尾转录符号附录，确认确有作者章内容，但词间换行与并列发言/列布局未保留；不据文本从题名延至附录便宣称所有图示和原页完整。最终国际提案明确complete_article:false、fulltext_obtained:false、fulltext_available:false，MD仅partial_text_transcription；合并后的pending实际仍保留INTL-DUBOIS-2007，旧61实际只移除ZH013，没有因partial阅读状态清除。",
+          "evidence": [
+            {
+              "file": "papers/human-expression/round5/INTL-DUBOIS-2007/author-public-page-transcript.md",
+              "bytes": 141108,
+              "sha256": "2e7cea1b31d43c5518b5a449691b2872b31e9b81721505c82ebaa19572bfc38c",
+              "locator": "开头题名/引言、首个diagraph解释及例48、末尾转录符号附录；仅结构/布局缺口抽查"
+            }
+          ],
+          "sample_scope": "仅独立抽看上述文字位置，未通读章、原始会话转录或原版PDF；不否定作者页文字的阅读价值。完整目标取得与所选文字可读分别记账。"
+        },
+        {
+          "id": "R5-MANUAL-INTEGRATED-ENTRY-AND-DENOMINATORS",
+          "domains": [
+            "chinese",
+            "international",
+            "integrated_delivery"
+          ],
+          "status": "current_entries_and_scope_crosschecked_after_integration",
+          "issue": "主入口是否仍用历史分母或把61路线完成、新格式/选章误写为61全文清零。",
+          "resolution": "独立读当前README、HANDOFF、R5入口、acquisition入口、问题地图及总报告第五轮部分。它们一致给旧61仅ZH013闭合、60仍缺，新增蔡书/Centrality两条整书目标，当前62（49书籍版本/13文章章节）；184来源、102不同散列PDF/5791物理页、R5新7PDF/168页、55卡与93阅读队列。DuBois仍保留fulltext_available:false及pending；29图试读、6页前置、指定书页和完整单章不计新整书；61路线终态与获取完成区分。总报告第四/三轮的历史段落显式保留当时范围，不把其数字加为当前总量。",
+          "evidence": [
+            {
+              "file": "docs/research/2026-10-20-human-expression/README.md",
+              "bytes": 7497,
+              "sha256": "f8ea655fb68ce1d4a1958abee647c6128d19152ccb59c615ea5f5d936916a79a",
+              "locator": "已读当前数量、第五轮范围和获取/阅读边界；总报告仅核当前及第五轮部分"
+            },
+            {
+              "file": "docs/research/2026-10-20-human-expression/总报告.md",
+              "bytes": 29741,
+              "sha256": "f28a1738848da10a936bf64beb5af38ae5080987526cb7e29742fb7908b95ef0",
+              "locator": "已读当前数量、第五轮范围和获取/阅读边界；总报告仅核当前及第五轮部分"
+            },
+            {
+              "file": "docs/research/2026-10-20-human-expression/HANDOFF.md",
+              "bytes": 13507,
+              "sha256": "54a93c56887d1e01c1403f81d4394a057f1a88a124c30f40063bdf3096e74404",
+              "locator": "已读当前数量、第五轮范围和获取/阅读边界；总报告仅核当前及第五轮部分"
+            },
+            {
+              "file": "docs/research/2026-10-20-human-expression/acquisition/README.md",
+              "bytes": 4604,
+              "sha256": "5b0fa079e797596eb718e1114f8dfb087b57158930fd75fae7ea07e0391e9ed9",
+              "locator": "已读当前数量、第五轮范围和获取/阅读边界；总报告仅核当前及第五轮部分"
+            },
+            {
+              "file": "docs/research/2026-10-20-human-expression/fulltext-round5/README.md",
+              "bytes": 5193,
+              "sha256": "829c91c524ddb5f7f325fd1b66f9aad22605397d213abb40544a58df7b4506fb",
+              "locator": "已读当前数量、第五轮范围和获取/阅读边界；总报告仅核当前及第五轮部分"
+            },
+            {
+              "file": "docs/research/2026-10-20-human-expression/evidence-map.md",
+              "bytes": 7837,
+              "sha256": "d540e6245433597e3c33c53602c276945eaed0b00157a3ea016c9b9cb3b638b0",
+              "locator": "已读当前数量、第五轮范围和获取/阅读边界；总报告仅核当前及第五轮部分"
+            }
+          ],
+          "sample_scope": "入口语义和关键数量人工对照；来源/提案字段与全部文件散列另由静态验收核。未逐字审完所有历史正文、55卡或全部外部URL；首次通过后的4入口状态及验收/交付链接已实际读回。公开交付文件的最终散列清单由root随后单次生成并独立回核，本工具不声称检查了尚未写入的清单。"
+        }
+      ],
+      "target_files_hash_checked": 15,
+      "fulltext_closures_manually_checked": [
+        "linguistics-zh:ZH013-yu1979-westernization"
+      ],
+      "limits": "实际范围为所列中文/国际/根分支原页与原文抽审、ZH013完整文件身份/结构核验和当前入口边界，不是全部55卡、61路线内容或外部引文亲读。本agent自己的14比较卡不自证；root另核五张出版PDF原页的窄结论单列。全部61状态、19提案保留、旧95PDF与新文件散列另静态检查；未证明模型复现、全书通读、理论普适性或编辑效果。"
+    },
+    "public_content": {
+      "public_binary_originals_or_scans": [],
+      "round5_text_files_screened": 24,
+      "private_text_files_screened": 108,
+      "long_exact_raw_text_hits": [],
+      "limits": "Binaries, signed-query keys and exact 500-character runs only; not a complete quotation/copyright judgement"
+    }
+  },
+  "unique_files_hash_checked": 485,
+  "errors": [],
+  "warnings": [],
+  "scope": "Round5 frozen61/status61, actual reading, proposals, raw-file receipts, manual interpretation audit and runtime restrictions; not exhaustiveness or editing effectiveness"
+}

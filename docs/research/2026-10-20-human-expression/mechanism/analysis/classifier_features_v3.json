@@ -1,0 +1,199 @@
+{
+ "n_formal": 140,
+ "n_informal": 122,
+ "families": {
+  "M5_rhythm": {
+   "auc_formal": 0.92,
+   "auc_informal": 0.952,
+   "auc_pooled": 0.852,
+   "transfer_formal_to_informal": 0.698,
+   "transfer_informal_to_formal": 0.525
+  },
+  "M4_stance": {
+   "auc_formal": 0.709,
+   "auc_informal": 0.589,
+   "auc_pooled": 0.596,
+   "transfer_formal_to_informal": 0.52,
+   "transfer_informal_to_formal": 0.376
+  },
+  "M3_reference": {
+   "auc_formal": 0.846,
+   "auc_informal": 0.841,
+   "auc_pooled": 0.788,
+   "transfer_formal_to_informal": 0.736,
+   "transfer_informal_to_formal": 0.547
+  },
+  "M2_infostructure": {
+   "auc_formal": 0.785,
+   "auc_informal": 0.539,
+   "auc_pooled": 0.664,
+   "transfer_formal_to_informal": 0.535,
+   "transfer_informal_to_formal": 0.744
+  },
+  "H1_typicality": {
+   "auc_formal": 0.784,
+   "auc_informal": 0.44,
+   "auc_pooled": 0.63,
+   "transfer_formal_to_informal": 0.446,
+   "transfer_informal_to_formal": 0.409
+  },
+  "M1_register_legit": {
+   "auc_formal": 0.777,
+   "auc_informal": 0.717,
+   "auc_pooled": 0.657,
+   "transfer_formal_to_informal": 0.568,
+   "transfer_informal_to_formal": 0.625
+  },
+  "ALL": {
+   "auc_formal": 0.97,
+   "auc_informal": 0.948,
+   "auc_pooled": 0.937,
+   "transfer_formal_to_informal": 0.786,
+   "transfer_informal_to_formal": 0.65
+  }
+ },
+ "feature_stability": {
+  "adjacent_topic_continuity": {
+   "diff_formal": -0.021,
+   "diff_informal": -0.008,
+   "stable": true
+  },
+  "bei_rate": {
+   "diff_formal": -0.206,
+   "diff_informal": 0.247,
+   "stable": false
+  },
+  "booster_rate": {
+   "diff_formal": -0.536,
+   "diff_informal": 0.072,
+   "stable": false
+  },
+  "connective_rate": {
+   "diff_formal": 1.469,
+   "diff_informal": 1.698,
+   "stable": true
+  },
+  "de_rate": {
+   "diff_formal": -3.522,
+   "diff_informal": -9.08,
+   "stable": true
+  },
+  "digit_rate": {
+   "diff_formal": -0.247,
+   "diff_informal": -0.03,
+   "stable": true
+  },
+  "disyllabic_ratio": {
+   "diff_formal": 0.006,
+   "diff_informal": -0.006,
+   "stable": false
+  },
+  "first_person_pl_rate": {
+   "diff_formal": -0.355,
+   "diff_informal": -0.149,
+   "stable": true
+  },
+  "hedge_rate": {
+   "diff_formal": -0.179,
+   "diff_informal": 0.515,
+   "stable": false
+  },
+  "monosyllabic_ratio": {
+   "diff_formal": 0.004,
+   "diff_informal": 0.027,
+   "stable": true
+  },
+  "nominalization_rate": {
+   "diff_formal": -2.319,
+   "diff_informal": -1.668,
+   "stable": true
+  },
+  "p_comma": {
+   "diff_formal": 0.464,
+   "diff_informal": -0.275,
+   "stable": false
+  },
+  "p_dunhao": {
+   "diff_formal": 0.132,
+   "diff_informal": 0.195,
+   "stable": true
+  },
+  "p_period": {
+   "diff_formal": 0.379,
+   "diff_informal": 1.117,
+   "stable": true
+  },
+  "p_question": {
+   "diff_formal": -0.041,
+   "diff_informal": 0.112,
+   "stable": false
+  },
+  "p_semicolon": {
+   "diff_formal": 0.109,
+   "diff_informal": 0.351,
+   "stable": true
+  },
+  "para_sents_cv": {
+   "diff_formal": 0.027,
+   "diff_informal": 0.004,
+   "stable": true
+  },
+  "para_sents_mean": {
+   "diff_formal": 0.436,
+   "diff_informal": -0.049,
+   "stable": false
+  },
+  "para_topic_overlap": {
+   "diff_formal": -0.02,
+   "diff_informal": -0.003,
+   "stable": true
+  },
+  "pronoun_rate": {
+   "diff_formal": -0.835,
+   "diff_informal": -0.757,
+   "stable": true
+  },
+  "second_person_rate": {
+   "diff_formal": -0.046,
+   "diff_informal": -1.65,
+   "stable": true
+  },
+  "self_repeat_5gram": {
+   "diff_formal": -0.004,
+   "diff_informal": -0.002,
+   "stable": true
+  },
+  "sent_initial_connective_ratio": {
+   "diff_formal": 0.054,
+   "diff_informal": 0.005,
+   "stable": true
+  },
+  "sent_len_cv": {
+   "diff_formal": -0.08,
+   "diff_informal": 0.042,
+   "stable": false
+  },
+  "sent_len_mean": {
+   "diff_formal": -9.47,
+   "diff_informal": -44.611,
+   "stable": true
+  },
+  "top50_share": {
+   "diff_formal": -0.071,
+   "diff_informal": -0.001,
+   "stable": true
+  },
+  "type_token_ratio": {
+   "diff_formal": 0.061,
+   "diff_informal": -0.008,
+   "stable": false
+  },
+  "unigram_entropy": {
+   "diff_formal": 0.138,
+   "diff_informal": 0.003,
+   "stable": true
+  }
+ },
+ "n_stable": 19,
+ "n_features": 28
+}

@@ -26,6 +26,15 @@ You do not need to name the generating model. The skill follows the supplied aud
 - Stiff wording, misplaced modifiers, unclear references, and unnecessarily indirect syntax.
 - Awkward transitions or sentence boundaries, without changing the underlying relationships.
 - Rhetorical gestures and redundant emphasis that obscure the actual point.
+- Genre mismatches: strings of figures and procedure in a personal essay, lyricism in an official notice, pure evaluation in a news item.
+
+### Settle three things before touching sentences
+
+1. **Situation** — who writes, who reads, what goes wrong if it is wrong. Supplying it removes filler on its own; sentence-level editing cannot.
+2. **Genre** — a notice should read like a notice. Genre form is part of the contract; the skill does not promise to make official prose unrecognisable, only to fix over-uniformity *within* a genre.
+3. **Material dose** — one or two concrete items for an essay, five or more for a notice, news item, or report. Models use everything they are given and will not select.
+
+Figures, dates, and proper names are content, not style: an edit never deletes them. When density looks wrong for the genre, say so and let the author decide.
 
 Questions, parallelism, metaphors, connectives, long sentences, and short sentences are not automatic editing targets. A repeated sentence can still answer a separate concern, preserve politeness, or establish rhythm.
 
@@ -83,12 +92,14 @@ skills/renhua/
   SKILL.md                  # Complete default editing contract
   references/
     examples.zh.md          # On demand for difficult boundaries or structural work
+    situating.md            # When judging situation, genre, or material dose
     evidence.md             # On demand when the user asks for evidence
 ```
 
 Research and evaluation are outside the installable skill:
 
 - [Current evidence and limitations](skills/renhua/references/evidence.md)
+- [Depth research, 2026-10](docs/research/2026-10-20-human-expression/README.md): five pre-registered experiments that now drive the "settle three things" section and `situating.md`
 - [Archived research and retractions](docs/research/evidence-history.md)
 - [Reconstruction audit and design](docs/plans/2026-09-22-renhua-reconstruction.md)
 - [Evaluation protocol](evals/README.md) and [implementation record](docs/plans/2026-09-22-renhua-reconstruction.report.md)
@@ -106,6 +117,8 @@ The evidence summary separates observations from design decisions. Historical wo
 First check whether meaning, tone, or commitments changed. Then ask whether the edit is more useful for the intended audience. Edit counts, source labels, and detector scores answer neither question.
 
 This reconstruction uses 36 original synthetic development documents and 120 separately sealed synthetic confirmation documents. They exercise engineering boundaries; **they are neither a human-writing baseline nor proof of real-world safety or best-in-class quality**. Direct-prompt runs, actual skill loading, model-assisted review, and human blind review are reported separately in the implementation record.
+
+Five pre-registered experiments (one model, 30 items, 5 genres x 6 topics) support the three-layer split: situation context cuts evaluative filler from 7.7 to 5.2 per 1,000 characters while material only reaches 5.9; material count lifts referential density 4 -> 20 -> 28 -> 40 with coverage reaching 1.00; genre labels, not material, drive form convergence (eta-squared 0.456 -> 0.342). **No reader blind review was run**, so this version promises fewer predictable failures (material dumping, inventing around a missing situation), not that output reads more human.
 
 The skill still relies on the editor model's judgment. Authors or domain users should review distinctive voices, legal material, and technical content. Editing cannot recover facts or judgments absent from the input. Stable gains over a good simple editing prompt require complete-document comparisons and Chinese reader evaluation.
 

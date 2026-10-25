@@ -1,0 +1,125 @@
+{
+  "work_date": "2026-10-20",
+  "records": 621,
+  "identifier_groups": 618,
+  "overlap_groups": 1,
+  "counting_note": "Records are not independent studies; groups need edition/version review. Full reading may describe a guide rather than a study.",
+  "by_branch": {
+    "linguistics-zh": {
+      "records": 92,
+      "reading_status": {
+        "partial": 46,
+        "metadata": 28,
+        "full": 17,
+        "abstract": 1
+      },
+      "source_types": {
+        "conference_paper": 4,
+        "journal_article": 50,
+        "book_chapter": 1,
+        "book": 23,
+        "edited_book": 1,
+        "journal_essay": 1,
+        "review_article": 5,
+        "open_book": 1,
+        "corpus_documentation": 3,
+        "empirical_journal_article": 2,
+        "author_manuscript": 1
+      }
+    },
+    "linguistics-intl": {
+      "records": 476,
+      "reading_status": {
+        "partial": 40,
+        "metadata": 436
+      },
+      "source_types": {
+        "book": 23,
+        "chapter": 7,
+        "article": 20,
+        "conference-paper": 4,
+        "review": 2,
+        "edited-book": 3,
+        "journal_article": 52,
+        "preprint": 365
+      }
+    },
+    "reading-cognition": {
+      "records": 11,
+      "reading_status": {
+        "partial": 6,
+        "full": 1,
+        "abstract": 1,
+        "metadata": 3
+      },
+      "source_types": {
+        "journal_article": 8,
+        "conference_paper": 2,
+        "review_article": 1
+      }
+    },
+    "practice-guides": {
+      "records": 24,
+      "reading_status": {
+        "full": 17,
+        "partial": 5,
+        "metadata": 2
+      },
+      "source_types": {
+        "newsletter": 3,
+        "course-design": 1,
+        "lecture-report": 1,
+        "practice-article": 1,
+        "lecture-summary": 1,
+        "lecture-notes": 1,
+        "collection-entry": 3,
+        "teaching-guide": 10,
+        "standard": 1,
+        "official-handbook": 1,
+        "layout-requirements": 1
+      }
+    },
+    "open-books": {
+      "records": 9,
+      "reading_status": {
+        "partial": 9
+      },
+      "source_types": {
+        "book": 6,
+        "edited_book": 3
+      }
+    },
+    "citation-audits": {
+      "records": 1,
+      "reading_status": {
+        "partial": 1
+      },
+      "source_types": {
+        "journal_article": 1
+      }
+    },
+    "supplements": {
+      "records": 8,
+      "reading_status": {
+        "partial": 7,
+        "full": 1
+      },
+      "source_types": {
+        "conference_paper": 1,
+        "journal_article": 6,
+        "review_article": 1
+      }
+    }
+  },
+  "pending_branch_files": [],
+  "warnings": [
+    "linguistics-zh:ZH079-zhangfang1996-functional: original publication URL pending; metadata_url is an evidence locator, not a substitute publication",
+    "linguistics-zh:ZH081-liao1987-scope: original publication URL pending; metadata_url is an evidence locator, not a substitute publication",
+    "linguistics-zh:ZH083-liao1992-collected: original publication URL pending; metadata_url is an evidence locator, not a substitute publication",
+    "linguistics-zh:ZH096: original publication URL pending; metadata_url is an evidence locator, not a substitute publication",
+    "linguistics-zh:ZH097: original publication URL pending; metadata_url is an evidence locator, not a substitute publication",
+    "linguistics-zh:ZH099: original publication URL pending; metadata_url is an evidence locator, not a substitute publication",
+    "linguistics-zh:ZH100: original publication URL pending; metadata_url is an evidence locator, not a substitute publication"
+  ],
+  "errors": []
+}

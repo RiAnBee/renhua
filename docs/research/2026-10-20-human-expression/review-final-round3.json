@@ -1,0 +1,333 @@
+{
+  "reviewer": "chinese_linguistics",
+  "checked_at_utc": "2026-10-20T13:36:18.778482+00:00",
+  "review_scope": "Third-round authoritative report, handoff, acquisition and coverage entrypoints; current source mappings, actual files/counts and finite GitHub identity closure. Read-only independent audit; no source-card edits or external project execution.",
+  "passed": true,
+  "unresolved_findings": [],
+  "resolved_findings": [
+    {
+      "id": "R3ZH-F01",
+      "severity": "P2",
+      "file": "HANDOFF.md",
+      "line": 63,
+      "issue": "The next-stage instruction linked to an empty former unreviewed queue, although source-insufficient and access records were held elsewhere.",
+      "status": "resolved_by_root_and_independently_rechecked",
+      "resolution": "HANDOFF explicitly says the old queue has zero rows and links candidates-disposition.jsonl with filters for153 insufficient records,1 targeted-source record and access states.",
+      "verified_line_text": "GitHub原candidate_not_yet_reviewed已清零，不再把1810重派；原next-round-queue.jsonl因此为0行。后续定点审读从[判定总表](github/candidates-disposition.jsonl)筛选`status=content_insufficient_needs_source_review`的153条及`readme_insufficient_needs_targeted_inspection`的1条；无根文档、空仓或访问不可得状态也在该表，先看具体缺失原因再决定是否重试。README片段不等于整库代码审计。四片评审保留历史，总索引另并入代表方法补核。"
+    },
+    {
+      "id": "R3ZH-F02",
+      "severity": "P2",
+      "file": "reading-cognition/报告.md",
+      "line": 83,
+      "issue": "RC006 branch wording still conflated referential redundancy with zero new semantic facts, unlike its corrected source card and main report.",
+      "status": "resolved_by_root_and_independently_rechecked",
+      "resolution": "Branch report now distinguishes lack of unique-reference discrimination from color property information and explicitly does not authorize invented details.",
+      "verified_line_text": "- 对renhua的启示：不参与唯一指称区分的修饰语仍可能帮助加工；颜色可传递属性信息，不能等同语义上没有新事实。此例只反驳按指称冗余一律删减，不授权主动补细节。"
+    }
+  ],
+  "verified_counts": {
+    "catalog": {
+      "records": 177,
+      "unique_ids": 177,
+      "branches": {
+        "linguistics-zh": 69,
+        "linguistics-intl": 59,
+        "reading-cognition": 8,
+        "practice-guides": 24,
+        "open-books": 8,
+        "citation-audits": 1,
+        "supplements": 8
+      },
+      "read_status": {
+        "partial": 92,
+        "metadata": 54,
+        "full": 26,
+        "abstract": 5
+      },
+      "all_book_full_status_ids": []
+    },
+    "pdf_actual": {
+      "files": 82,
+      "unique_sha256": 82,
+      "pages": 4916,
+      "bytes": 195080788,
+      "by_collection": {
+        "cnki": 17,
+        "linguistics-intl": 21,
+        "linguistics-zh": 11,
+        "open-books": 7,
+        "practice-guides": 5,
+        "reading-cognition": 3,
+        "round3-intl": 4,
+        "supplements": 7,
+        "zh-access-round3": 7
+      }
+    },
+    "pdf_increment_actual": {
+      "files": 18,
+      "pages": 588,
+      "bytes": 26450296,
+      "baseline_remainder_files": 64,
+      "baseline_remainder_pages": 4328,
+      "baseline_remainder_bytes": 168630492
+    },
+    "nonpdf": {
+      "records": 4,
+      "formats": {
+        "author_public_html_transcription": 2,
+        "official_article_epub": 1,
+        "author_uncorrected_proof_transcript": 1
+      },
+      "all_read_status_partial": true
+    },
+    "queues": {
+      "pending": 65,
+      "unique_pending": 65,
+      "pending_by_branch": {
+        "linguistics-intl": 37,
+        "linguistics-zh": 24,
+        "open-books": 1,
+        "reading-cognition": 2,
+        "supplements": 1
+      },
+      "pending_reason": {
+        "complete_book_not_obtained": 48,
+        "fulltext_not_obtained_or_not_verified": 17
+      },
+      "reading": 86,
+      "unique_reading": 86,
+      "overlap_pending_reading": []
+    },
+    "old85": {
+      "closed": 20,
+      "remaining": 65,
+      "union": 85,
+      "overlap": [],
+      "current_pending_matches_remaining": true,
+      "closed_all_partial": true,
+      "closed_statuses": {
+        "linguistics-intl:INTL-FLOWER-HAYES-1981": "partial",
+        "linguistics-intl:INTL-GRAESSER-2004": "partial",
+        "linguistics-intl:INTL-MCNAMARA-2010": "partial",
+        "linguistics-intl:INTL-SANDERS-1992": "partial",
+        "linguistics-intl:INTL-SCHEGLOFF-1977": "partial",
+        "linguistics-zh:ZH003-zhangfang1994-theme": "partial",
+        "linguistics-zh:ZH015-gu1990-politeness": "partial",
+        "linguistics-zh:ZH021-sun2019-topicchain": "partial",
+        "linguistics-zh:ZH027-name2024": "partial",
+        "linguistics-zh:ZH028-yaobushuo2026": "partial",
+        "linguistics-zh:ZH029-lipiao2025-suowei": "partial",
+        "linguistics-zh:ZH032-wuyunpan2021": "partial",
+        "linguistics-zh:ZH036-tao2007-procedural": "partial",
+        "linguistics-zh:ZH051-zhouzhang2018-politeness": "partial",
+        "linguistics-zh:ZH052-tao1999-registers": "partial",
+        "linguistics-zh:ZH053-wangliu2023-dataregister": "partial",
+        "linguistics-zh:ZH055-kirkpatrickxu2012-rhetoric": "partial",
+        "linguistics-zh:ZH060-bcc2016-construction": "partial",
+        "linguistics-zh:ZH064-zhang2007-registergrammar": "partial",
+        "linguistics-zh:ZH071-tan2002-broadrhetoric": "partial"
+      }
+    },
+    "github_actual": {
+      "repos": 2438,
+      "unique_repo_ids": 2438,
+      "categories": 14,
+      "evidence_level": {
+        "README_only": 2212,
+        "source_read": 223,
+        "primary_file_read": 3
+      },
+      "source_read_prefix": 223,
+      "seed_only": 15,
+      "internal": 1,
+      "queries": 112,
+      "query_failures": 0,
+      "all_reviewed_not_run": true,
+      "license": {
+        "license_endpoint_unavailable": 857,
+        "license_file_saved": 1581
+      },
+      "dispositions": 1443,
+      "disposition_status": {
+        "content_excluded_scope": 1142,
+        "content_insufficient_needs_source_review": 153,
+        "empty_repository_no_default_branch_commit": 46,
+        "default_branch_accessible_no_readme_or_root_skill": 92,
+        "repository_unavailable_after_metadata_refresh": 4,
+        "readme_insufficient_needs_targeted_inspection": 1,
+        "branch_unavailable_after_metadata_refresh": 1,
+        "endpoint_or_content_unavailable": 4
+      },
+      "repo_disposition_id_overlap": 0
+    },
+    "github_round3_actual": {
+      "all_rows": 1822,
+      "queue_rows": 1810,
+      "scope_rows": 12,
+      "unique_queue_ordinals": 1810,
+      "unique_scope_ordinals": 12,
+      "queue_ordinal_range": [
+        1,
+        1810
+      ],
+      "queue_dispositions": {
+        "out_of_scope": 362,
+        "included": 997,
+        "content_insufficient": 6,
+        "no_root_document": 10,
+        "empty_repository": 3,
+        "content_excluded_scope": 364,
+        "content_insufficient_needs_source_review": 55,
+        "empty_repository_no_default_branch_commit": 9,
+        "default_branch_accessible_no_readme_or_root_skill": 3,
+        "access_gap": 1
+      },
+      "scope_dispositions": {
+        "content_excluded_scope": 11,
+        "included": 1
+      }
+    },
+    "authoritative_links": {
+      "checked": 129,
+      "missing": []
+    }
+  },
+  "additional_checks": {
+    "frozen_baseline39_plus46_matches_current85": true,
+    "queue-1810.jsonl_identity_match": true,
+    "scope-candidates-12.jsonl_identity_match": true,
+    "search3861_all_identified_in_final_outputs": true,
+    "searched_final_included": 2423,
+    "searched_final_nonincluded": 1438,
+    "net_added_included": 998,
+    "removed_old_included": 0,
+    "zh69_table_id_state_year_matches": true,
+    "zh_table_errors": [],
+    "current_global_validation_passed": true,
+    "current_global_validation_errors": []
+  },
+  "acquisition_vs_reading_checks": {
+    "all20_closed_old_gap_cards_are_partial": true,
+    "all8_complete_book_cards_are_partial": true,
+    "official_epub_not_pdf": true,
+    "ZH029_112physical_issue_article9pages": true,
+    "ZH051_uncorrected_author_proof_transcript_not_VoR_PDF": true,
+    "ZH015_public_academic_host_license_unverified_not_official_OA": true,
+    "three_exact_isbn_and_one_alternate_online_books_not_counted_as_local_complete_books": true,
+    "RC007_partial_preview_still_fulltext_pending": true,
+    "no_new_full_reading_or_project_effectiveness_claim": true
+  },
+  "limitations": [
+    "Not an independent replication of paper results or software effects.",
+    "All82 PDF files were hashed and parsed, not visually reread page by page.",
+    "Qualitative claims were checked against cards and selected original evidence; not all177 full sources reread.",
+    "223 is the exact machine source_read label;3 additional primary_file_read records remain separate and do not affect2438 total.",
+    "Historical milestone counts were treated as dated snapshots, not current authoritative status."
+  ],
+  "evidence_artifact": ".harness/research-20261020/final-zh-review/observed.json",
+  "input_snapshots": [
+    {
+      "path": "docs/research/2026-10-20-human-expression/README.md",
+      "sha256": "60db48ccdd6acd05a4b3d5c9e33546c73dde8a979a966b31729622d287a5e7b3",
+      "bytes": 5816
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/HANDOFF.md",
+      "sha256": "04254024d66aaea4c4d62aa0bfac30623012728ab229479bccb247cb68b96362",
+      "bytes": 9044
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/总报告.md",
+      "sha256": "5782f918b2d9e2ee84aeb19dfd52b57613d37895f1142d193599ed951677b5ea",
+      "bytes": 20049
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/scope-and-coverage.md",
+      "sha256": "fac6a406debdb9c53b9a6d6f896f61a611c6f41bb7dc01e1144b2dcdc4597386",
+      "bytes": 4471
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/evidence-map.md",
+      "sha256": "d4e60fddaf90b0193cf5a0092b90ea2317b5ff30b3d0b3691b10f44ce5632ef2",
+      "bytes": 6299
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/README.md",
+      "sha256": "aa6075d3e37d077c8e9163b8e101f9cba5948e0a5b3bf2726251931580828141",
+      "bytes": 5010
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/README.md",
+      "sha256": "70614acfea62135cb78f3a726c658527cb40254e01aafe7d0b7a53533aa579e0",
+      "bytes": 14900
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3/README.md",
+      "sha256": "e84cfb7617a048ca4a0179dde273a87f942729f721d1a0f3e0aa3f1c7b3eb0ce",
+      "bytes": 2332
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/round3-report.md",
+      "sha256": "fdcf1124d2982ffb23afb4d381bce7dbc3b36866480732d85d2f270c0bf9660e",
+      "bytes": 11102
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/catalog.jsonl",
+      "sha256": "7716f22ef032eea92eb1ac96a36fad574653a670a00088153e0032dffa8d1426",
+      "bytes": 140244
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/pdf-files.jsonl",
+      "sha256": "03565b074d59c3bf7206a3aa047a1603bb56c79780a1cbe353d0f7487aa1d524",
+      "bytes": 35971
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/pending-access.jsonl",
+      "sha256": "855a0fc864e49cbcec2ebeaed0f294aeb9aaa5dcbf2c69c1b5d060a529536aa5",
+      "bytes": 46325
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/reading-queue.jsonl",
+      "sha256": "f280903cd559ec8430c5c51b1e95d08d8dbf0e106da10468c513b8a55b13486d",
+      "bytes": 61005
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/repos.jsonl",
+      "sha256": "f7e9e26dd96025d3d58e5402586428d16bfa8812374c74a6185855a5d3151769",
+      "bytes": 6848408
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/github/candidates-disposition.jsonl",
+      "sha256": "fb9d5e62eb3fda103aefc8b79d4ffbfe8ae695ccccc5957b50958953aeec276e",
+      "bytes": 1791068
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/reading-cognition/报告.md",
+      "sha256": "ae832d29407181bac921e16d7ec21c8608b927a95a33cf57608672053d1b01f7",
+      "bytes": 11471
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/fulltext-round3-zh/报告.md",
+      "sha256": "692f91f229e78479e071e4c253220add3fd035398e41277dc2948c1e394d322d",
+      "bytes": 19394
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-fulltext-summary.json",
+      "sha256": "dd0a2d1172b6b8b7b80c295ac111e6a25e3e3e336e2e9dea2b823b469fe17607",
+      "bytes": 6149
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/acquisition/round3-nonpdf-files.jsonl",
+      "sha256": "cf7a2a2b826dd8fd86788cc75c1be240bdad4ecffc6f751c53372a14ea9ea62b",
+      "bytes": 3269
+    },
+    {
+      "path": "docs/research/2026-10-20-human-expression/validation.json",
+      "sha256": "123d2e04dc0783e917b8b306771c226fb8f558f0762178c8e1d3e30df5bdddaa",
+      "bytes": 2185
+    }
+  ],
+  "modified_source_cards": false,
+  "modified_authoritative_reports": false
+}
