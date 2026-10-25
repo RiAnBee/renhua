@@ -2,9 +2,9 @@
 
 [中文](README.md) | English
 
-Chinese prose that is empty, stiff, repetitive, or wrong for its genre, edited until a reader can get through it in one pass. Facts, judgments, tone, and the author's voice stay.
+Model-written Chinese gives itself away after two lines: plenty said, nothing pinned to a fact; every sentence the same length; the same tone whatever the genre. This skill cleans that up, until a reader can move through the text without thinking "a model wrote this". Facts, judgments, tone, and the author's own voice stay where they are.
 
-It does not estimate whether a draft came from a model, and it reports no detector score.
+It does not guess which model wrote the draft, and it reports no detector score.
 
 ## Usage
 
@@ -29,17 +29,17 @@ You do not need to name the model that wrote the draft. A stated audience, purpo
 
 Long or short sentences, parallelism, questions, metaphors, and formal wording are not editing targets by themselves. No sentence-length, density, or change-count quota exists.
 
-## Who writes, for whom, in which genre
+## Before you touch the draft
 
-**Who writes, for whom.** What the reader already knows, what goes wrong if the text is wrong. Without those, there is no way to tell which sentences are filler. Supply them and each sentence has grounds to stay or go; leave them out and the choice is guesswork.
+Start with who is writing, for whom, and what goes wrong if the text is wrong. What the reader already knows, which sentence would cost someone something if it were overstated — without that, there is no telling filler from content, and deletion turns into guesswork. Once it is clear, each sentence has grounds to stay or go; rewording alone will not get you there.
 
-**Which genre.** A notice, a news item, an essay, a technical post: each has its own normal form. The skill does not make official prose read unlike official prose. It fixes over-uniformity inside a genre: every sentence the same length, disyllabic words in a run, every paragraph opening the same way.
+Then the genre. A notice, a news item, a theoretical essay, a technical post, a personal essay: each has its own normal form. The skill does not make official prose read unlike official prose. It fixes over-uniformity inside a genre: every sentence the same length, disyllabic words in a run, every paragraph opening the same way.
 
-**How many facts you have.** That sets how concrete the text can be: one or two items for an essay, five or more for a notice, a news item, or a report. Models use whatever they are given and will not select.
+Finally, how many real facts you hold. That sets how concrete the text can be: one or two items for an essay, five or more for a notice, a news item, or a report. Models use whatever they are given and will not select.
 
 Missing material or a missing purpose gets one sentence at delivery. It is not filled in for the author.
 
-**Editing words is not permission to edit meaning.** Numbers, terms, quotations, sources, qualifications, stance, responsibility, and the force of a request all survive. A sentence with no new fact can still work: it answers a worry, hands a decision back, or carries the rhythm.
+Words can change; meaning cannot. Numbers, terms, quotations, sources, qualifications, stance, responsibility, and the force of a request all survive. A sentence with no new fact can still work: it answers a worry, hands a decision back, or carries the rhythm.
 
 ### One boundary example
 
