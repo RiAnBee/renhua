@@ -2,13 +2,13 @@
 
 [中文](README.md) | English
 
-A Chinese prose-editing skill for empty, stiff, repetitive, or contextually awkward writing. It preserves facts, judgments, tone, and the author's voice.
+Chinese prose that is empty, stiff, repetitive, or wrong for its genre, edited until a reader can get through it in one pass. Facts, judgments, tone, and the author's voice stay.
 
-This is an editor, not an AI-origin detector. It does not impose slang, short sentences, an internet-post persona, or a literary style, and promises no detector-score reduction.
+It does not estimate whether a draft came from a model, and it reports no detector score.
 
 ## Usage
 
-Give your agent the draft and, when relevant, its purpose:
+Hand the draft to any agent that supports Agent Skills:
 
 ```text
 Use renhua to make this Chinese draft natural. Keep my voice and return only the edited text.
@@ -16,58 +16,57 @@ This email is for a client. Remove the template tone without turning a request i
 Edit this technical explanation; keep code, parameters, and numbered steps intact.
 ```
 
-The default deliverable is the complete edited draft, without a change ledger or a list of rules. Ask for key changes and reasons when you need them. An already effective passage can remain unchanged.
+The default deliverable is the complete edited draft. Ask for "key changes and reasons" when you want them. A passage that already works comes back unchanged; there is no quota to fill.
 
-You do not need to name the generating model. The skill follows the supplied audience, purpose, and explicitly designated style samples; otherwise it retains the draft's register. It does not search private files for a style profile or build a permanent author model.
+You do not need to name the model that wrote the draft. A stated audience, purpose, or style sample governs the edit. Otherwise the draft's own register, person, and regional vocabulary carry over. The skill does not search private files or build an author profile.
 
-## What it edits
+## What it changes
 
-- Repetition, announcements, and self-evaluation that serve no useful function.
-- Stiff wording, misplaced modifiers, unclear references, and unnecessarily indirect syntax.
-- Awkward transitions or sentence boundaries, without changing the underlying relationships.
-- Rhetorical gestures and redundant emphasis that obscure the actual point.
-- Genre mismatches: strings of figures and procedure in a personal essay, lyricism in an official notice, pure evaluation in a news item.
+- Repetition, announcements, and self-evaluation that do no work.
+- Actions buried under noun phrases, misplaced modifiers, references the reader cannot resolve.
+- Connectives piled up until the relation disappears; sentence breaks that turn a parallel into a cause.
+- Rhetorical gestures that crowd out the point: stacked reversals, evenly spaced aphorisms, vague metaphors, repeated emphasis.
 
-### Settle three things before touching sentences
+Long or short sentences, parallelism, questions, metaphors, and formal wording are not editing targets by themselves. No sentence-length, density, or change-count quota exists.
 
-1. **Situation** — who writes, who reads, what goes wrong if it is wrong. Supplying it removes filler on its own; sentence-level editing cannot.
-2. **Genre** — a notice should read like a notice. Genre form is part of the contract; the skill does not promise to make official prose unrecognisable, only to fix over-uniformity *within* a genre.
-3. **Material dose** — one or two concrete items for an essay, five or more for a notice, news item, or report. Models use everything they are given and will not select.
+## Who writes, for whom, in which genre
 
-Figures, dates, and proper names are content, not style: an edit never deletes them. When density looks wrong for the genre, say so and let the author decide.
+**Who writes, for whom.** What the reader already knows, what goes wrong if the text is wrong. Without those, there is no way to tell which sentences are filler. Supply them and each sentence has grounds to stay or go; leave them out and the choice is guesswork.
 
-Questions, parallelism, metaphors, connectives, long sentences, and short sentences are not automatic editing targets. A repeated sentence can still answer a separate concern, preserve politeness, or establish rhythm.
+**Which genre.** A notice, a news item, an essay, a technical post: each has its own normal form. The skill does not make official prose read unlike official prose. It fixes over-uniformity inside a genre: every sentence the same length, disyllabic words in a run, every paragraph opening the same way.
 
-**Changing wording is not permission to change meaning.** Facts, quantities, terms, quotations, sources, qualifications, stance, responsibility, and the force of a request must survive.
+**How many facts you have.** That sets how concrete the text can be: one or two items for an essay, five or more for a notice, a news item, or a report. Models use whatever they are given and will not select.
 
-### A constructed boundary example
+Missing material or a missing purpose gets one sentence at delivery. It is not filled in for the author.
 
-Before:
+**Editing words is not permission to edit meaning.** Numbers, terms, quotations, sources, qualifications, stance, responsibility, and the force of a request all survive. A sentence with no new fact can still work: it answers a worry, hands a decision back, or carries the rhythm.
+
+### One boundary example
 
 > 小组完成了对值班安排的调整。如果方便，请周三前告诉我；来不及也请说一声。
 
-An acceptable edit:
+Edited:
 
 > 小组调整了值班安排。如果方便，请周三前告诉我；来不及也请说一声。
 
-The first sentence can be simplified. The flexibility in the second is meaningful; changing it to a firm Wednesday deadline would be a fidelity failure. This example illustrates the contract, not measured performance.
+The first sentence can be shortened. The leeway in the second cannot: "submit by Wednesday" turns a request into an order. This illustrates the contract, not measured performance.
 
 ## Default scope
 
 | Allowed when needed | Not automatic |
 |---|---|
-| Meaning-preserving rewording, syntax changes, sentence splitting or merging | Invented facts, data, experiences, motives, or opinions |
-| Editing explanatory prose inside a README or mixed document | Changes to code, parameters, quotations, obligations, conditions, or attribution |
-| Removing redundant emphasis that has no function | Changes to heading hierarchy, numbering, tables, or cross-references |
-| Identifying organizational problems and briefly suggesting a remedy | Reordering, splitting, or merging body paragraphs, or changing argument/narrative order |
+| Meaning-preserving rewording; word order, syntax, sentence splitting and merging | Invented facts, data, experiences, motives, or opinions |
+| Editing explanatory prose, including inside a README | Changes to code, parameters, quotations, obligations, conditions, or attribution |
+| Removing emphasis that does no work | Changes to heading hierarchy, numbering, tables, or cross-references |
+| Naming an organizational problem and suggesting a fix | Reordering, splitting, or merging body paragraphs; changing argument or narrative order |
 
-Explicitly request structural editing when needed; it still uses only the supplied material. Requests such as “typos only,” “review without rewriting,” and “preserve formatting” narrow the scope.
+Ask for structural editing when you want it; it still uses only the supplied material. "Typos only", "review without rewriting", and "preserve formatting" narrow the scope to that one job.
 
-Chinese/English mixed documents are edited only within the authorized Chinese scope. Pure English does not receive Chinese style advice. Traditional/simplified script, regional vocabulary, person, and existing voice are retained.
+Mixed Chinese/English documents are edited only inside the authorized Chinese scope. Pure English gets no Chinese style advice. Traditional or simplified script, regional words, person, and voice follow the draft.
 
 ## Install and update
 
-Copy the whole skill directory:
+Copy the whole directory, `references/` included:
 
 ```bash
 git clone https://github.com/RiAnBee/renhua.git
@@ -75,57 +74,57 @@ mkdir -p ~/.claude/skills
 cp -r renhua/skills/renhua ~/.claude/skills/
 ```
 
-Use another skills directory if required by your agent. **For an existing installation, move the old `renhua` directory aside before copying the new one**, rather than merging files and leaving obsolete rules behind. An existing symlink to the repository follows repository updates directly.
+Any skills directory your agent recognises works. If an older `renhua` is already installed, move it aside before copying, so two rule sets do not mix. A symlink into the repository updates whenever the repository files do.
 
-The repository also includes a local plugin entrypoint. OMP supports:
+Plugin entrypoint:
 
 ```bash
 omp --plugin-dir ./renhua
 ```
 
-`commands/renhua.md` routes to the core rather than duplicating its policy. No marketplace manifest is configured, so this README does not provide an unverified marketplace-install command.
+`commands/renhua.md` routes to the core and holds no second copy of the rules. No marketplace manifest is configured; install from a local directory.
 
 ## Layout
 
 ```text
 skills/renhua/
-  SKILL.md                  # Complete default editing contract
+  SKILL.md                  # Editing contract; usable on its own
   references/
-    examples.zh.md          # On demand for difficult boundaries or structural work
-    situating.md            # When judging situation, genre, or material dose
-    evidence.md             # On demand when the user asks for evidence
+    examples.zh.md          # Difficult boundaries, structural work
+    situating.md            # Judging situation, genre, material dose
+    evidence.md             # When someone asks for the evidence
 ```
 
-Research and evaluation are outside the installable skill:
+Research and evaluation sit outside the installable skill:
 
-- [Current evidence and limitations](skills/renhua/references/evidence.md)
-- [Depth research, 2026-10](docs/research/2026-10-20-human-expression/README.md): five pre-registered experiments that now drive the "settle three things" section and `situating.md`
+- [Evidence summary](skills/renhua/references/evidence.md)
+- [Depth research, 2026-10](docs/research/2026-10-20-human-expression/README.md): linguistics, books, writing practice, GitHub projects, and a citable source base. Five pre-registered experiments from it now drive the section above and [situating.md](skills/renhua/references/situating.md).
 - [Archived research and retractions](docs/research/evidence-history.md)
 - [Reconstruction audit and design](docs/plans/2026-09-22-renhua-reconstruction.md)
-- [Evaluation protocol](evals/README.md) and [implementation record](docs/plans/2026-09-22-renhua-reconstruction.report.md)
+- [Evaluation protocol](evals/README.md), [implementation record](docs/plans/2026-09-22-renhua-reconstruction.report.md), [0.8.0 smoke tests](evals/smoke-0.8.0.md)
 
-## Why it no longer only subtracts
+## What the previous version withdrew
 
-The previous contract extended “do not invent facts” into a restriction on normal rewording, using sentence lengths, human/AI frequency differences, and rule hits as editing proxies. Those prescriptions have been withdrawn: **a feature that distinguishes sources does not necessarily improve writing when removed.**
+The old contract turned "invent no facts" into "replace nothing", and governed edits with sentence length, human/AI frequency gaps, and rule hits. Those prescriptions were withdrawn in 2026-09: **telling sources apart does not make the text better once those features are gone.**
 
-[LAMP](https://arxiv.org/abs/2409.14509v5) includes substantial replacement editing, not just deletion. [StoryScope](https://arxiv.org/abs/2604.03136v6) studies narrative attribution signals; its classification results do not establish that structural editing is useless. Chinese question-answering, translated news, and register studies do not define one universal sentence-length target either.
+[LAMP](https://arxiv.org/abs/2409.14509v5) records professional editors replacing far more than they delete, which does not support deletion-only editing. [StoryScope](https://arxiv.org/abs/2604.03136v6) studies narrative attribution signals; its classifier results say nothing about whether structural editing helps. Chinese question answering, translated news, and register studies do not add up to one sentence-length target.
 
-The evidence summary separates observations from design decisions. Historical work remains available, but a non-replication is not a permanent editing prohibition, and a small historical error fraction is not a current error-rate guarantee.
+The evidence summary keeps observation and design decision apart. Historical work remains available for review; a non-replication is not a permanent ban, and an old small-sample error fraction is not today's rate.
 
 ## Validation and limitations
 
-First check whether meaning, tone, or commitments changed. Then ask whether the edit is more useful for the intended audience. Edit counts, source labels, and detector scores answer neither question.
+Read an edit in this order: did meaning, tone, or commitment change; then, does this version suit the purpose at hand. Beyond those two questions, change counts, source labels, and detector scores are only circumstantial.
 
-This reconstruction uses 36 original synthetic development documents and 120 separately sealed synthetic confirmation documents. They exercise engineering boundaries; **they are neither a human-writing baseline nor proof of real-world safety or best-in-class quality**. Direct-prompt runs, actual skill loading, model-assisted review, and human blind review are reported separately in the implementation record.
+Development material is 36 synthetic drafts, with 120 differently themed synthetic drafts sealed separately. They exercise engineering boundaries. **They are not a human-writing baseline and they prove nothing about real-world safety or quality.** Direct-prompt runs, real skill loading, model-assisted review, and human blind review are counted separately in the implementation record.
 
-Five pre-registered experiments (one model, 30 items, 5 genres x 6 topics) support the three-layer split: situation context cuts evaluative filler from 7.7 to 5.2 per 1,000 characters while material only reaches 5.9; material count lifts referential density 4 -> 20 -> 28 -> 40 with coverage reaching 1.00; genre labels, not material, drive form convergence (eta-squared 0.456 -> 0.342). **No reader blind review was run**, so this version promises fewer predictable failures (material dumping, inventing around a missing situation), not that output reads more human.
+Five pre-registered experiments (one model, 30 items, 5 genres x 6 topics) support the three layers: situation context cuts evaluative filler from 7.7 to 5.2 per 1,000 characters, while added material only reaches 5.9; material count lifts referential density 4 -> 20 -> 28 -> 40 with coverage at 1.00; genre labels drive form convergence (eta-squared 0.456 -> 0.342), material barely moves it. **No reader blind review was run this round**, so the release claims fewer predictable failures (dumping every supplied fact, inventing around a missing situation) and makes no claim that output reads more human. Protocols and reports are in the [research directory](docs/research/2026-10-20-human-expression/experiments/).
 
-The skill still relies on the editor model's judgment. Authors or domain users should review distinctive voices, legal material, and technical content. Editing cannot recover facts or judgments absent from the input. Stable gains over a good simple editing prompt require complete-document comparisons and Chinese reader evaluation.
+Editing still rests on the model's judgment; information preservation has no formal guarantee. Distinctive voices, legal text, and technical material should be reviewed by the author or a domain user. Missing material can only be flagged, never recovered. Answering whether this beats a good one-line prompt needs complete-document comparisons and Chinese reader evaluation; neither has been run.
 
 ## Contributing and license
 
-Report unnecessary edits, missed problems, meaning changes, or voice flattening with the full context, intended audience, and relevant boundaries. Prompt wording changes behavior and needs rechecking. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Report edits that were unnecessary, problems that were missed, meaning that shifted, or voice that flattened, with the full context, intended audience, and boundaries. Changing prompt wording changes behaviour, so it has to be retested. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Inspired by [lieflat-less-ai-tone](https://github.com/larashero3-dotcom/lieflat-less-ai-tone), with additional practical lessons from [human-writing](https://github.com/KKKKhazix/human-writing). Stars and self-reported feature ratios are not performance validation.
+Inspired by [lieflat-less-ai-tone](https://github.com/larashero3-dotcom/lieflat-less-ai-tone), with practical lessons from [human-writing](https://github.com/KKKKhazix/human-writing) on material and function. Stars are not treated as validation.
 
-[MIT](LICENSE). Third-party papers and collected texts retain their original copyrights; they are not uploaded with this repository or relicensed by it.
+[MIT](LICENSE). Third-party papers and collected texts keep their original copyright; they are not uploaded with this repository or relicensed by it.
