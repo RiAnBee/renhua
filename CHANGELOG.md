@@ -2,6 +2,14 @@
 
 本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [未发布]
+
+### 仓库只留产品文件
+
+- `docs/`、`evals/`、`scripts/`、`papers/`、`corpus/`、`.harness/` 移出仓库，clone 下来只有 skill、命令入口和说明文档。
+- 正文里指向这些目录的链接删掉了，依据仍写在 `references/evidence.md`。
+- 旧条目里出现的 `scripts/*.py`、`docs/*`、`evals/*` 路径属于历史记录，文件已不在仓库。
+
 ## [0.8.1] — 2026-10-25
 
 ### 补上段首和标题这一类，建了 AI 味案例库
