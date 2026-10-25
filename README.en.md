@@ -2,7 +2,7 @@
 
 [中文](README.md) | English
 
-Model-written Chinese gives itself away after two lines: plenty said, nothing pinned to a fact; every sentence the same length; the same tone whatever the genre. This skill cleans that up, until a reader can move through the text without thinking "a model wrote this". Facts, judgments, tone, and the author's own voice stay where they are.
+Chinese drafts from models tend to come out vague, stiff, repetitive, or out of register. This skill edits those spots until a reader can move through the text in one go, and might even remark that the agent has finally started to sound like a person. Facts, judgments, tone, and the author's own voice stay as they are.
 
 It does not guess which model wrote the draft, and it reports no detector score.
 
