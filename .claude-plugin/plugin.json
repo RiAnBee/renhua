@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "renhua",
-  "description": "中文表达编辑：把空泛、僵硬和重复的措辞改自然，保留事实、判断、语气与作者声音。Faithful Chinese prose editing without imposing a single voice.",
+  "description": "中文表达编辑：先回到具体沟通，再改妨碍理解的地方；不替作者补内容，不把原稿改成统一口吻。Faithful Chinese prose editing without imposing a single voice.",
   "author": {
     "name": "Donglin",
     "url": "https://github.com/RiAnBee"

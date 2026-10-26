@@ -2,9 +2,9 @@
 
 [中文](README.md) | English
 
-Chinese drafts from models tend to come out vague, stiff, repetitive, or out of register. This skill edits those spots until a reader can move through the text in one go, and might even remark that the agent has finally started to sound like a person. Facts, judgments, tone, and the author's own voice stay as they are.
+Model-written Chinese is often not wrong at the word level; the sentence is complete but does not land on the matter at hand. renhua first checks who is saying what to whom and what the reader must do, then edits only what blocks that exchange. It does not rewrite the author's claims or manner of speaking.
 
-It does not guess which model wrote the draft, and it reports no detector score.
+It does not guess the source model or use detector scores as an outcome.
 
 ## Usage
 
@@ -31,13 +31,13 @@ Long or short sentences, parallelism, questions, metaphors, and formal wording a
 
 ## Before you touch the draft
 
-Start with who is writing, for whom, and what goes wrong if the text is wrong. What the reader already knows, which sentence would cost someone something if it were overstated — without that, there is no telling filler from content, and deletion turns into guesswork. Once it is clear, each sentence has grounds to stay or go; rewording alone will not get you there.
+Ask what each passage is doing for this writer, this reader, and this occasion: what it points to, what it claims, what relation it has to the surrounding sentences, and what the reader must be able to decide or do. Missing material is flagged, not invented.
 
-Then the genre. A notice, a news item, a theoretical essay, a technical post, a personal essay: each has its own normal form. The skill does not make official prose read unlike official prose. It fixes over-uniformity inside a genre: every sentence the same length, disyllabic words in a run, every paragraph opening the same way.
+Do not start with a blacklist. Words such as `满`, `而`, `不是……而是……`, headings, and summaries can be useful. Edit only when a form could fit almost any topic, has no commitment to an object or proposition, and does no work for relation, stance, politeness, scope, or genre. Paragraph openings and endings are sampling points, not bans.
 
-Finally, how many real facts you hold. That sets how concrete the text can be: one or two items for an essay, five or more for a notice, a news item, or a report. Models use whatever they are given and will not select.
+Fix propositions, relations, commitments, and reader state before adjusting wording, syntax, punctuation, or rhythm. A notice, news item, theoretical essay, technical post, and personal essay each has its own normal form.
 
-Missing material or a missing purpose gets one sentence at delivery. It is not filled in for the author.
+Missing purpose, material, or responsibility boundaries get one sentence at delivery. They are not filled with adjectives.
 
 Words can change; meaning cannot. Numbers, terms, quotations, sources, qualifications, stance, responsibility, and the force of a request all survive. A sentence with no new fact can still work: it answers a worry, hands a decision back, or carries the rhythm.
 
@@ -108,11 +108,11 @@ The evidence summary keeps observation and design decision apart. Historical wor
 
 Read an edit in this order: did meaning, tone, or commitment change; then, does this version suit the purpose at hand. Beyond those two questions, change counts, source labels, and detector scores are only circumstantial.
 
-Development material is 36 synthetic drafts, with 120 differently themed synthetic drafts sealed separately. They exercise engineering boundaries. **They are not a human-writing baseline and they prove nothing about real-world safety or quality.** Direct-prompt runs, real skill loading, model-assisted review, and human blind review are counted separately in the implementation record.
+Development material includes synthetic drafts used only to stress-test editing boundaries. **It is not a human-writing baseline and proves nothing about real-world quality.** Direct prompts, real skill loading, model-assisted review, and human evaluation must be reported separately.
 
-Five pre-registered experiments (one model, 30 items, 5 genres x 6 topics) support the three layers: situation context cuts evaluative filler from 7.7 to 5.2 per 1,000 characters, while added material only reaches 5.9; material count lifts referential density 4 -> 20 -> 28 -> 40 with coverage at 1.00; genre labels drive form convergence (eta-squared 0.456 -> 0.342), material barely moves it. **No reader blind review was run this round**, so the release claims fewer predictable failures (dumping every supplied fact, inventing around a missing situation) and makes no claim that output reads more human.
+Local experiments support a narrow claim: situation context and real material change what models select, while genre prompts change formal prototypes. They do not establish a fixed “AI vocabulary” or guarantee that an edit will read as human. The current working hypothesis is a **break in situated commitments**: check objects, propositions, relations, reader tasks, and consequences before touching form.
 
-Editing still rests on the model's judgment; information preservation has no formal guarantee. Distinctive voices, legal text, and technical material should be reviewed by the author or a domain user. Missing material can only be flagged, never recovered. Answering whether this beats a good one-line prompt needs complete-document comparisons and Chinese reader evaluation; neither has been run.
+No Chinese full-document intervention with human readers has been run. Authors or domain users should review distinctive voices, legal text, and technical material. Missing material can only be flagged. Change counts, source labels, and detector scores cannot replace that review.
 
 ## Contributing and license
 
